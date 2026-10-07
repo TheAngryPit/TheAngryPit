@@ -1,0 +1,28 @@
+{
+  "generatedBy": "scripts/render-banner.mjs",
+  "output": "assets/banner-storytelling.png",
+  "outputCssSize": {
+    "width": 1600,
+    "height": 294
+  },
+  "outputPixelSize": {
+    "width": 3200,
+    "height": 588
+  },
+  "inputs": [
+    {
+      "path": "assets/banner-art.png",
+      "provenance": "Root-supplied generated architectural artwork; see assets/banner-art.png.json."
+    },
+    {
+      "path": "assets/signature.svg",
+      "provenance": "Unchanged copy of output/cv-assets/personal-brand/vitor-signature-negative.svg."
+    }
+  ],
+  "typography": {
+    "family": "Avenir Next Condensed",
+    "source": "Installed macOS system font; no font file is distributed."
+  },
+  "artworkRole": "Decorative architectural composition, not a portfolio-work image.",
+  "tagline": "Storytelling · Creativity · Agentic systems"
+}

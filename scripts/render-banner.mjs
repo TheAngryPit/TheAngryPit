@@ -3,8 +3,8 @@ import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright';
 
 const assetsDir = fileURLToPath(new URL('../assets/', import.meta.url));
-const outputPath = fileURLToPath(new URL('../assets/banner.png', import.meta.url));
-const provenancePath = fileURLToPath(new URL('../assets/banner.png.json', import.meta.url));
+const outputPath = fileURLToPath(new URL('../assets/banner-storytelling.png', import.meta.url));
+const provenancePath = fileURLToPath(new URL('../assets/banner-storytelling.png.json', import.meta.url));
 const WIDTH = 1600;
 const HEIGHT = 294;
 const SCALE = 2;
@@ -76,7 +76,7 @@ async function main() {
 
   const provenance = {
     generatedBy: 'scripts/render-banner.mjs',
-    output: 'assets/banner.png',
+    output: 'assets/banner-storytelling.png',
     outputCssSize: { width: WIDTH, height: HEIGHT },
     outputPixelSize: { width: WIDTH * SCALE, height: HEIGHT * SCALE },
     inputs: [
