@@ -1,5 +1,5 @@
 <picture>
-  <img src="assets/banner.png" alt="Vítor Cepeda Lopes — BETTER / STORIES / BRIGHTER / SYSTEMS. Creative work. Systems. Open source. Storytelling, creativity and agentic systems.">
+  <img src="assets/banner.png?v=20261008" alt="Vítor Cepeda Lopes — BETTER / STORIES / BRIGHTER / SYSTEMS. Creative work. Systems. Open source. Storytelling, creativity and agentic systems.">
 </picture>
 
 I build stories, systems and practical solutions.
