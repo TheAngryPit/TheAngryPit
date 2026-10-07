@@ -1,50 +1,224 @@
 {
   "provider": "Shields.io",
-  "style": "flat-square",
-  "retrievedAt": "2026-10-07T22:22:53.087Z",
-  "scope": "Static badges indicating source-backed tools/languages, not proficiency, certifications or measurements",
+  "style": "flat-square; E2B official for-the-badge exception",
+  "retrievedAt": "2026-10-07T23:17:41.667Z",
+  "scope": "Static tool/OS badges and confirmed access/membership labels, not certifications or proficiency ratings. E2B uses its official Startups sponsorship badge; other program labels are custom Shields badges, not official credentials.",
   "badges": [
     {
       "id": "codex",
       "label": "Codex",
+      "group": "stack",
       "source": "https://img.shields.io/badge/Codex-0D1117?style=flat-square&logo=openai&logoColor=E6342E",
       "href": "https://github.com/openai/codex",
+      "officialProgramBadge": false,
       "sha256": "12bf9e9b89124e3bfe0bb5d67d862c43e0fcbe6254f6fd292391ac5b9ce883fd"
     },
     {
       "id": "openclaw",
       "label": "OpenClaw",
+      "group": "stack",
       "source": "https://img.shields.io/badge/OpenClaw-0D1117?style=flat-square",
       "href": "https://openclaw.ai",
+      "officialProgramBadge": false,
       "sha256": "c34f9e828ff2a7e0172bad2b9320d384212bb339f9a6ed48c4fce0cb2c4c15f0"
     },
     {
       "id": "hermes",
       "label": "Hermes Agent",
+      "group": "stack",
       "source": "https://img.shields.io/badge/Hermes%20Agent-0D1117?style=flat-square",
       "href": "https://github.com/NousResearch/hermes-agent",
+      "officialProgramBadge": false,
       "sha256": "ef2ea91f1cfb16572679d532d2db4f6343d065ecf034f24b02ec652ce614db78"
     },
     {
       "id": "typescript",
       "label": "TypeScript",
+      "group": "stack",
       "source": "https://img.shields.io/badge/TypeScript-0D1117?style=flat-square&logo=typescript&logoColor=E6342E",
       "href": "https://www.typescriptlang.org",
+      "officialProgramBadge": false,
       "sha256": "1bf1c4ac9490c892b4fe539a1288eae6dafb265d2f4c6802b81730a37788e2c5"
     },
     {
       "id": "csharp",
       "label": "C#",
+      "group": "stack",
       "source": "https://img.shields.io/badge/C%23-0D1117?style=flat-square&logo=dotnet&logoColor=E6342E",
       "href": "https://learn.microsoft.com/en-us/dotnet/csharp/",
+      "officialProgramBadge": false,
       "sha256": "6ff60b9f467e6d44d2745bb567f1443a6edb3fa6cf88c6e301d7f6d81a485f86"
     },
     {
       "id": "python",
       "label": "Python",
+      "group": "stack",
       "source": "https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=E6342E",
       "href": "https://www.python.org",
+      "officialProgramBadge": false,
       "sha256": "6e24898f81af7632cde165fddc4bd12a5212fe06cf55bf5ce939090a91d6ed81"
+    },
+    {
+      "id": "openwhispr",
+      "label": "OpenWhispr",
+      "group": "stack",
+      "source": "https://img.shields.io/badge/OpenWhispr-0D1117?style=flat-square",
+      "href": "https://github.com/OpenWhispr/openwhispr",
+      "officialProgramBadge": false,
+      "sha256": "0a265fb1a1b86bffc92b5a467401876b88e69f8a81d76cfc3eb5c4c05c177990"
+    },
+    {
+      "id": "prime",
+      "label": "Prime Agent",
+      "group": "stack",
+      "source": "https://img.shields.io/badge/Prime%20Agent-0D1117?style=flat-square",
+      "href": "https://github.com/PrimeIntellect-ai/prime-agent",
+      "officialProgramBadge": false,
+      "sha256": "9167c5a6812ad012eb277772e51aac27119a74235f47eadfbb80f496eaf60ac7"
+    },
+    {
+      "id": "buzz",
+      "label": "Buzz",
+      "group": "stack",
+      "source": "https://img.shields.io/badge/Buzz-0D1117?style=flat-square",
+      "href": "https://github.com/chidiwilliams/buzz",
+      "officialProgramBadge": false,
+      "sha256": "064cf91f2313bd5d83b74ef3d9d7dc8dfa5980447d945d4239478c088f31408d"
+    },
+    {
+      "id": "ghostty",
+      "label": "Ghostty",
+      "group": "stack",
+      "source": "https://img.shields.io/badge/Ghostty-0D1117?style=flat-square&logo=ghostty&logoColor=E6342E",
+      "href": "https://ghostty.org",
+      "officialProgramBadge": false,
+      "sha256": "58e585387f29e57c3d64ebd3c9e5ff3abde7f6f2a51ab8c42cd08af93ab0e64a"
+    },
+    {
+      "id": "llamacpp",
+      "label": "llama.cpp",
+      "group": "stack",
+      "source": "https://img.shields.io/badge/llama.cpp-0D1117?style=flat-square",
+      "href": "https://github.com/ggml-org/llama.cpp",
+      "officialProgramBadge": false,
+      "sha256": "7ad2d42449b624e4f190e2ff83ad64725499b073fb418f687850dc1bf7b4bea3"
+    },
+    {
+      "id": "hindsight",
+      "label": "Hindsight",
+      "group": "stack",
+      "source": "https://img.shields.io/badge/Hindsight-0D1117?style=flat-square",
+      "href": "https://github.com/vectorize-io/hindsight",
+      "officialProgramBadge": false,
+      "sha256": "27f08f262482bb79b3cf7c1c5ff9641442146c11052c8e859e360149034bf3f4"
+    },
+    {
+      "id": "honcho",
+      "label": "Honcho",
+      "group": "stack",
+      "source": "https://img.shields.io/badge/Honcho-0D1117?style=flat-square",
+      "href": "https://github.com/plastic-labs/honcho",
+      "officialProgramBadge": false,
+      "sha256": "ca282dd7ec9599e7c672afa042814fa4b261b341263c61546708663ae8698262"
+    },
+    {
+      "id": "docker",
+      "label": "Docker",
+      "group": "stack",
+      "source": "https://img.shields.io/badge/Docker-0D1117?style=flat-square&logo=docker&logoColor=E6342E",
+      "href": "https://www.docker.com",
+      "officialProgramBadge": false,
+      "sha256": "c3ac8e9aefda5746623b9edca203f4810adbf76dc491a75dcec1d6a1ff81391d"
+    },
+    {
+      "id": "ecloud",
+      "label": "E2B",
+      "group": "stack",
+      "source": "https://img.shields.io/badge/E2B-0D1117?style=flat-square",
+      "href": "https://e2b.dev",
+      "officialProgramBadge": false,
+      "sha256": "fda861aed0f918374b485b312af2f1a6d278129bdc56dbf102238585fef82f7c"
+    },
+    {
+      "id": "comfy",
+      "label": "ComfyUI",
+      "group": "stack",
+      "source": "https://img.shields.io/badge/ComfyUI-0D1117?style=flat-square&logo=comfyui&logoColor=E6342E",
+      "href": "https://github.com/Comfy-Org/ComfyUI",
+      "officialProgramBadge": false,
+      "sha256": "dfd042890a9684a2775afa0528ce7863d5719ae199e471ad6548668148852ca9"
+    },
+    {
+      "id": "macos",
+      "label": "macOS",
+      "group": "os",
+      "source": "https://img.shields.io/badge/macOS-0D1117?style=flat-square&logo=macos&logoColor=E6342E",
+      "href": "https://www.apple.com/macos/",
+      "officialProgramBadge": false,
+      "sha256": "ae1f57e7d2de01b7432c36a0af749fa2f33f7fc6ee6ac3bffc3727bb15d2539f"
+    },
+    {
+      "id": "windows",
+      "label": "Windows",
+      "group": "os",
+      "source": "https://img.shields.io/badge/Windows-0D1117?style=flat-square",
+      "href": "https://www.microsoft.com/windows",
+      "officialProgramBadge": false,
+      "sha256": "1d68c1f5109ba1ce4ab6f7d86aa6fa3c4687c8a8988c46014e5fddc8195abd49"
+    },
+    {
+      "id": "ubuntu",
+      "label": "Ubuntu",
+      "group": "os",
+      "source": "https://img.shields.io/badge/Ubuntu-0D1117?style=flat-square&logo=ubuntu&logoColor=E6342E",
+      "href": "https://ubuntu.com",
+      "officialProgramBadge": false,
+      "sha256": "fac6443ff9876ee430a5a7c3b867c13a79fe67856c27f04a6574c3bec602360a"
+    },
+    {
+      "id": "omarchy",
+      "label": "Omarchy",
+      "group": "os",
+      "source": "https://img.shields.io/badge/Omarchy-0D1117?style=flat-square",
+      "href": "https://omarchy.org",
+      "officialProgramBadge": false,
+      "sha256": "cf27be1f296ff5139c9a72865e5eb8cef7eaa3319381fe5fc2b4f761d10e5afb"
+    },
+    {
+      "id": "daybreak",
+      "label": "OpenAI Daybreak access",
+      "group": "program",
+      "source": "https://img.shields.io/badge/OpenAI%20Daybreak%20access-0D1117?style=flat-square",
+      "href": "https://openai.com/daybreak/",
+      "officialProgramBadge": false,
+      "sha256": "f7ecacb43b8385fcdd6415c565b4d6eaf5760c92163aed9efcdafc8f0ac2be1e"
+    },
+    {
+      "id": "appledev",
+      "label": "Apple Developer Program member",
+      "group": "program",
+      "source": "https://img.shields.io/badge/Apple%20Developer%20Program%20member-0D1117?style=flat-square",
+      "href": "https://developer.apple.com/programs/",
+      "officialProgramBadge": false,
+      "sha256": "75dd8367456d3c08879826a898ac85cd46b6340a8abc2e29ffff9549954e9672"
+    },
+    {
+      "id": "nvidiadev",
+      "label": "NVIDIA Developer Program",
+      "group": "program",
+      "source": "https://img.shields.io/badge/NVIDIA%20Developer%20Program-0D1117?style=flat-square",
+      "href": "https://developer.nvidia.com/developer-program",
+      "officialProgramBadge": false,
+      "sha256": "f7003d04342066fae0371e4ae838e90045226e0501ec0875bb3c81a2f6bd8dc0"
+    },
+    {
+      "id": "egrant",
+      "label": "SPONSORED BY: E2B FOR STARTUPS",
+      "group": "program",
+      "source": "https://img.shields.io/badge/SPONSORED%20BY-E2B%20FOR%20STARTUPS-ff3001?style=for-the-badge&labelColor=black",
+      "href": "https://e2b.dev/startups",
+      "officialProgramBadge": true,
+      "sha256": "2a26609d59b546fba1270e949f2fa938742df1f3e333eb15e7fa31bcda2a1a32"
     }
   ]
 }

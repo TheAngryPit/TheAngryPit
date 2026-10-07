@@ -6,7 +6,13 @@ import path from 'node:path';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 
-export function badgeUrl({ label, logo }) {
+const E2B_STARTUPS_BADGE = 'https://img.shields.io/badge/SPONSORED%20BY-E2B%20FOR%20STARTUPS-ff3001?style=for-the-badge&labelColor=black';
+
+export function badgeUrl({ label, logo, badgeSource }) {
+  if (badgeSource) {
+    assert.equal(badgeSource, E2B_STARTUPS_BADGE, 'Unreviewed official badge source');
+    return new URL(badgeSource);
+  }
   const url = new URL(`https://img.shields.io/badge/${encodeURIComponent(label.replaceAll('-', '--'))}-0D1117`);
   url.searchParams.set('style', 'flat-square');
   if (logo) {
@@ -51,12 +57,12 @@ export async function fetchStackBadges() {
     await writeFile(path.join(root, 'assets', `stack-${item.id}.svg`), svg);
   }
   const receipt = {
-    provider: 'Shields.io', style: 'flat-square', retrievedAt: new Date().toISOString(),
-    scope: 'Static badges indicating source-backed tools/languages, not proficiency, certifications or measurements',
-    badges: fetched.map(({ item, source, svg }) => ({ id: item.id, label: item.label, source, href: item.href, sha256: createHash('sha256').update(svg).digest('hex') })),
+    provider: 'Shields.io', style: 'flat-square; E2B official for-the-badge exception', retrievedAt: new Date().toISOString(),
+    scope: 'Static tool/OS badges and confirmed access/membership labels, not certifications or proficiency ratings. E2B uses its official Startups sponsorship badge; other program labels are custom Shields badges, not official credentials.',
+    badges: fetched.map(({ item, source, svg }) => ({ id: item.id, label: item.label, group: item.group || 'stack', source, href: item.href, officialProgramBadge: item.id === 'egrant', sha256: createHash('sha256').update(svg).digest('hex') })),
   };
   await writeFile(path.join(root, 'assets/stack-badges.provenance.json'), JSON.stringify(receipt, null, 2) + '\n');
-  console.log(`Saved ${fetched.length} real Shields.io flat-square badges; no credentials used.`);
+  console.log(`Saved ${fetched.length} Shields.io badges including the official E2B for Startups badge; no credentials used.`);
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {

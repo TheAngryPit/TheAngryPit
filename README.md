@@ -1,19 +1,48 @@
 <picture>
-  <img src="assets/banner.png" alt="Vítor Cepeda Lopes — BETTER / STORIES / BRIGHTER / SYSTEMS. Creative work. Systems. Open source. Music, theatre, film and agentic systems.">
+  <img src="assets/banner.png" alt="Vítor Cepeda Lopes — BETTER / STORIES / BRIGHTER / SYSTEMS. Creative work. Systems. Open source. Storytelling, creativity and agentic systems.">
 </picture>
 
 I build stories, systems and practical solutions.
 
 [Portfolio](https://www.vitorcepedalopes.com/portfolio) · [LinkedIn](https://www.linkedin.com/in/theangrypit/) · [Writing](https://www.linkedin.com/newsletters/%F0%9F%A7%A0-themind-shift-by-vcl-7373346533582286848/)
 
-### Tools & languages
+### Tools
 
 <a href="https://github.com/openai/codex"><img src="assets/stack-codex.svg" alt="Codex" height="26"></a>
 <a href="https://openclaw.ai"><img src="assets/stack-openclaw.svg" alt="OpenClaw" height="26"></a>
 <a href="https://github.com/NousResearch/hermes-agent"><img src="assets/stack-hermes.svg" alt="Hermes Agent" height="26"></a>
+<a href="https://github.com/PrimeIntellect-ai/prime-agent"><img src="assets/stack-prime.svg" alt="Prime Agent" height="26"></a>
+<a href="https://github.com/OpenWhispr/openwhispr"><img src="assets/stack-openwhispr.svg" alt="OpenWhispr" height="26"></a>
+<a href="https://github.com/chidiwilliams/buzz"><img src="assets/stack-buzz.svg" alt="Buzz" height="26"></a>
+<a href="https://ghostty.org"><img src="assets/stack-ghostty.svg" alt="Ghostty" height="26"></a>
+<a href="https://github.com/ggml-org/llama.cpp"><img src="assets/stack-llamacpp.svg" alt="llama.cpp" height="26"></a>
+<a href="https://github.com/vectorize-io/hindsight"><img src="assets/stack-hindsight.svg" alt="Hindsight" height="26"></a>
+<a href="https://github.com/plastic-labs/honcho"><img src="assets/stack-honcho.svg" alt="Honcho" height="26"></a>
+<a href="https://www.docker.com"><img src="assets/stack-docker.svg" alt="Docker" height="26"></a>
+<a href="https://e2b.dev"><img src="assets/stack-ecloud.svg" alt="E2B" height="26"></a>
+<a href="https://github.com/Comfy-Org/ComfyUI"><img src="assets/stack-comfy.svg" alt="ComfyUI" height="26"></a>
+
+### Languages
+
 <a href="https://www.typescriptlang.org"><img src="assets/stack-typescript.svg" alt="TypeScript" height="26"></a>
 <a href="https://learn.microsoft.com/en-us/dotnet/csharp/"><img src="assets/stack-csharp.svg" alt="C#" height="26"></a>
 <a href="https://www.python.org"><img src="assets/stack-python.svg" alt="Python" height="26"></a>
+
+### Operating systems
+
+<a href="https://www.apple.com/macos/"><img src="assets/stack-macos.svg" alt="macOS" height="26"></a>
+<a href="https://www.microsoft.com/windows"><img src="assets/stack-windows.svg" alt="Windows" height="26"></a>
+<a href="https://ubuntu.com"><img src="assets/stack-ubuntu.svg" alt="Ubuntu" height="26"></a>
+<a href="https://omarchy.org"><img src="assets/stack-omarchy.svg" alt="Omarchy" height="26"></a>
+
+### Programs & support
+
+<a href="https://openai.com/daybreak/"><img src="assets/stack-daybreak.svg" alt="OpenAI Daybreak access" height="26"></a>
+<a href="https://developer.apple.com/programs/"><img src="assets/stack-appledev.svg" alt="Apple Developer Program member" height="26"></a>
+<a href="https://developer.nvidia.com/developer-program"><img src="assets/stack-nvidiadev.svg" alt="NVIDIA Developer Program" height="26"></a>
+<a href="https://e2b.dev/startups"><img src="assets/stack-egrant.svg" alt="Sponsored by E2B for Startups" height="28"></a>
+
+Daybreak access for defensive security work.
 
 ## GitHub activity
 

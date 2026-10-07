@@ -13,6 +13,12 @@ This directory is the portable package for the published [TheAngryPit profile](h
 - `npm run preview:screenshots` captures desktop/mobile and light/dark screenshots using the installed Playwright browser. It checks that source details start collapsed, remain keyboard-operable, and retain their links/qualification notes. It uses a local file URL by default, starts no server, and accepts `PROFILE_PREVIEW_URL` when a different already-running local preview is preferred.
 - `npm run render:banner` is an optional, local Playwright-based banner regeneration. The checked-in PNG is the publishable artifact; no font file is included.
 
+## Tools, operating systems and program labels
+
+`config/stack-badges.json` records user-stated tools/OS and narrowly confirmed program facts. `node scripts/fetch-stack-badges.mjs` downloads static Shields.io labels without credentials. They denote tools/OS, Daybreak defensive-security access, confirmed Apple Developer Program membership, NVIDIA Developer Program participation, and E2B for Startups support, not proficiency ratings, certifications or employment. No grant amount is disclosed.
+
+E2B uses the exact official “Sponsored by E2B for Startups” Shields snippet supplied in the program's badge instructions, with its original orange, black label and for-the-badge style. It links to [E2B for Startups](https://e2b.dev/startups); source and SHA-256 are recorded in `assets/stack-badges.provenance.json`. The acceptance email and private links are not part of this package. Daybreak, Apple and NVIDIA use custom plain-text labels rather than borrowed partner or App Store marks.
+
 ## Scheduled refresh
 
 `.github/workflows/profile-refresh.yml` supports a weekly schedule and manual dispatch. The job's only write permission is `contents: write`; it stages an explicit list of JSON, README, and generated chart files, then commits only when their content changes. It does not run for pull requests, use a personal token, or keep the schedule alive with unrelated commits.

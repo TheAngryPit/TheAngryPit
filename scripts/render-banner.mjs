@@ -41,7 +41,7 @@ function makeBannerHtml(artData, signatureData) {
   <div class="red-field"></div>
   <div class="architecture" aria-hidden="true"><img src="${artData}" alt=""></div>
   <img class="signature" src="${signatureData}" alt="">
-  <div class="tagline">Music · Theatre · Film · Agentic systems</div>
+  <div class="tagline">Storytelling · Creativity · Agentic systems</div>
   <div class="headline"><span>Creative work.</span><span>Systems. Open source.</span></div>
   <div class="stairs-copy" aria-label="Better stories. Brighter systems."><span>BETTER</span><span>STORIES</span><span>BRIGHTER</span><span>SYSTEMS</span></div>
 </body>
@@ -64,7 +64,9 @@ async function main() {
       const headline = document.querySelector('.headline');
       const bounds = headline.getBoundingClientRect();
       const secondLine = headline.lastElementChild.getBoundingClientRect();
-      return bounds.bottom <= window.innerHeight && secondLine.right < window.innerWidth * 0.62;
+      const tagline = document.querySelector('.tagline').getBoundingClientRect();
+      const signature = document.querySelector('.signature').getBoundingClientRect();
+      return bounds.bottom <= window.innerHeight && secondLine.right < window.innerWidth * 0.62 && tagline.left > signature.right && tagline.bottom < 99;
     });
     if (!textFits) throw new Error('banner text does not fit the approved composition');
     await page.screenshot({ path: outputPath, type: 'png', animations: 'disabled' });
@@ -83,6 +85,7 @@ async function main() {
     ],
     typography: { family: 'Avenir Next Condensed', source: 'Installed macOS system font; no font file is distributed.' },
     artworkRole: 'Decorative architectural composition, not a portfolio-work image.',
+    tagline: 'Storytelling · Creativity · Agentic systems',
   };
   await writeFile(provenancePath, `${JSON.stringify(provenance, null, 2)}\n`, 'utf8');
   console.log(`Rendered ${provenance.output} at ${provenance.outputPixelSize.width}x${provenance.outputPixelSize.height}.`);
