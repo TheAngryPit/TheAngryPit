@@ -1,6 +1,6 @@
 # Package operations
 
-This directory is a portable profile README package. The profile itself is not published or changed by these scripts.
+This directory is the portable package for the published [TheAngryPit profile](https://github.com/TheAngryPit). Publication and the first automatic refresh were verified on 7 October 2026. The local Node scripts generate files; repository commits and pushes are handled separately or by the narrowly scoped workflow.
 
 ## Local commands
 
@@ -17,8 +17,8 @@ This directory is a portable profile README package. The profile itself is not p
 
 `.github/workflows/profile-refresh.yml` supports a weekly schedule and manual dispatch. The job's only write permission is `contents: write`; it stages an explicit list of JSON, README, and generated chart files, then commits only when their content changes. It does not run for pull requests, use a personal token, or keep the schedule alive with unrelated commits.
 
-GitHub may disable scheduled workflows after 60 days of repository inactivity. An owner can run `workflow_dispatch` when needed. The scheduled workflow is included as source; enabling it requires publishing this package in the account's public profile repository.
+The weekly/manual workflow is enabled in the public `TheAngryPit/TheAngryPit` repository. Its [first manual run](https://github.com/TheAngryPit/TheAngryPit/actions/runs/37697543823) completed installation, public-data refresh, chart generation, tests and a generated-data commit successfully. GitHub may disable scheduled workflows after 60 days of repository inactivity; an owner can run `workflow_dispatch` when needed. A successful first run does not guarantee future scheduled runs.
 
 ## Verification boundary
 
-The generated local preview carries the label **“Local rendering preview — GitHub rendering unverified.”** Local layout and static SVG rendering do not prove how the live profile page, image proxy/cache, or Actions workflow behaves. No account change, publication, GitHub write, or live-profile verification is performed by this package.
+The local preview is an approximation and deliberately carries the label **“Local rendering preview — GitHub rendering unverified.”** Separately, the actual published GitHub profile was read back and visually inspected, and the successful Actions run provides operational refresh proof. The optional Markdown API POST was not performed. Current proof covers the inspected desktop profile and local mobile/light/dark variants, not every handset, future cache state or future execution. Avatar, account settings, private repositories, credentials, CV/Sites and domain state were not changed.
