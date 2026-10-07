@@ -27,6 +27,11 @@ I build stories, systems and practical solutions.
 <a href="https://www.typescriptlang.org"><img src="assets/stack-typescript.svg" alt="TypeScript" height="26"></a>
 <a href="https://learn.microsoft.com/en-us/dotnet/csharp/"><img src="assets/stack-csharp.svg" alt="C#" height="26"></a>
 <a href="https://www.python.org"><img src="assets/stack-python.svg" alt="Python" height="26"></a>
+<a href="https://www.swift.org"><img src="assets/stack-swift.svg" alt="Swift" height="26"></a>
+<a href="https://www.rust-lang.org"><img src="assets/stack-rust.svg" alt="Rust" height="26"></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="assets/stack-html.svg" alt="HTML" height="26"></a>
+<a href="https://www.sqlite.org/lang.html"><img src="assets/stack-sql.svg" alt="SQL" height="26"></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="assets/stack-javascript.svg" alt="JavaScript" height="26"></a>
 
 ### Operating systems
 

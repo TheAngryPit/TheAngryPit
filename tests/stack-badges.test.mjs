@@ -25,7 +25,7 @@ test('badge input excludes active SVG, remote assets and wrong labels', () => {
 test('README exposes exactly the source-backed stack and includes the confirmed Nexus description', async () => {
   const readme = await readFile(new URL('../README.md', import.meta.url), 'utf8');
   const stack = JSON.parse(await readFile(new URL('../config/stack-badges.json', import.meta.url), 'utf8'));
-  assert.deepEqual(stack.map(({ label }) => label), ['Codex', 'OpenClaw', 'Hermes Agent', 'TypeScript', 'C#', 'Python', 'OpenWhispr', 'Prime Agent', 'Buzz', 'Ghostty', 'llama.cpp', 'Hindsight', 'Honcho', 'Docker', 'E2B', 'ComfyUI', 'macOS', 'Windows', 'Ubuntu', 'Omarchy', 'OpenAI Daybreak access', 'Apple Developer Program member', 'NVIDIA Developer Program', 'SPONSORED BY: E2B FOR STARTUPS']);
+  assert.deepEqual(stack.map(({ label }) => label), ['Codex', 'OpenClaw', 'Hermes Agent', 'TypeScript', 'C#', 'Python', 'Swift', 'Rust', 'HTML', 'SQL', 'JavaScript', 'OpenWhispr', 'Prime Agent', 'Buzz', 'Ghostty', 'llama.cpp', 'Hindsight', 'Honcho', 'Docker', 'E2B', 'ComfyUI', 'macOS', 'Windows', 'Ubuntu', 'Omarchy', 'OpenAI Daybreak access', 'Apple Developer Program member', 'NVIDIA Developer Program', 'SPONSORED BY: E2B FOR STARTUPS']);
   for (const { id, href } of stack) {
     assert.ok(readme.includes(`href="${href}"`));
     assert.ok(readme.includes(`assets/stack-${id}.svg`));
@@ -36,6 +36,9 @@ test('README exposes exactly the source-backed stack and includes the confirmed 
   const programs = readme.split('### Programs & support')[1].split('## GitHub activity')[0];
   assert.ok(!/certified|certification|partner|\$20,000/i.test(programs));
   assert.ok(readme.includes('Storytelling, creativity and agentic systems.'));
+  const languages = readme.split('### Languages')[1].split('### Operating systems')[0];
+  assert.deepEqual([...languages.matchAll(/alt="([^"]+)"/g)].map((match) => match[1]), ['TypeScript', 'C#', 'Python', 'Swift', 'Rust', 'HTML', 'SQL', 'JavaScript']);
+  assert.ok(!stack.some(({ label }) => label === 'Java'));
 });
 
 test('E2B uses the exact official Startups sponsorship badge, not an invented grant seal', async () => {

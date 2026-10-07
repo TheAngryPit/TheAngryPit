@@ -1,7 +1,7 @@
 {
   "provider": "Shields.io",
   "style": "flat-square; E2B official for-the-badge exception",
-  "retrievedAt": "2026-10-07T23:17:41.667Z",
+  "retrievedAt": "2026-10-07T23:28:34.301Z",
   "scope": "Static tool/OS badges and confirmed access/membership labels, not certifications or proficiency ratings. E2B uses its official Startups sponsorship badge; other program labels are custom Shields badges, not official credentials.",
   "badges": [
     {
@@ -34,7 +34,7 @@
     {
       "id": "typescript",
       "label": "TypeScript",
-      "group": "stack",
+      "group": "language",
       "source": "https://img.shields.io/badge/TypeScript-0D1117?style=flat-square&logo=typescript&logoColor=E6342E",
       "href": "https://www.typescriptlang.org",
       "officialProgramBadge": false,
@@ -43,7 +43,7 @@
     {
       "id": "csharp",
       "label": "C#",
-      "group": "stack",
+      "group": "language",
       "source": "https://img.shields.io/badge/C%23-0D1117?style=flat-square&logo=dotnet&logoColor=E6342E",
       "href": "https://learn.microsoft.com/en-us/dotnet/csharp/",
       "officialProgramBadge": false,
@@ -52,11 +52,56 @@
     {
       "id": "python",
       "label": "Python",
-      "group": "stack",
+      "group": "language",
       "source": "https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=E6342E",
       "href": "https://www.python.org",
       "officialProgramBadge": false,
       "sha256": "6e24898f81af7632cde165fddc4bd12a5212fe06cf55bf5ce939090a91d6ed81"
+    },
+    {
+      "id": "swift",
+      "label": "Swift",
+      "group": "language",
+      "source": "https://img.shields.io/badge/Swift-0D1117?style=flat-square&logo=swift&logoColor=E6342E",
+      "href": "https://www.swift.org",
+      "officialProgramBadge": false,
+      "sha256": "be3976b591c8667ed1e1019e1616375fab07c682962b3e22cea4b78f75f6db3d"
+    },
+    {
+      "id": "rust",
+      "label": "Rust",
+      "group": "language",
+      "source": "https://img.shields.io/badge/Rust-0D1117?style=flat-square&logo=rust&logoColor=E6342E",
+      "href": "https://www.rust-lang.org",
+      "officialProgramBadge": false,
+      "sha256": "2f471b572a87b391dab0559cbf6607369e6efc6fb3fe6abed86f87f41f1fcea3"
+    },
+    {
+      "id": "html",
+      "label": "HTML",
+      "group": "language",
+      "source": "https://img.shields.io/badge/HTML-0D1117?style=flat-square&logo=html5&logoColor=E6342E",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+      "officialProgramBadge": false,
+      "sha256": "ec0a2983432175dd902f9e949390e300d41c68a3824aef53ae69543ab041e036"
+    },
+    {
+      "id": "sql",
+      "label": "SQL",
+      "group": "language",
+      "source": "https://img.shields.io/badge/SQL-0D1117?style=flat-square",
+      "href": "https://www.sqlite.org/lang.html",
+      "officialProgramBadge": false,
+      "sha256": "4dee7cb2d05ff28533bd7a8bc83755e175bc7b2cfdb0d69c6bfa0b3c690c39d0"
+    },
+    {
+      "id": "javascript",
+      "label": "JavaScript",
+      "group": "language",
+      "source": "https://img.shields.io/badge/JavaScript-0D1117?style=flat-square&logo=javascript&logoColor=E6342E",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      "officialProgramBadge": false,
+      "sha256": "c32172d61ad2b711a63246978e2b4dd4026a34dcd30709835e5ca22f7c378c0f"
     },
     {
       "id": "openwhispr",
