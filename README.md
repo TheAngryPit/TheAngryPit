@@ -2,8 +2,6 @@
   <img src="assets/banner.png" alt="Vítor Cepeda Lopes — BETTER / STORIES / BRIGHTER / SYSTEMS. Creative work. Systems. Open source. Music, theatre, film and agentic systems.">
 </picture>
 
-**Vítor Cepeda Lopes** · Founder of TheHive · Creative Director · Executive Producer · Storyteller
-
 I build stories, systems and practical solutions.
 
 [Portfolio](https://www.vitorcepedalopes.com/portfolio) · [LinkedIn](https://www.linkedin.com/in/theangrypit/) · [Writing](https://www.linkedin.com/newsletters/%F0%9F%A7%A0-themind-shift-by-vcl-7373346533582286848/)
