@@ -2,7 +2,11 @@
   <img src="assets/banner-storytelling.png" alt="Vítor Cepeda Lopes — BETTER / STORIES / BRIGHTER / SYSTEMS. Creative work. Systems. Open source. Storytelling, creativity and agentic systems.">
 </picture>
 
-I build stories, systems and practical solutions.
+My path began in music and technical theatre and grew into film, advertising and visual storytelling. Along the way, I've kept finding ways to adapt technology and build better systems for creative work.
+
+I founded TheHive to make ambitious storytelling more accessible without compromising creative quality. Today, I'm exploring what a company can become in a world with agents, building generative production workflows and agentic systems, and contributing to open source.
+
+Working with agents lets me bring ideas to life that I previously lacked the means to build. I look for ways that solving our own needs can help the wider community too. Storytelling remains the thread connecting all of it.
 
 [Portfolio](https://www.vitorcepedalopes.com/portfolio) · [LinkedIn](https://www.linkedin.com/in/theangrypit/) · [Writing](https://www.linkedin.com/newsletters/%F0%9F%A7%A0-themind-shift-by-vcl-7373346533582286848/) · [X](https://x.com/TheAngryPit)
 
