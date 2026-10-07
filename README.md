@@ -42,12 +42,10 @@ I build stories, systems and practical solutions.
 
 ### Programs & support
 
-<a href="https://openai.com/daybreak/"><img src="assets/stack-daybreak.svg" alt="OpenAI Daybreak access" height="26"></a>
+<a href="https://openai.com/daybreak/"><img src="assets/stack-daybreaksecurity.svg" alt="OpenAI Daybreak · Defensive security access" height="26"></a>
 <a href="https://developer.apple.com/programs/"><img src="assets/stack-appledev.svg" alt="Apple Developer Program member" height="26"></a>
 <a href="https://developer.nvidia.com/developer-program"><img src="assets/stack-nvidiadev.svg" alt="NVIDIA Developer Program" height="26"></a>
 <a href="https://e2b.dev/startups"><img src="assets/stack-egrant.svg" alt="Sponsored by E2B for Startups" height="28"></a>
-
-Daybreak access for defensive security work.
 
 ## GitHub activity
 

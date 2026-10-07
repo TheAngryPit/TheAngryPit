@@ -1,7 +1,7 @@
 {
   "provider": "Shields.io",
   "style": "flat-square; E2B official for-the-badge exception",
-  "retrievedAt": "2026-10-07T23:28:34.301Z",
+  "retrievedAt": "2026-10-07T23:31:59.424Z",
   "scope": "Static tool/OS badges and confirmed access/membership labels, not certifications or proficiency ratings. E2B uses its official Startups sponsorship badge; other program labels are custom Shields badges, not official credentials.",
   "badges": [
     {
@@ -230,13 +230,13 @@
       "sha256": "cf27be1f296ff5139c9a72865e5eb8cef7eaa3319381fe5fc2b4f761d10e5afb"
     },
     {
-      "id": "daybreak",
-      "label": "OpenAI Daybreak access",
+      "id": "daybreaksecurity",
+      "label": "OpenAI Daybreak · Defensive security access",
       "group": "program",
-      "source": "https://img.shields.io/badge/OpenAI%20Daybreak%20access-0D1117?style=flat-square",
+      "source": "https://img.shields.io/badge/OpenAI%20Daybreak%20%C2%B7%20Defensive%20security%20access-0D1117?style=flat-square",
       "href": "https://openai.com/daybreak/",
       "officialProgramBadge": false,
-      "sha256": "f7ecacb43b8385fcdd6415c565b4d6eaf5760c92163aed9efcdafc8f0ac2be1e"
+      "sha256": "c26ec73e6d31475eb8cf8a70d1a40cccd783b318e9d6a365d9762e6313d842ab"
     },
     {
       "id": "appledev",
