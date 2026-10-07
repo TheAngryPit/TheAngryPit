@@ -38,7 +38,7 @@ I build stories, systems and practical solutions.
 ### Data notes
 
 <!-- PROFILE-DATA:START -->
-- **Calendar:** 1,964 publicly displayed contributions · 5 October 2025–7 October 2026 (368 days).
+- **Calendar:** 1,968 publicly displayed contributions · 5 October 2025–7 October 2026 (368 days).
 - **Public search counts (all-time):** 148 public pull requests opened · 78 distinct public PRs ever reviewed · 101 public issues opened; retrieved 7 October 2026 UTC.
 - GitHub’s displayed calendar is a rolling window that may include privacy-obscured activity; it is not a public-only total. Search counts use a different period.
 <!-- PROFILE-DATA:END -->
@@ -67,11 +67,11 @@ City rendering uses [GitHub Profile 3D Contrib](https://github.com/yoshi389111/g
 <!-- PROFILE-SOURCES:START -->
 - **Contribution calendar:** [public GitHub contribution calendar](https://github.com/users/TheAngryPit/contributions); retrieved 7 October 2026 UTC. The source reports displayed activity and may include privacy-obscured contributions. This package did not access private repositories.
 
-- **public pull requests opened:** [Pull requests opened search](https://api.github.com/search/issues?q=is%3Apr%20author%3ATheAngryPit%20is%3Apublic&per_page=1); retrieved 7 October 2026 UTC.
+- **public pull requests opened:** [Pull requests opened search](https://api.github.com/search/issues?q=is%3Apr+author%3ATheAngryPit+is%3Apublic&per_page=1); retrieved 7 October 2026 UTC.
 
-- **distinct public PRs ever reviewed:** [PRs matched by the public reviewed-by search](https://api.github.com/search/issues?q=is%3Apr%20reviewed-by%3ATheAngryPit%20is%3Apublic&per_page=1); retrieved 7 October 2026 UTC.
+- **distinct public PRs ever reviewed:** [PRs matched by the public reviewed-by search](https://api.github.com/search/issues?q=is%3Apr+reviewed-by%3ATheAngryPit+is%3Apublic&per_page=1); retrieved 7 October 2026 UTC.
 
-- **public issues opened:** [Issues opened search](https://api.github.com/search/issues?q=is%3Aissue%20author%3ATheAngryPit%20is%3Apublic&per_page=1); retrieved 7 October 2026 UTC.
+- **public issues opened:** [Issues opened search](https://api.github.com/search/issues?q=is%3Aissue+author%3ATheAngryPit+is%3Apublic&per_page=1); retrieved 7 October 2026 UTC.
 
 - The reviewed count is distinct pull requests ever reviewed, not the number of review submissions.
 
