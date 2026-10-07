@@ -39,6 +39,7 @@ test('README exposes exactly the source-backed stack and includes the confirmed 
   const languages = readme.split('### Languages')[1].split('### Operating systems')[0];
   assert.deepEqual([...languages.matchAll(/alt="([^"]+)"/g)].map((match) => match[1]), ['TypeScript', 'C#', 'Python', 'Swift', 'Rust', 'HTML', 'SQL', 'JavaScript']);
   assert.ok(!stack.some(({ label }) => label === 'Java'));
+  assert.match(readme, /\[Writing\]\([^\n]+\) · \[X\]\(https:\/\/x\.com\/TheAngryPit\)/);
 });
 
 test('E2B uses the exact official Startups sponsorship badge, not an invented grant seal', async () => {
