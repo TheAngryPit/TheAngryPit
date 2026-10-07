@@ -1,0 +1,50 @@
+{
+  "provider": "Shields.io",
+  "style": "flat-square",
+  "retrievedAt": "2026-10-07T22:22:53.087Z",
+  "scope": "Static badges indicating source-backed tools/languages, not proficiency, certifications or measurements",
+  "badges": [
+    {
+      "id": "codex",
+      "label": "Codex",
+      "source": "https://img.shields.io/badge/Codex-0D1117?style=flat-square&logo=openai&logoColor=E6342E",
+      "href": "https://github.com/openai/codex",
+      "sha256": "12bf9e9b89124e3bfe0bb5d67d862c43e0fcbe6254f6fd292391ac5b9ce883fd"
+    },
+    {
+      "id": "openclaw",
+      "label": "OpenClaw",
+      "source": "https://img.shields.io/badge/OpenClaw-0D1117?style=flat-square",
+      "href": "https://openclaw.ai",
+      "sha256": "c34f9e828ff2a7e0172bad2b9320d384212bb339f9a6ed48c4fce0cb2c4c15f0"
+    },
+    {
+      "id": "hermes",
+      "label": "Hermes Agent",
+      "source": "https://img.shields.io/badge/Hermes%20Agent-0D1117?style=flat-square",
+      "href": "https://github.com/NousResearch/hermes-agent",
+      "sha256": "ef2ea91f1cfb16572679d532d2db4f6343d065ecf034f24b02ec652ce614db78"
+    },
+    {
+      "id": "typescript",
+      "label": "TypeScript",
+      "source": "https://img.shields.io/badge/TypeScript-0D1117?style=flat-square&logo=typescript&logoColor=E6342E",
+      "href": "https://www.typescriptlang.org",
+      "sha256": "1bf1c4ac9490c892b4fe539a1288eae6dafb265d2f4c6802b81730a37788e2c5"
+    },
+    {
+      "id": "csharp",
+      "label": "C#",
+      "source": "https://img.shields.io/badge/C%23-0D1117?style=flat-square&logo=dotnet&logoColor=E6342E",
+      "href": "https://learn.microsoft.com/en-us/dotnet/csharp/",
+      "sha256": "6ff60b9f467e6d44d2745bb567f1443a6edb3fa6cf88c6e301d7f6d81a485f86"
+    },
+    {
+      "id": "python",
+      "label": "Python",
+      "source": "https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=E6342E",
+      "href": "https://www.python.org",
+      "sha256": "6e24898f81af7632cde165fddc4bd12a5212fe06cf55bf5ce939090a91d6ed81"
+    }
+  ]
+}

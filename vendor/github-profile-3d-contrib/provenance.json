@@ -1,0 +1,47 @@
+{
+  "name": "github-profile-3d-contrib",
+  "repository": "https://github.com/yoshi389111/github-profile-3d-contrib",
+  "commit": "9e3f937195cf840d364388973f73e3c4b3753586",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "sourceFiles": [
+    {
+      "path": "upstream/src/create-3d-contrib.ts",
+      "sha256": "b0953b1438ee554f4d5cde2956b30d9f915dff941f432fe0376459df97a27360",
+      "runtime": "runtime/create-3d-contrib.mjs"
+    },
+    {
+      "path": "upstream/src/create-css-colors.ts",
+      "sha256": "6b1de623c51418ce7bf8c1b2a5975e636ef70a12b4dfcfca40bbe6e1c99a3673",
+      "runtime": "runtime/create-css-colors.mjs"
+    },
+    {
+      "path": "upstream/src/utils.ts",
+      "sha256": "4ef17d4a4b89b333491c45e8c83bd710257a11f039a7c83cb6561fe8878d1637",
+      "runtime": "runtime/utils.mjs"
+    }
+  ],
+  "transformation": {
+    "engine": "node:module stripTypeScriptTypes",
+    "minimumNode": "22.13.0",
+    "mode": "strip",
+    "mechanicalEdits": [
+      "Remove the upstream type-only namespace import from create-3d-contrib.ts and create-css-colors.ts.",
+      "Append .mjs to the relative utils import so the stripped ESM resolves in Node."
+    ],
+    "runtimeBehavior": "No upstream geometry, color, date, or count logic is rewritten."
+  },
+  "usedExports": [
+    "src/create-3d-contrib.ts:create3DContrib",
+    "src/create-css-colors.ts:createCssColors",
+    "src/utils.ts:toFixed"
+  ],
+  "excludedUpstreamFeatures": [
+    "GraphQL data fetching",
+    "private repository access",
+    "radar, pie, language, lifetime, and repository statistic renderers"
+  ],
+  "sha256": {
+    "LICENSE": "caa1ef089455b8d6bc7c03eded3b513868a530e04930f57f2e9cd93f3edef1c6"
+  }
+}

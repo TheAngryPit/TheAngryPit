@@ -1,0 +1,60 @@
+name: Refresh public GitHub profile data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 2 * * 1'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-refresh-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out the profile repository
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+
+      - name: Set up Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 22
+
+      - name: Install pinned renderer dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Refresh public GitHub data
+        run: node scripts/refresh.mjs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+
+      - name: Regenerate charts and README provenance
+        run: node scripts/render.mjs && node scripts/render-readme-data.mjs
+
+      - name: Validate generated profile package
+        run: npm test
+
+      - name: Commit only profile data and generated charts
+        run: |
+          git add README.md data/contributions.json data/metrics.json \
+            assets/activity-dark.svg assets/activity-light.svg \
+            assets/activity-mobile-dark.svg assets/activity-mobile-light.svg \
+            assets/metrics-dark.svg assets/metrics-light.svg \
+            assets/metrics-mobile-dark.svg assets/metrics-mobile-light.svg
+          if git diff --cached --quiet; then
+            echo "No source or rendered profile changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(profile): refresh public GitHub activity"
+          git push
+
+# GitHub may disable scheduled workflows after 60 days without repository
+# activity. The workflow_dispatch option allows an owner to run it manually.

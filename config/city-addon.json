@@ -1,0 +1,36 @@
+{
+  "upstream": {
+    "repository": "https://github.com/yoshi389111/github-profile-3d-contrib",
+    "commit": "9e3f937195cf840d364388973f73e3c4b3753586"
+  },
+  "settings": {
+    "type": "normal",
+    "growingAnimation": false,
+    "strongColor": "#E6342E",
+    "weakColor": "#8B949E",
+    "radarColor": "#E6342E"
+  },
+  "levels": {
+    "0": { "dark": "#42484F", "light": "#C7CDD4" },
+    "1": { "dark": "#FF635D", "light": "#FF635D" },
+    "2": { "dark": "#FF4C46", "light": "#FF4C46" },
+    "3": { "dark": "#F83F39", "light": "#F83F39" },
+    "4": { "dark": "#E6342E", "light": "#E6342E" }
+  },
+  "viewports": {
+    "desktop": {
+      "width": 1180,
+      "height": 790,
+      "plot": { "x": 0, "y": 96, "width": 1120, "height": 610 },
+      "monthLabelY": 83,
+      "legendY": 751
+    },
+    "mobile": {
+      "width": 360,
+      "height": 430,
+      "plot": { "x": 0, "y": 86, "width": 324, "height": 220 },
+      "monthLabelY": 77,
+      "legendY": 394
+    }
+  }
+}

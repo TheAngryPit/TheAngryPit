@@ -1,0 +1,26 @@
+{
+  "name": "theangrypit-github-profile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portable profile README, source-backed activity graphics, and refresh tools.",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "refresh": "node scripts/refresh.mjs",
+    "render:assets": "node scripts/render.mjs",
+    "render:readme": "node scripts/render-readme-data.mjs",
+    "render": "npm run render:assets && npm run render:readme",
+    "render:banner": "node scripts/render-banner.mjs",
+    "preview": "node scripts/render-preview.mjs",
+    "preview:screenshots": "node scripts/render-preview.mjs --screenshots",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0"
+  },
+  "dependencies": {
+    "d3": "7.9.0",
+    "jsdom": "26.0.0"
+  }
+}

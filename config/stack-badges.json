@@ -1,0 +1,8 @@
+[
+  {"id":"codex","label":"Codex","logo":"openai","href":"https://github.com/openai/codex","evidence":"cv.md: TheAngrySkills and Codex Goal Control Experiment; explicit current request"},
+  {"id":"openclaw","label":"OpenClaw","href":"https://openclaw.ai","evidence":"cv.md: current technical practice"},
+  {"id":"hermes","label":"Hermes Agent","href":"https://github.com/NousResearch/hermes-agent","evidence":"cv.md: additional contributions; explicit current correction"},
+  {"id":"typescript","label":"TypeScript","logo":"typescript","href":"https://www.typescriptlang.org","evidence":"cv.md: contributed accepted work across TypeScript, C#, Python"},
+  {"id":"csharp","label":"C#","logo":"dotnet","href":"https://learn.microsoft.com/en-us/dotnet/csharp/","evidence":"cv.md: contributed accepted work across TypeScript, C#, Python"},
+  {"id":"python","label":"Python","logo":"python","href":"https://www.python.org","evidence":"cv.md: contributed accepted work across TypeScript, C#, Python"}
+]
