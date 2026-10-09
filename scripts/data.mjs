@@ -124,6 +124,22 @@ export function validateContributions(data, { username = USERNAME } = {}) {
   return data;
 }
 
+export function sixMonthCalendar(data) {
+  validateContributions(data);
+  const end = new Date(`${data.to}T00:00:00.000Z`);
+  const targetMonth = end.getUTCMonth() - 6;
+  const monthEnd = new Date(Date.UTC(end.getUTCFullYear(), targetMonth + 1, 0));
+  const start = new Date(Date.UTC(end.getUTCFullYear(), targetMonth,
+    Math.min(end.getUTCDate(), monthEnd.getUTCDate()))).toISOString().slice(0, 10);
+  const days = data.days.filter((day) => day.date >= start);
+  return validateContributions({
+    ...data,
+    from: days[0].date,
+    total: days.reduce((sum, day) => sum + day.count, 0),
+    days,
+  });
+}
+
 function declaredCalendarRange(html) {
   for (const match of html.matchAll(/<[^>]+>/g)) {
     const tag = match[0];

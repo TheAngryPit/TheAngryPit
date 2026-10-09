@@ -1,35 +1,59 @@
 {
   "provider": "Shields.io",
   "style": "flat-square; E2B official for-the-badge exception",
-  "retrievedAt": "2026-10-07T23:31:59.424Z",
-  "scope": "Static tool/OS badges and confirmed access/membership labels, not certifications or proficiency ratings. E2B uses its official Startups sponsorship badge; other program labels are custom Shields badges, not official credentials.",
+  "retrievedAt": "2026-10-09T12:43:17.578Z",
+  "scope": "Static tool/OS badges and confirmed access/membership labels, not certifications or proficiency ratings. Tool marks are embedded from local snapshots of official repo/site assets or verified Simple Icons; original source URLs and SHA-256 hashes are retained separately from any presentation-tinted SVG snapshot. E2B uses its official Startups sponsorship badge; other program labels are custom Shields badges, not official credentials.",
   "badges": [
     {
       "id": "codex",
       "label": "Codex",
       "group": "stack",
-      "source": "https://img.shields.io/badge/Codex-0D1117?style=flat-square&logo=openai&logoColor=E6342E",
+      "source": "https://img.shields.io/badge/Codex-0D1117?style=flat-square&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC%2BaJAAAIi0lEQVR4nOxafUhT3xs%2FbfPlu9Q27DqhlYqkJlioOSU2YoRLUssoybSxSjODJBarJFkSyJp%2FhA3FShDNPzSjMZMIpWIlZQ5bmVm%2Bpy1NxvBt1JbdXfeD3%2FlxuL9t7iWX8gU%2Ff90957nPfT73Oed5znnuaFarFfybQVlrB1aKdQJrjXUCa411AmuNdQJrDZp3zS0tLQ0PDxsMhn%2F%2B%2BSc8PHzz5s3ete8AVm%2Fg69evMpmMy%2BXS6XSy8S1bthw%2FfrylpQXHca88yB4rJUAQhFwu9%2FPzc%2F6aoqKiBgYGvOTz%2F2FFBHAcz8nJQV7u2bNHoVBotdrv378PDg4qlcpTp06hmGzbtk0qle7du5fNZtPp9NDQ0JSUFLFY%2FP79%2BzUjkJ%2BfD52LiIh4%2Fvy5Qx29Xi8QCJwEh0KhiESiycnJ1SagVquhBykpKXNzcw51zGazXC4PCAhA7rJYLB6PJxAIOBwOWc5gMB4%2FfryqBLKysgAAbDZbr9c7VFCpVJGRkchFgUBgM1twHFer1cnJyVCBSqXev39%2FlQjMzc35%2BvoCAOrr6%2B1H%2B%2Fr69u3bR37rtbW1BEE4NLW4uHjhwgWo6efnp9VqV4PAvXv3AAChoaE2%2BZEgCJlMRqVSkUMSiWS5CUaGVCqFt8TFxXmUcz0m8OLFC4lEEhYWBgA4e%2FYskuM4XlVVFRUVBf3AMOzq1as6nc7m9rGxMZVKZU%2BJIAiRSATvVSgUf4XAly9f%2BHw%2BOYHcunULjVZXV0Ohj49PaWmp0Wi0uX1hYaG4uBgGJygoSC6X27zp2dnZoKAgmNO8T6Crqys4OBi5vmHDBgBAdXU1UigrK4NDDpPJq1evoqOj7aubjXJubi4cGhsbc9MxtzZzg4ODaWlpMzMzAICkpCSNRgOnkEMkJiaSf05NTQmFQh6PNzQ0BLNWQUEBrG7Dw8MZGRlFRUU%2Ff%2F6EylwuF158%2BvTJHceAO3shi8USFxcHlYVCIYx7eHj4chGYnp6GErPZLJPJULL39fWVSqU%2FfvyA1U0oFKK1HhYW9uDBA6vV2traCiUNDQ1uRsA1gebmZmg0PT0dzVqXBFQqVUREBHpNTCbz7du3NpY1Gk1KSgrS4fP55eXl8LqpqclrBA4dOgQAoNPp5ILlhMCbN29SU1PtQ52TkzM%2FP29v%2F%2BbNmygUCJ2dnd4hgOM4g8EAAIjFYrLcCQE0Z%2Fz8%2FMRisUQi8fHxgRIMw%2Brq6uzT%2FNDQUGZmJpnA%2BPi4dwh0d3dDix8%2FfnSTACy9UqkU7c8mJyevXbuGklh0dHR1dTVcDGT09PQcOXIE6mzfvt2%2BhvwJgfr6ejh%2FbOROCJw%2Ff95sNtubmpqaIu%2B9MQyrra21j8bdu3ehQlZWlhcI1NTUAACCg4PdJ4CykD3Gx8dt5npiYqJNbK1W67lz52Cp6evrc0nARR2AC2B%2Bft5isdiPLi0tOb99OcTHx8Oiq9Vqk5OTKyoqyPYrKiowDLNarZWVlS5NuSAAyydBEO%2FevbMfraysfPbs2R8QOHjw4MjIiEgkolKpJpOppKQE5jqIwMDAM2fOAACUSuXv379XRGDnzp2BgYHQFlkOS%2Bb4%2BHhqaurRo0dHR0c95RASEtLQ0NDV1QXPDD09PeTRw4cPAwCMRuOHDx9cGHI5yTIyMgAAmzZtmp2dRUIcx0tKSlD%2BptPpsbGx8NqdNVBWVoaEV65cgWuarInjOI1Gc6eiud4LwdSxsLBw6dIlJKTRaDdu3Ojq6uJwOAAAk8n0%2BfNnT4PgBDQaDe6XZmdnnWu6JnDs2DF4Kq%2BrqyssLEQbLwAAh8PRaDQdHR3p6ekUyv9M5efno%2BpBRnt7e15enpsELBbLr1%2B%2FYORdqLqcQlar1Wg0ok0Lm81WqVT2Oj09PWgvCQA4cOBAf38%2FHOrr60tLSyM%2F1OUU0mg0ULO3t9e5b%2B6eB3Q6HdkDPp8%2FOjpqr9bU1IRhGNShUqkFBQVFRUVoqaBi7JKAWCyGR9blTtIeE%2Bjs7LQJHYPBcFhKv337ZrOxgSgqKhoYGHCHwPT0NFwANhswh3C3Oz05OQkvrl%2B%2FDvPS%2FPx8YWEhh8Ox4cZms0%2BfPs1kMpEkLi7u6dOnt2%2Ff9vf3d%2Fkgi8WSn59vMpn8%2Ff1hHFzAzQg0NjZC%2FdbWVqvV2tbWtnXrVmQkOzt7ZGQEtlvIK5XJZNbU1KAouUyji4uLaL908uRJdxxzl8CTJ0%2Bg3Tt37kCJwWAg%2B0qn00%2BcOMFiseBPKpVaXFxs031wTkCtViclJSHmU1NT3iQwMTEBTefm5pLl3d3du3fvtolqamoqSkFkVFVVLUeADBaL5X57y4O2SkJCAgBg48aNNi0Di8XS0dGxf%2F9%2BCoWSkJDQ1tZmf%2B%2FLly9Rr45CoSiVSjR08eJF5DqGYZcvXzYYDO575QGBlpYW%2BBiBQOAwuznsqPX29pLbjFwu16ZDClPCrl27GhsbHR4kvEaAIAg0W0pLS13qz8zMkIsAhmHNzc02OjiOh4SEAAAaGxs9dR3Cs9Zif38%2FOvLKZLLl1BYXFxUKBTxLQGRmZjr8AtDU1AQTgMPzvjvwuDfa1taGDuk8Hk%2BlUplMJjRKEMSjR49iYmKQ67GxsR0dHQ5N6fV6NpsNAJBIJH%2Fm%2FR92p9VqNUqXsBkaExPD4%2FHQOQulQoVCsVyr2WAwwP0Vk8lc7gvD3yIAXx78wOEEfD4fVjd7tLe3o%2BYkuUP8B9iwkn9s9fb2KpXK169fT0xMmEwmBoMRGRnJ5XLlcrnRaITlLDs7OyMjY8eOHQEBATqdTqPRqFQqrVYLLQiFwvr6evvGlgdYCfvlMDY2JhKJnO984uPjHz58uPJn%2FRUCEHq9vry8PD4%2BHvbiIVgsVl5enlqt9tZTVjSF3ITZbNbpdGazOfS%2F8K7x1SDwV%2FGv%2F7fKOoG1xjqBtcY6gbXGOoG1xn8CAAD%2F%2F9MdEDse71PXAAAAAElFTkSuQmCC",
       "href": "https://github.com/openai/codex",
       "officialProgramBadge": false,
-      "sha256": "12bf9e9b89124e3bfe0bb5d67d862c43e0fcbe6254f6fd292391ac5b9ce883fd"
+      "logoAsset": {
+        "sourceUrl": "https://github.com/openai.png?size=64",
+        "mimeType": "image/png",
+        "path": "assets/stack-logo-sources/codex.png",
+        "sha256": "9082c23ea02b9d0bad95376e7463013971adaabf4eceee75af60e237a2e290dc"
+      },
+      "sha256": "2398b6b3afeed0df8e76fc6c77816c5541427938508e356aaf794910a8e30462",
+      "publishedAsset": "assets/stack-codex-logo.svg",
+      "publishedAssetSha256": "2398b6b3afeed0df8e76fc6c77816c5541427938508e356aaf794910a8e30462"
     },
     {
       "id": "openclaw",
       "label": "OpenClaw",
       "group": "stack",
-      "source": "https://img.shields.io/badge/OpenClaw-0D1117?style=flat-square",
+      "source": "https://img.shields.io/badge/OpenClaw-0D1117?style=flat-square&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDE2IDE2IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IlBpeGVsIGxvYnN0ZXIiPgogIDxyZWN0IHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0ibm9uZSIvPgogIDwhLS0gb3V0bGluZSAtLT4KICA8ZyBmaWxsPSIjM2EwYTBkIj4KICAgIDxyZWN0IHg9IjEiIHk9IjUiIHdpZHRoPSIxIiBoZWlnaHQ9IjMiLz4KICAgIDxyZWN0IHg9IjIiIHk9IjQiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjIiIHk9IjgiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjMiIHk9IjMiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjMiIHk9IjkiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjQiIHk9IjIiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjQiIHk9IjEwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8%2BCiAgICA8cmVjdCB4PSI1IiB5PSIyIiB3aWR0aD0iNiIgaGVpZ2h0PSIxIi8%2BCiAgICA8cmVjdCB4PSIxMSIgeT0iMiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPgogICAgPHJlY3QgeD0iMTIiIHk9IjMiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjEyIiB5PSI5IiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8%2BCiAgICA8cmVjdCB4PSIxMyIgeT0iNCIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPgogICAgPHJlY3QgeD0iMTMiIHk9IjgiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjE0IiB5PSI1IiB3aWR0aD0iMSIgaGVpZ2h0PSIzIi8%2BCiAgICA8cmVjdCB4PSI1IiB5PSIxMSIgd2lkdGg9IjYiIGhlaWdodD0iMSIvPgogICAgPHJlY3QgeD0iNCIgeT0iMTIiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjExIiB5PSIxMiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPgogICAgPHJlY3QgeD0iMyIgeT0iMTMiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjEyIiB5PSIxMyIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPgogICAgPHJlY3QgeD0iNSIgeT0iMTQiIHdpZHRoPSI2IiBoZWlnaHQ9IjEiLz4KICA8L2c%2BCgogIDwhLS0gYm9keSAtLT4KICA8ZyBmaWxsPSIjZmY0ZjQwIj4KICAgIDxyZWN0IHg9IjUiIHk9IjMiIHdpZHRoPSI2IiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjQiIHk9IjQiIHdpZHRoPSI4IiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjMiIHk9IjUiIHdpZHRoPSIxMCIgaGVpZ2h0PSIxIi8%2BCiAgICA8cmVjdCB4PSIzIiB5PSI2IiB3aWR0aD0iMTAiIGhlaWdodD0iMSIvPgogICAgPHJlY3QgeD0iMyIgeT0iNyIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjQiIHk9IjgiIHdpZHRoPSI4IiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjUiIHk9IjkiIHdpZHRoPSI2IiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjUiIHk9IjEyIiB3aWR0aD0iNiIgaGVpZ2h0PSIxIi8%2BCiAgICA8cmVjdCB4PSI2IiB5PSIxMyIgd2lkdGg9IjQiIGhlaWdodD0iMSIvPgogIDwvZz4KCiAgPCEtLSBjbGF3cyAtLT4KICA8ZyBmaWxsPSIjZmY3NzVmIj4KICAgIDxyZWN0IHg9IjEiIHk9IjYiIHdpZHRoPSIyIiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjIiIHk9IjUiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjIiIHk9IjciIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjEzIiB5PSI2IiB3aWR0aD0iMiIgaGVpZ2h0PSIxIi8%2BCiAgICA8cmVjdCB4PSIxMyIgeT0iNSIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPgogICAgPHJlY3QgeD0iMTMiIHk9IjciIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz4KICA8L2c%2BCgogIDwhLS0gZXllcyAtLT4KICA8ZyBmaWxsPSIjMDgxMDE2Ij4KICAgIDxyZWN0IHg9IjYiIHk9IjUiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz4KICAgIDxyZWN0IHg9IjkiIHk9IjUiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz4KICA8L2c%2BCiAgPGcgZmlsbD0iI2Y1ZmJmZiI%2BCiAgICA8cmVjdCB4PSI2IiB5PSI0IiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8%2BCiAgICA8cmVjdCB4PSI5IiB5PSI0IiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8%2BCiAgPC9nPgo8L3N2Zz4KCg%3D%3D",
       "href": "https://openclaw.ai",
       "officialProgramBadge": false,
-      "sha256": "c34f9e828ff2a7e0172bad2b9320d384212bb339f9a6ed48c4fce0cb2c4c15f0"
+      "logoAsset": {
+        "sourceUrl": "https://raw.githubusercontent.com/openclaw/openclaw/main/docs/assets/pixel-lobster.svg",
+        "mimeType": "image/svg+xml",
+        "path": "assets/stack-logo-sources/openclaw.svg",
+        "sha256": "1ee82ff331b7295074bf6f60a0812c5f64daad65b2395d5d5e47a6c6c5180a7c"
+      },
+      "sha256": "1634cd9fe41f205bf7fa9f245b27fd062245813959822143772cf71fad8bd98b",
+      "publishedAsset": "assets/stack-openclaw-logo.svg",
+      "publishedAssetSha256": "1634cd9fe41f205bf7fa9f245b27fd062245813959822143772cf71fad8bd98b"
     },
     {
       "id": "hermes",
       "label": "Hermes Agent",
       "group": "stack",
-      "source": "https://img.shields.io/badge/Hermes%20Agent-0D1117?style=flat-square",
+      "source": "https://img.shields.io/badge/Hermes%20Agent-0D1117?style=flat-square&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC%2BaJAAAQo0lEQVR4nOx6aWxU1fvw3ebeO%2FvSZWbaznToIt2AQCFFCIVaCRiMEiREg2L46heNMcT4BcIXAwlgCCGKxggYAwpUKrtFkAREMN3pUKbMUDptmU636e10Zu765tcnHm5vp2VR3sTk%2F3xozz1zlud5zrOfQ2D%2Fcfg%2FAmYGhmFwHMcwDMdxgnhRG1H%2F4lp2u51hGJZlCwsLMQxTFCWVSkmSRFH%2F26Wrq0tRFIqiotEoz%2FMEQciy%2FM83%2FUcE4DjOsqzBYHC5XDk5OcXFxTqdzmw2u1wup9NJ0zTP86IowjmMjo6Kojg6Onrr1i1BEGKxWHNz88TExD8kAH%2FumXa7vaCgYN68eQUFBW632%2BPxUBSVlZUly7JOp9Pr9YqiAJtlWSYIQpIkwFuW5VgsFg6H%2FX7%2FzZs3u7u7JyYmxsbG%2Fj8RAJK9ZMmSBQsWVFRUFBUVuVwuDMPoSSAm4X%2B6RRAURUmShE8CSIsgCNAWRVEQhP7%2BflmWQ6HQ1atXb9%2B%2Bff%2F%2BfVEUXywBJpNp4cKFZWVl1dXVTqfT4%2FEQBEHTNEmSOI6TJImUFXokSZJlmaZpQRAURQFioBMAhCoSiXR1ddXX1zc2No6OjkqS9EIIcDqdtbW1r7%2F%2ButfrtVgsZrOZoiidTgdIA%2FYURQmCQFEUQRAkSWIYJooiiBDwXpZlRVFkWZYkSZkESZJSqRTHcaFQ6Ndff7179%2B7Nmzfj8fhTYvVUSkzT9MKFC9966605c%2BYUFBRkZGQA4xHXKYqCNkmSOp0O2I9hmCRJLMuCusuyjDoFQSAIgud5WZaBWpqmjUaj2%2B3u7u52u91nz54dGRn5dwgwmUzLly9fsWLF8uXLMzIyDAYDNQmAsW4SAHWktWpBQuugNo7jOp0OdF2SJJ7nFUUBRpAk6ZgEq9V67ty5np6eJ2oFOfvPZrO5pqamtra2uro6OzvbaDQCrswkQIOiKGA5cluzrwnihP6CHMJEhmFkWTYajQ6HIzMz8%2BHDh2NjY4qiPD8BK1euXL9%2B%2FcqVK202G8uygCtN0xRFgc8Cvj4R6bSAyMBxHJwd4KrT6ex2u9frJQiit7d3dHT0eQjAcXzZsmUbNmwoLy93OBx6vZ6mad3fwLIssO25sdeQAfKDlAdOxuVyKYoyODg4PDw80%2FQZdcBms1VUVMybNy8vL4%2BiqCtXrpw7dw7HcTCa27dv93g8H330EU3TIN%2Bff%2F45hmHJZPLYsWPBYNDhcGzdutVqtWIYdvDgwUePHsGyb7zxRlFR0Z49e8AE1dTUvPrqq01NTe3t7bIsL1u2LC8vD45FUZS8vLyNGze63e6dO3eOj48%2FA1d0Ot3GjRtPnjwZCATC4XBvb%2B%2BlS5ecTicaUFdXpyjK6tWr4bO2tlZRlHg8XlFRgcY4nc5AIKAoyqFDh7KysqDz66%2B%2FfvDgAbQrKyuvXLmyfv16NIUgiL179%2FI8Pz4%2B3t%2Ff39vb29nZeeHChU8%2B%2BcRoND4DAWVlZfv27fvjjz96enr6%2Bvqi0Wg8Hv%2Fss8%2FQAGBhY2MjfF6%2BfFlRlD179mjWWbVqFXB6%2B%2Fbt0PPNN98gAs6cObNz505or169GjGoo6MDPEM0Gn348GFLS0tdXV1VVVVaWU0T5er1%2BrKysqKiIovFgiy3JElqm3j%2F%2Fn3wD4jZGIYdPXoUPo8cOWKz2TAMu3r1amtrK4ZhFosFzUV4GAyGffv2QXv37t0ffvghtI8fP45sNMMwGRkZL7300vvvv5%2Bdnf1kAsCEr1ixIj8%2F32KxgIUGxVXH9IFAQDOR5%2Fnm5mbQh%2Ffee%2B%2Fll1%2BG%2FsuXL2MYhiJnNRdjsRjyVkaj0ev1Qtvv9%2Bt0OuTOKYoymUw%2Bn6%2BmpmZ6XpGGgIqKikQiwTAMhO8EQYCxV%2B%2Fd1dWlmYhImjNnDoZh%2Bfn58Nne3q7BG7Xtdvt03mEYBpEpGCIwUDqdLi8vr7Cw0GAwPIEAk8m0ePHi%2BfPng9EkCALFAmoRCoVCmok8z0MDzCsyshzHaQhAjknNTvDi6gFgVcHoEQRhNBqrqqrURiI9AWazubCw0OVyIQzgBGA59ciOjg71JzKUGlXr6elRIz0LIAKQ50JBCo7jer3e6%2FXW1taCdqUngKKoBQsWFBUV6fV6MMZ6vR6kcDpmd%2B%2FeVX%2Fm5eWlRWs66qhH8xP6RIoBHhrtyzBMSUlJWVmZGpMpBFgsFqfT6Xa7wbyACGkYjyAYDE7hxFQB0IA6%2FX2i566qqlJ%2F0jQNMQvDMBaLBdUK0hBgs9kKCwt1Oh2KzNSjNRtrCJgdP0TeTIk8OAe73f7tt98eOXIE9UP0Beeg0%2BlcLld5ebler09PQFZWlsvlMhgMLMtCjK4JidXQ2dmZtl8DcCDqY1G3V61aBY29e%2FdWVVXdu3dv69atmhVAiUEfzGbz3LlzTSZTGgJIkvR4PD6fD%2BWHKLQCQG1QiXv37qXFOC2P01oeDMMQuhcvXrx161ZmZmbaNdEsgiD0er3b7UbIPF4uKysrNzeXZVk149PKQ3l5OYZh4XAYmU7w1mlRRNElokS95qZNm6AmgGHYxx9%2FnEgk0mIP8QgopM%2FnU0dljzdjWdbtdsuyjHJzTe0JcdHn80FD7c6QpGmUWHMgmiNlWXbbtm3wGQ6Hd%2B%2FePZ0AKG0AW6m%2F4fGZqJczmUwoaIHaQVoRmjt3LjT8fv%2F0%2FTSgOZDpyvDBBx8UFxdDz65duyDK0tAM0TUcBUmSUALUEiCKIkEQULpBeXpaDwrBwkxq8Kz5DcMwX375JbQTicSnn36algsoWWMYxuFwoFyZQLuyLJuRkQG1Bo1v1wCUPtNGRNNFSEOPWgdQ45VXXnnttdegfeLECQ1fUF0MptM0bbPZHlsF%2BEfTdHZ2djKZTKVSaBtJktLSgE6gpaVlOt7TMVZ3Il5qABI6gK%2B%2B%2Bgq1NWIsiqKiKPB3CgEgOSaTyWq1whwQu7SbFRUVgcomk0k1n6aPnE5eWlctCEJGRgbKB44dO4Z%2BAkOCapIEQXAc19TU9HgAWlRRFEEQkskkRVFwZFA2S4tQaWnp0%2BCa9ldEKow8fvx4RUXFqVOnNm3aBP19fX1tbW3qWcBNHMcFQYhPwmOrDf9IkuQ4rq%2BvjyRJqP6BTkMxEMaoDWJJSclMeKcVIfUn6hkfHy8vL3%2F77bdB6CsrK9EwNQEwnp8EKEtO8YzwD5JGhmGQjMJftcVVAzJ8TwQNPerVOI5DMbnVamUYBiWN6oxPc2IYhoGiTiFAURS73U5RFM%2FzcDpQ0VefgHpvcMZp4elFSA1QtkAuVl1EkWUZqqgYhsXjcagzaAmAUxNFES4gYDQqIGtODcoWM6GYFr%2BZQlrNAGSg%2B%2Fv7EfZqOyZJ0tDQkDrimJLUBYNBKORDARkq42mj0ek6MP2g1aBOYmYhRp0GQgOK73CTIIpiMplsa2tTF%2BqmSGRbW1s8Hud5HmwWqDKQpJYlKL14PJ60KM5uT6FaOAupACi%2Fg62Bp7IsP3jwoK2tTY3JlBMIBAKtra0gRTATCJge0swiRdMTADUgHUNhOYLOzs5wOAxtCN2QIIDnisfjvb29mnuDKWgNDg52dHSMjo7CISDqBUGQJElTqp%2BJAIjGUPnNbDZDsQM%2BI5EIupnMzs5GMdnIyIjX60XpvMfjgd3R%2BQMrm5ubUfUgDQEcxzU3N3d2dnIcB3yCg1P%2BBvVgFJMCoOonz%2FPhcBjFM263G8MwlKlwHDcwMABtl8uF0t9QKKTX6xHZ8%2BfPR4xHTralpaWxsVETn2ur06FQ6MaNG%2Fn5%2BSzLWq1WHMeTySSK8NSgcQVOp9PlcgF7Vq9ejQhYunQphmFLliyBz2vXrg0ODoK%2B%2Bny%2BzZs3X7t2DcOw7777ThRFMC85OTmVlZVwSQ6QTCYjkUggEOju7sZmBxzHS0pKtm3bdv369WAw2Nvb29fXNzw8HI1G161bB2Pu3r2rKEokEkGz2tvbFUVBqQmCnJwcuGJRFKW6ulr90%2BbNmxVFSSaTNTU1mln79%2B%2FneX5sbGxkZCQSifT09HR0dJw4cWJ6VSs9OByON9988%2Beff%2F7zzz9DoVA4HO7v79%2B%2BfXtpaWnZJKxZswZwWrx4MfRAGT0Wi6nDgdzcXCAMIBAIoOyxuLg4EolAfyKR2LFjR05ODviBgwcP8jwfj8eHhoYikUhvb29XV9fJkye3bNmizuUfc3x6F0EQHo9nw4YNa9euzc3NtVqtUN9F9ZlZShU8z%2F%2F444%2B3b98uLy9%2F5513QIMRxGKxw4cPkyS5ZcsWzU8AyGYkEglQv2QyOTQ0dOXKld27d6vPHEEaPBRFGR8fF0UxJycnMzMTrh%2FB5A0ODl64cGFkZATuUerr61tbWy0Wi9VqTaVS9fX1HMetW7euuro6HA53dXUVFhZSFNXU1BQMBr1eL8uyDoeD4ziWZUHpm5ubr169ajabbTZbQ0NDS0tLKBTy%2BXyiKKZSKUEQotFoe3v7gQMHuru705rm9DmXJEltbW1nz57t6emJxWLxeByWo2n6iy%2B%2B2LVrF3iWw4cP37x5MxqNwlXAxYsXwYxQFPXTTz%2F5%2FX5IGO7cuXPo0CEIb0ZHR8%2BfP79jxw5gx%2F79%2B4uKioaGhiRJamhoqKuru3jxYjwen5iYSKVSQ0NDfr%2F%2Fhx9%2B8Pv9M1XEZnzGk0gkrl%2B%2FfuDAgd9%2B%2B21gYCCZTEqSBEgYjUbwFYIg5OfnQzVcp9PV1NTU1dXBdLfbTRAEEHDjxg2gFnIXk8lks9mSySRkJ6lUiiRJWNzj8cADF57nh4eH79y58%2F333zc0NMzyMGe2a1a4hSYIori4GO5VJyYmvF7vmjVr4GKdZVmj0Th%2F%2Fny4Cnn06NG7774LGbcoitnZ2QsWLIDC4MaNG%2BEKQxCE0tLSefPmOZ1Oi8VSUFAQDAZB9XEcz8zMzM%2FPd7vd4%2BPj4XD40qVLDQ0Nsz%2FJeUIFwWg0Llq0aMmSJZWVlaWlpTabDbQZ5ATKNVD0QxemqAilvrIHgEgO2ImyW6S40OZ5nuO4hw8fnjp16uzZs2CsZsHwCRfdgiBwHBcMBn0%2BH8uykiRB5R0SN3hQg2pP8LYJ2rArkIFKBMidoxcGEO1AqAKd8Xi8o6Pj9OnT9fX1oF2zwxMIgMw9Fov5%2Ff5EImGz2WiaFkURKtgo5oOgBZ6qEAQBvMRxHGIqIAzqkBBTiaII6KJnK4IgpFKpsbGxxsbG06dPnz9%2FfpbL7WcjACAej4dCIYPB0N%2Ffj%2BO4wWCABxvAbCQPgBlICJQSAD9IAiEoADVF5wCd4%2BPjAwMDv%2Fzyy4ULF86cOZO2SPqPCAAndf%2F%2B%2FdbWVo7jKIqyWCwg8YAiuCEIG1E5Awk3BJWCIADLAUByJiYmHjx40NnZefTo0XPnzjU3Nz%2FNfRSCZ37mAFdm8Ghr7dq1DocDXpqZzWZ4nKUuR6PyHsoMUYILXnZsbKypqam7u7uurm54eDgWiz0T9s%2F%2F6A%2FHcZvNVllZuWjRoqVLl5pMJoZhjJMgCALDMKAkoOuiKJIkCXiTJDkxCZFI5K%2B%2F%2FgoEAr%2F%2F%2FvvY2FgymXxW1P8RAQgYhsnLyyspKfF4PCaTqayszG63w92o1WoFNTAYDBMTE6DQAwMDPT09%2Ff39HR0dEKg9vbi%2FEALQha7JZDIajZmZmQ6HIzs7OzMzMzc3FyIRj8eTSCQePXpkNptjsVhTU1M0Gn0OaXlRBExZblIB4C0Z%2BA1kiKBwBpbn3930vw3%2F%2Bdfr%2Fy8AAP%2F%2F1Q9lsSl68f8AAAAASUVORK5CYII%3D",
       "href": "https://github.com/NousResearch/hermes-agent",
       "officialProgramBadge": false,
-      "sha256": "ef2ea91f1cfb16572679d532d2db4f6343d065ecf034f24b02ec652ce614db78"
+      "logoAsset": {
+        "sourceUrl": "https://github.com/NousResearch.png?size=64",
+        "mimeType": "image/png",
+        "path": "assets/stack-logo-sources/hermes.png",
+        "sha256": "d9822f1acf520a702524bee227700b2742076323f69e7a5d5f63c85275a9b2ea"
+      },
+      "sha256": "91aa3e23cf825eed10910a44c72d42080d30a1283960e3593d91e4529d43adfc",
+      "publishedAsset": "assets/stack-hermes-logo.svg",
+      "publishedAssetSha256": "91aa3e23cf825eed10910a44c72d42080d30a1283960e3593d91e4529d43adfc"
     },
     {
       "id": "typescript",
@@ -38,6 +62,7 @@
       "source": "https://img.shields.io/badge/TypeScript-0D1117?style=flat-square&logo=typescript&logoColor=E6342E",
       "href": "https://www.typescriptlang.org",
       "officialProgramBadge": false,
+      "logoAsset": null,
       "sha256": "1bf1c4ac9490c892b4fe539a1288eae6dafb265d2f4c6802b81730a37788e2c5"
     },
     {
@@ -47,6 +72,7 @@
       "source": "https://img.shields.io/badge/C%23-0D1117?style=flat-square&logo=dotnet&logoColor=E6342E",
       "href": "https://learn.microsoft.com/en-us/dotnet/csharp/",
       "officialProgramBadge": false,
+      "logoAsset": null,
       "sha256": "6ff60b9f467e6d44d2745bb567f1443a6edb3fa6cf88c6e301d7f6d81a485f86"
     },
     {
@@ -56,6 +82,7 @@
       "source": "https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=E6342E",
       "href": "https://www.python.org",
       "officialProgramBadge": false,
+      "logoAsset": null,
       "sha256": "6e24898f81af7632cde165fddc4bd12a5212fe06cf55bf5ce939090a91d6ed81"
     },
     {
@@ -65,6 +92,7 @@
       "source": "https://img.shields.io/badge/Swift-0D1117?style=flat-square&logo=swift&logoColor=E6342E",
       "href": "https://www.swift.org",
       "officialProgramBadge": false,
+      "logoAsset": null,
       "sha256": "be3976b591c8667ed1e1019e1616375fab07c682962b3e22cea4b78f75f6db3d"
     },
     {
@@ -74,6 +102,7 @@
       "source": "https://img.shields.io/badge/Rust-0D1117?style=flat-square&logo=rust&logoColor=E6342E",
       "href": "https://www.rust-lang.org",
       "officialProgramBadge": false,
+      "logoAsset": null,
       "sha256": "2f471b572a87b391dab0559cbf6607369e6efc6fb3fe6abed86f87f41f1fcea3"
     },
     {
@@ -83,6 +112,7 @@
       "source": "https://img.shields.io/badge/HTML-0D1117?style=flat-square&logo=html5&logoColor=E6342E",
       "href": "https://developer.mozilla.org/en-US/docs/Web/HTML",
       "officialProgramBadge": false,
+      "logoAsset": null,
       "sha256": "ec0a2983432175dd902f9e949390e300d41c68a3824aef53ae69543ab041e036"
     },
     {
@@ -92,6 +122,7 @@
       "source": "https://img.shields.io/badge/SQL-0D1117?style=flat-square",
       "href": "https://www.sqlite.org/lang.html",
       "officialProgramBadge": false,
+      "logoAsset": null,
       "sha256": "4dee7cb2d05ff28533bd7a8bc83755e175bc7b2cfdb0d69c6bfa0b3c690c39d0"
     },
     {
@@ -101,97 +132,198 @@
       "source": "https://img.shields.io/badge/JavaScript-0D1117?style=flat-square&logo=javascript&logoColor=E6342E",
       "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
       "officialProgramBadge": false,
+      "logoAsset": null,
       "sha256": "c32172d61ad2b711a63246978e2b4dd4026a34dcd30709835e5ca22f7c378c0f"
     },
     {
       "id": "openwhispr",
       "label": "OpenWhispr",
       "group": "stack",
-      "source": "https://img.shields.io/badge/OpenWhispr-0D1117?style=flat-square",
+      "source": "https://img.shields.io/badge/OpenWhispr-0D1117?style=flat-square&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAQvUlEQVR4nKxbC3AcxZn%2Benal1dOytLt%2BSLZQZFuWH8nFwi%2BVj8OHMY4xJEAgJJe7Iw5wJHdccqEIhcEQJ0XVEapyx5mYEAjhCl%2FhyzlHQkIRMDiEGIwxjnFswMKyLdlCL%2ButXa20Wu301cz0zPRrVstBV0nT0zPzP77%2B%2B%2B%2F%2F7%2B4Nx648RgEC948Q9wq7WFfiXu024tWJ9Bx2nbArbFrCc7dNoAeBHrwr%2Fy1PU0NPaCNauu57ok4EYVDKWp2Le%2BsSsu%2FZM1D4bXwh7Jl1IdT6x274j91vqS%2B9TI%2FREb5l3xhenePn0vOIWxcKSomGriiL2xZ2OLIX3G6EwT7WE3LaiAAMD4JVoeBAYMIJIPCoa4r%2FnvOOaVMkOb5w%2BNjsmEBqZ1G713n2YVDTV9zjZ9oVSg1VSOLqxHqa09%2BBzn1NBgHe%2B35PO71lELEPqASWBzg4Ouw9w8WWcgrC73EiWY3zjksPzAIkM%2Fc7x7RBEFATwHBA4JmYriFRFwTfPD3whJ6mMCnxAPQVl7BiYIGDnLj8ZEuQiHjyM2JW1WCPw37v8IpDsAZnTBFPANG0ApDmO8wzT8rIiyJ7yvFycBbn6cRbFVTwZeX4Xvd4sjZnSFkAEKoyU0AAA4HvBf4bnYNRQZgbLUDjRRHUzi5EZXkIJRFnwGRNipFkFr1DWZztTON056RNkh8K8HwrJ4PGAgn1BrA%2FpVDRgvj3w4qtIQgEk1M%2ByDmKDqas2MAVq8pwWVMZVi0tsQHIp4ynTRxrHcdb76XwypEk2nsyEubMEjgBZRAogeRMZMXYo9imN4U4wJ8JctRZvBA03y6aV4h%2FvC6Kay6pQGFBsN%2FOtxw%2FPY6nXhjC%2FiNJ5g9cviQwvhBjBRZLQBMTxDa9QR3fLSuLHCAYHgg8AAtrCvHdv4nj6nUVMIyPrbdSznSmsevZAbz8dlKvHAvE9ADAsxQeBBK74nUq927%2BluDMEMURgju%2FEsdtX4h%2BIj0%2BXflTSwrff6rXGxpyR5AckaxoCTYAB6irGLFHV7DZ64BYUFOEn98zH0vrivISPp0xcbZzEt0DU0ilTUxlKUqKDNspLqqJYGZ5KC86E5MmvvdkL373ZsLzdV74rAMhICQXpkHZwSs%2BQ3KOG1aV46d31aKiNFhoyyO%2F05LCi4cTeON4Cu%2B3T8A0NTkEk6wmVoA1S0tw6YpSbLi4zAZHV4oKDfzwm3Ox5KIIHv6ffjseUOJ2TdzotzpTM4lt%2FAOzACO%2Fnmf3VzbPxM%2B2fQoFYb3iU1ng2deGsevZfrR2TGrMVAUBgjMjmFFq4Ia%2FrsAtV1chPjOAEYDnD47i3sd7%2FCCLc3KGJpES7mMbX6WiooZeaa5t4%2BoKPLW9HpECfe%2F88VjSFuiUrThEYXTjEqLvdUGw%2FllJUGkxwTeuieLmq6KBgP%2F2jVFsf6JHmPlc0A1NJuiCECqpv2mHYCmEq%2FBBErtftaQMz%2FxgkW2CcklNmLj7J13Y%2FkQvBkZMfzKRPLI%2FaCW2XlhLhHE9OQW8acUEbyfQtLgYMY01LK6NoLiQ4OC7KYEv9Mp5JVRS%2F%2Fc7cr7H1StnhPGrBxtRWa4KcGEogy%2Feexb73k5wH4oMqawye8zFVyJLzmKs1oHRLJ47MIqG%2BYWor44oMnx2UTHauiZx%2BsNJFXDvwoFP7LCZMg9Iwdch1a1nj9xRj7mxQoVxR28aW%2B5sxfHTKe5bk6WzVAhrKYvXrWd%2BXb06rKl%2Fz%2Bik0hS3%2F3sXnjswoshhlfu3zkJ1rICj4RBwZXD5urIYnqI2g2AQrrk0ik1rKxWGI8kp3HjfabR3TSigOSBgehBofiC471sO9u7HenDwxJgiT3lJCNv%2BNq7Q82SACILh9jwJAoGaiBQA999cqzCzBLn1X8%2BitWM80HJ0luD%2Bza4Ko7G20AdlOhAggvCdnV34sC%2BjyLW%2BqQxrlhYLViB0BEfHkM3cBcFeKLFnceCrn5uNebPUQOfxX3fj1aPD4K3I%2BY4HwfRo8shv%2B7s4%2FvRkA%2FbvXIAXf1SHaEVIAcHkQTApZw0OncGEiTt2diFrqkPhn66LioBKQ8CWzF5qA1OUKUzsP99WDVDcdm21wqCrL42HdndwlE3fzWlB8IFY1ViMb98Q9%2FKFTy8oxh03xrRWYnJJnUeSA%2BGdUxPY8%2FKQIl%2FT4hI0NRSJw86rU29ZzlDMVhJ4U3MV6mtKFAY%2F3N2BsYkp4V3faljdBYIbDtbf8nrVmqw2k2qcIweC34OcJYBi5y8HkExlFZo3ba7UWACvKnWHAEQzhu8XvrRxtkK4sy%2BNva%2F0imNe5zyhcHRoE6rQNNhaguykPBCoT5X3C1b74GgWz7w8rNC8dEU5ZpYaCi2fhjcLmKoDo06SsnF1TCG8%2B4VuZKbk3tVZUvC0qiuiDwiYIajoHMHG8u6XhhVfYEWNl3y2lJtKVXrqEOAUWb1sBiKaiG%2FPvh7J9FUQtl4Vx4HHlmHffzRic3OF8I4uYaYSEHOiYfzs7nk48OgCPPytuZhRYgTOENa1sz%2BDIyfVabF5WYkUT4gghj0FvKVxw4tLVy6pUAi%2B35ZEd984excOCMTwNSDAVeuq8NDtdd43T21fgCvvaMHRD1IadVULCIeAPTtqsbjW8RX11YW2Nf7DQ50OW7YcDm4zhlCC146NYc2yUoGmFR26U6C%2FecIAsHMNNtUJjopBtXxhuSLkoRPD7FW%2Bx03ws8nn1s4UvgkZwGUXl3vv%2BBsjgvpe%2B7xZBZ7ybtm0eobQc6Y8TVKKwydTCtW6uRZ4RJwCOUswhClMAmHhPNX7v382IZg%2B0Yz5UEiTdISQcwg4xQEnZOi%2FD5ohTFb%2F4FxaS3X%2BrEJu7FMHPNEJSt6agRCvVBOOtq6UEjkqzk%2Fbw7LVKA85awoYIgEzhHufSJkYHJ1SvquOhSUn6gNpCIylKauiTE18EmMZJXJUvL5OAY42DVAwN0DqDAHOo7vT5MCICsCM0pDoPDka%2FpKYXUzOCUK7spuygx9GTb8%2Fqi3eMpQ2K4dPxVZKE9tywjuMxE1Xl7mVLSq8pY1Wvi3sKO0uibmW4N6rpTBMmJkavtaCgEHmy%2FdsDgtQ10pygsBvdFptjnwKcxb8SKAJQ4CP39m9be5SKS12F0B5x%2BnmEGZOExZ5qEJ6OUmAD9EFMyYD3W0rK1E7LjGeFYcPR8tQIjjufjgxqRCriUe4MW%2BqUWTgIPCB1es3PQ0%2Bo1T%2FqB0%2F1MRVv3VhcMrxPUIO4YBnaGN31tbepUZWDReV6SNAyk2LAcL702BukIJ8gL%2FAInp%2F1wHWzi6AZgbF%2Bd6MEC9QgMsGwWdxYhrb0j6qEFu5dKYKmHR%2FrlsNSDovTEzr5d1n%2FcMZewOFL%2Bd60p6PotQUzN4FpGlxsUJxKJFFz%2BCUb%2FYSCIbamz4QR94bUAiuWlaF4oihyfn9v5%2F%2B73kcO%2BWDt%2B9QP375So8%2FBHI5QUoxMjaFu358HulJB4REKos7H%2FlQ4KMbDutXlCkkrfCbQp9DUMjToODVTRw63q8QLI6EsHndbDy7vwvKt1Yhju%2FY%2FM%2BHsXxBOdIZipPtY97hGUKMAC%2FPWQYFnnmpD68cHkZddRFaP0xjKGH6%2BQehHj3HAgiKCom9DS%2BXg%2B%2BmRJ%2FD5xD%2BeoDepLv7xnDsg0GF6Ne%2FUCcOFyUzNJHNmvjzqRG0tCXYmDc9YAMjRSESpLgwPInD7ycxZEV3VOXBrzJdv77CDnjk8urRpND7ppRiG2oILNb37junEF29PIqVSyv9VR9h%2BIAT0KdHvPEbpLw8TTK63NpkUN5iGNQ%2BjyCXE2fGcfJcWgh9IeUPogVQtb73pXaMjavxwF1fWwzlW74HlanRD537htSkpW9oUupduUM0Poddb7ysAgvnqXnL0y8OKeGz7A%2BkRVEOecZwODGBPb9rU4ivXzkbn19frc0htM6RmyZfOtSH462%2Bk5yYNLFrb4cGzNyzjXWNlodw39fmKPJ1D2Twi%2F0jvuHwIHBDgMTXPUmnOwwxJ1aKI%2F99NQqlzdD%2BoTQuvWU%2F%2BgbTyLnDrNldtpzp9RvmIlZZiOde68OZzgn1%2FTwObvzX9xZg0xp14ebex7vxxG%2BGAo%2FxuG2h0trPT7s3mExlUFYcxupPxwUmJVbbsir86vcd9kEH%2F1t5kw%2FM9foNU1kTx1uTePPEiO3klIVSYWdV0o7d%2F8uX52DrlriifFt3Gt9%2BuNPePAF3UIL%2F1ts5VkNQzQIpKH709Lvo6FEjw1XLo3j03pUsc5TGqxBgQfIREHIIqgwfebldlOnav6rEtptqFHmssu0nXUhnsly8wLhLobP1XF0QAbQOcSyVwTcfOMhWg8Wy5ZIa%2FPz7a9hpDhrorX1XzOUQcnSogK%2BC%2BeWNUez67qegy1f%2F84V%2B7D8yIkzPurHvrgqFSmuv2uF%2F7poxkepO6exNYSSZweVr1Z2iRbXluLx5Dl4%2F2oeh0bR6BiDAjN268ljzbaTAwAO31WH71lrtstmh9xK49cF2liHKfPxTbTz9UOn8LTu0oZkigNPwzskBVFUUoWmJOu%2FOqirCV7fUYTSZwbGWIT%2B0JHmAIJ0cEfJ%2BAvzFwjLseWApNq2t0ggLtHdP4Pp7WjE2boq0NTy8YxiWEyyzANAJpwXBKb9%2FqxvVs0rxmQZVmIKwgcvXzrH%2Fegcn0NaZ9Bci8gBB9p%2F1NcW4%2F5Z6PHj7QsyuUlNd2OuUE%2Fjithb0DGbykp9vIPHmXTTvaYe7t2L6B7%2BzCluvadAK5ZYzHUk8%2FXwbnv9jNzp6NVOd5r64KIQNq2P4yqZqbFgT0451t7ScS%2BFL97TY835uHSBM094vY%2BLNP6Z8A%2F0IIFh%2Ft17fiPu%2BsQJFhdOf72s9n8DRk8N2utzRO47URNaeqoqLwphVFUHtnBIsqy9HU2OFdkdKLr890I9v%2FdsZJMfNHDJDOvwF8CdjSbz5EUq8JUunZ%2BlHtIbPNETx2P3rsLB2xrRCfxLFSpN%2F8GQbnvh1N3PVOnkNzZFfQ7onlhPcvMNrBLiqzjXznskf170D49j9%2FGn7lPeKxigieVjD%2F6dY3F94vQ837XgP%2B98elOTNw49p3iXx5p3Uf8aGARsSeVkCb14gmDkjgq9f24Cbr2tAvDK%2F47PTlakpE785cAGP7j2PP7cmA2T46H7M1nhW804pQSWKo%2FiofsGqF4TD2PyX83DDFXW45OLZKCkKPukZVE6cHsVzf%2BjBL17uRu%2FApMCDur8R0B3s1Mkb8I4GAAiHpj8OCG69KBLGiiVRNDVGsWB%2BOWrnlqGqotADJZulGE5m0NEzjvO9KRw%2FNYq33h1C31BGy4OXzRbe3cOQrDGfI7%2FeECBcIAzNcPi4IOhN0xCtjndURHZmslcnrPeh0sp17lmaIQLtkvr%2Blf10jYBQ55CC4Fh4vwhpXVHymYpD8n6yx7%2Fvnjdw1xvZdh34MwxMD%2B%2BnT2Ld%2FdWQ8676Gwd3Mcy6D8t6qDA4P1h0gjkrc2OraIoy1N9ek7fWqGRiMoBBwHjPTEFxXmAXP8rd01yd4m39mSIAuYr7EyXqprDuT%2BiIhCjfo9QUzVoWXmtF1O8lGmA5AfeEKUz57b88eObtmj0QwDGxibrmpuklj7GpmqNgmsxavJ%2Fj8u%2Brm7CB91xGbf9MDgZnmXoLDBONheYCwatLZ22kF4MF1tblMWtw2pgSCFS7M81bgtNJxB6yVLBMQ5HBMKfGB3Uy54LB%2FXPPFRNlYWOa%2B6C6sBok3VN5QYVftBE3ad3Trs6tvJcg8vi%2FAAAA%2F%2F9llFgzbyrewQAAAABJRU5ErkJggg%3D%3D",
       "href": "https://github.com/OpenWhispr/openwhispr",
       "officialProgramBadge": false,
-      "sha256": "0a265fb1a1b86bffc92b5a467401876b88e69f8a81d76cfc3eb5c4c05c177990"
+      "logoAsset": {
+        "sourceUrl": "https://github.com/OpenWhispr.png?size=64",
+        "mimeType": "image/png",
+        "path": "assets/stack-logo-sources/openwhispr.png",
+        "sha256": "0072f689f47715d02bd7e4cccb49be8971efc24861e65746514a83b28a9fa965"
+      },
+      "sha256": "e75e6ca8f3a5ab9331c5f6f40fe5cd3f054ae1b7be2e6fc4b1dd96e009068cbe",
+      "publishedAsset": "assets/stack-openwhispr-logo.svg",
+      "publishedAssetSha256": "e75e6ca8f3a5ab9331c5f6f40fe5cd3f054ae1b7be2e6fc4b1dd96e009068cbe"
     },
     {
       "id": "prime",
       "label": "Prime Agent",
       "group": "stack",
-      "source": "https://img.shields.io/badge/Prime%20Agent-0D1117?style=flat-square",
+      "source": "https://img.shields.io/badge/Prime%20Agent-0D1117?style=flat-square&logo=data%3Aimage%2Fjpeg%3Bbase64%2C%2F9j%2F2wCEAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDIBCQkJDAsMGA0NGDIhHCEyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMv%2FAABEIAEAAQAMBIgACEQEDEQH%2FxAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29%2Fj5%2BgEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4%2BTl5ufo6ery8%2FT19vf4%2Bfr%2F2gAMAwEAAhEDEQA%2FAPn%2BiiigAooooAKKKKACiiigAooooA6PQfAfifxPp81%2Fo2kTXdrC2x5FZV%2BbGcAEgscEdM9awrq1uLG6ktbuCSC4iYrJFIpVlI7EHpX0x4XuJfhl8LdAtAqS61rd5H5NvLnAaVlzkA5wqYz%2FALR96zP2gvBbXsFh4i02yeW78wW1ysEZZnUj5GIHoRtz%2FtAdqAPnSur8GfDzxB44uSumWwS1Q4lu58rEntnHJ9hmu58N%2FCG20TR5PFPxClNpptuokFghPmSZ6ByOmSQNo555Irsz8QD4P0KfVr%2FTLiwhePydF0aO0lhjhHJ%2FesVVGY%2FKTgnAzjqcgHJeKPhr4I%2BHXh5pNe1S81LWZ4mFtbQMIgWxw23khQe5P4HpXitaOu67qPiTV59U1W4ae6mOWY9AOwA7AelZ1ABWp4d0C%2F8AE%2Bu2ukabGHubhsDccKoHJYnsAMmsuu5%2BE%2FjHT%2FBPjP8AtLU4ZJLWW2e3Zo13NHkqQwHf7uPoTQB6T8XdM1vw%2FeeDfEl3qE16mmlIrm4iiVdsgcNvVPujcMgdvlGa9K034maNrWjxX2j2uo6jJJu%2F0S2t98iYYj94QdsecZG5hkHNeN%2FEL47N4h0280TRdNSOwuFMUlxdgM7qf7qdF%2BuSfoat%2FDL4xeG%2FB3geLSL%2BxvftcMkjlreNWE25iQSSwwQMD6AUAd8nhTxJ4r1aXVPG13BZaJGfMg0ZNknlgDGZJMYB6kkHv1A4r5w8YeIL7WtbuopdZvNS0%2B2uJEsmuJCR5e4hSB0BIA7V1Hj%2FAOMmteMo5NPtVOm6Q3DQI2XlH%2B23p%2Fsjj1zXmtABRRRQAUUUUAFFFFABRRRQAUUUUAf%2F2Q%3D%3D",
       "href": "https://github.com/PrimeIntellect-ai/prime-agent",
       "officialProgramBadge": false,
-      "sha256": "9167c5a6812ad012eb277772e51aac27119a74235f47eadfbb80f496eaf60ac7"
+      "logoAsset": {
+        "sourceUrl": "https://github.com/PrimeIntellect-ai.png?size=64",
+        "mimeType": "image/jpeg",
+        "path": "assets/stack-logo-sources/prime.jpg",
+        "sha256": "f0036d4d52754804b41db1b1dc7871de662dfcf01e2ad559c11603b08b4c6f04"
+      },
+      "sha256": "39b414838c93073a1674140eb403d51a4b075fe9ddfc0bf130e4639b04ee099c",
+      "publishedAsset": "assets/stack-prime-logo.svg",
+      "publishedAssetSha256": "39b414838c93073a1674140eb403d51a4b075fe9ddfc0bf130e4639b04ee099c"
     },
     {
       "id": "buzz",
       "label": "Buzz",
       "group": "stack",
-      "source": "https://img.shields.io/badge/Buzz-0D1117?style=flat-square",
+      "source": "https://img.shields.io/badge/Buzz-0D1117?style=flat-square&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIxMDI0IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTEyLCA1MTIpIHNjYWxlKDAuOSkgdHJhbnNsYXRlKC01MTIsIC01MTIpIiBjbGlwLXBhdGg9InVybCgjY2xpcDBfOTQ1XzgpIj4KICAgICAgICA8cmVjdCB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIxMDI0IiBmaWxsPSIjQ0QwMDAwIi8%2BCiAgICAgICAgPHJlY3Qgd2lkdGg9IjEwMjQiIGhlaWdodD0iMTAyNCIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyXzk0NV84KSIvPgogICAgICAgIDxwYXRoIGQ9Ik04NzEgNTEyQzg3MSA3MTAuMjcgNzEwLjI3IDg3MSA1MTIgODcxQzMxMy43MyA4NzEgMTUzIDcxMC4yNyAxNTMgNTEyQzE1MyAzMTMuNzMgMzEzLjczIDE1MyA1MTIgMTUzQzcxMC4yNyAxNTMgODcxIDMxMy43MyA4NzEgNTEyWiIKICAgICAgICAgICAgICBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjcyIi8%2BCiAgICAgICAgPGNpcmNsZSBjeD0iNTEyLjUiIGN5PSI1MTIuNSIgcj0iMjM3LjUiIGZpbGw9InVybCgjcGFpbnQxX3JhZGlhbF85NDVfOCkiLz4KICAgIDwvZz4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhcl85NDVfOCIgeDE9IjUxMiIgeTE9IjAiIHgyPSI1MTIiIHkyPSIxMDI0IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI%2BCiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNDRDAwMDAiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3Atb3BhY2l0eT0iMC4yIi8%2BCiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8cmFkaWFsR3JhZGllbnQgaWQ9InBhaW50MV9yYWRpYWxfOTQ1XzgiIGN4PSIwIiBjeT0iMCIgcj0iMSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICAgICAgICAgICAgICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDQ2IDQ1NC45MDYpIHJvdGF0ZSg0NSkgc2NhbGUoMzIwLjc2MSAzNjUuODUzKSI%2BCiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMC41Nzg5OTgiIHN0b3AtY29sb3I9IndoaXRlIi8%2BCiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMC44NzMxNzciIHN0b3AtY29sb3I9IiNFNkU2RTYiLz4KICAgICAgICA8L3JhZGlhbEdyYWRpZW50PgogICAgICAgIDxjbGlwUGF0aCBpZD0iY2xpcDBfOTQ1XzgiPgogICAgICAgICAgICA8cmVjdCB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIxMDI0IiByeD0iMTg1IiBmaWxsPSJ3aGl0ZSIvPgogICAgICAgIDwvY2xpcFBhdGg%2BCiAgICA8L2RlZnM%2BCjwvc3ZnPgo%3D",
       "href": "https://github.com/chidiwilliams/buzz",
       "officialProgramBadge": false,
-      "sha256": "064cf91f2313bd5d83b74ef3d9d7dc8dfa5980447d945d4239478c088f31408d"
+      "logoAsset": {
+        "sourceUrl": "https://raw.githubusercontent.com/chidiwilliams/buzz/main/share/icons/io.github.chidiwilliams.Buzz.svg",
+        "mimeType": "image/svg+xml",
+        "path": "assets/stack-logo-sources/buzz.svg",
+        "sha256": "0aac4a0dbedc4cac1ecbbee027b08f9fe82a566c502a273074bf44c31de6e14b"
+      },
+      "sha256": "cbd9ee2bd71e5a0206c5fd14e7c5c38d6616fd7c712daf8ac12ebf574ef9a44e",
+      "publishedAsset": "assets/stack-buzz-logo.svg",
+      "publishedAssetSha256": "cbd9ee2bd71e5a0206c5fd14e7c5c38d6616fd7c712daf8ac12ebf574ef9a44e"
     },
     {
       "id": "ghostty",
       "label": "Ghostty",
       "group": "stack",
-      "source": "https://img.shields.io/badge/Ghostty-0D1117?style=flat-square&logo=ghostty&logoColor=E6342E",
+      "source": "https://img.shields.io/badge/Ghostty-0D1117?style=flat-square&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsPSIjRTYzNDJFIj48dGl0bGU%2BR2hvc3R0eTwvdGl0bGU%2BPHBhdGggZD0iTTEyIDBDNi43IDAgMi40IDQuMyAyLjQgOS42djExLjE0NmMwIDEuNzcyIDEuNDUgMy4yNjcgMy4yMjIgMy4yNTRhMy4xOCAzLjE4IDAgMCAwIDEuOTU1LS42ODYgMS45NiAxLjk2IDAgMCAxIDIuNDQ0IDAgMy4xOCAzLjE4IDAgMCAwIDEuOTc2LjY4NmMuNzUgMCAxLjQzNi0uMjU3IDEuOTgtLjY4Ni43MTUtLjU2MyAxLjcxLS41ODcgMi40MTktLjAxOC41OS40NzYgMS4zNTUuNzQzIDIuMTgyLjY5OSAxLjcwNS0uMDk0IDMuMDIyLTEuNTM3IDMuMDIyLTMuMjQ0VjkuNjAxQzIxLjYgNC4zIDE3LjMwMiAwIDEyIDBNNi4wNjkgNi41NjJhMSAxIDAgMCAxIC40Ni4xMzFsMy41NzggMi4wNjV2LjAwMmEuOTc0Ljk3NCAwIDAgMSAwIDEuNjg3TDYuNTMgMTIuNTEyYS45NzUuOTc1IDAgMCAxLS45NzYtMS42ODdMNy42NyA5LjYwMiA1LjU1MyA4LjM4YS45NzUuOTc1IDAgMCAxIC41MTUtMS44MThtNy40MzggMi4wNjNoNC43YS45NzUuOTc1IDAgMSAxIDAgMS45NWgtNC43YS45NzUuOTc1IDAgMCAxIDAtMS45NSIvPjwvc3ZnPg%3D%3D",
       "href": "https://ghostty.org",
       "officialProgramBadge": false,
-      "sha256": "58e585387f29e57c3d64ebd3c9e5ff3abde7f6f2a51ab8c42cd08af93ab0e64a"
+      "logoAsset": {
+        "sourceUrl": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/ghostty.svg",
+        "mimeType": "image/svg+xml",
+        "path": "assets/stack-logo-sources/ghostty.svg",
+        "sha256": "a1f7de256a7b070cf112c3d5d254938b48186d2486054fb0832da4a83719387f",
+        "presentation": {
+          "path": "assets/stack-logo-presentations/ghostty.svg",
+          "color": "#E6342E",
+          "sha256": "55c0119b45528802f3c9893deeb3cb21d8b69074a5a11d19c224741b334b9a3d"
+        }
+      },
+      "sha256": "5445c8c82a79c2c406fe1691fbee58ac8b7ed286ca8999a05876f51f53fb20ef",
+      "publishedAsset": "assets/stack-ghostty-logo.svg",
+      "publishedAssetSha256": "5445c8c82a79c2c406fe1691fbee58ac8b7ed286ca8999a05876f51f53fb20ef"
     },
     {
       "id": "llamacpp",
       "label": "llama.cpp",
       "group": "stack",
-      "source": "https://img.shields.io/badge/llama.cpp-0D1117?style=flat-square",
+      "source": "https://img.shields.io/badge/llama.cpp-0D1117?style=flat-square&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8%2BCjxzdmcKICAgaWQ9IkxheWVyXzEiCiAgIHZlcnNpb249IjEuMSIKICAgdmlld0JveD0iMCAwIDI1MCAyNTAiCiAgIHNvZGlwb2RpOmRvY25hbWU9ImxsYW1hLWljb24uc3ZnIgogICB3aWR0aD0iMjUwIgogICBoZWlnaHQ9IjI1MCIKICAgaW5rc2NhcGU6dmVyc2lvbj0iMS40LjIgKGViZjBlOTQwZDAsIDIwMjUtMDUtMDgpIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0ibmFtZWR2aWV3NyIKICAgICBwYWdlY29sb3I9IiM1MDUwNTAiCiAgICAgYm9yZGVyY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMSIKICAgICBpbmtzY2FwZTpzaG93cGFnZXNoYWRvdz0iMCIKICAgICBpbmtzY2FwZTpwYWdlb3BhY2l0eT0iMCIKICAgICBpbmtzY2FwZTpwYWdlY2hlY2tlcmJvYXJkPSIxIgogICAgIGlua3NjYXBlOmRlc2tjb2xvcj0iIzUwNTA1MCIKICAgICBpbmtzY2FwZTp6b29tPSIyLjQ4IgogICAgIGlua3NjYXBlOmN4PSIxNDYuNTcyNTgiCiAgICAgaW5rc2NhcGU6Y3k9IjE4OS45MTkzNiIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjM0NDAiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iMTQ0MCIKICAgICBpbmtzY2FwZTp3aW5kb3cteD0iMCIKICAgICBpbmtzY2FwZTp3aW5kb3cteT0iMCIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIgogICAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9Imc3IiAvPgogIDwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyOS4zLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiAyLjEuMCBCdWlsZCAxNTEpICAtLT4KICA8ZGVmcwogICAgIGlkPSJkZWZzMSI%2BCiAgICA8c3R5bGUKICAgICAgIGlkPSJzdHlsZTEiPgogICAgICAuc3QwIHsKICAgICAgICBmaWxsOiAjZmY4MjM2OwogICAgICB9CgogICAgICAuc3QxIHsKICAgICAgICBmaWxsOiAjZmZmOwogICAgICB9CgogICAgICAuc3QyIHsKICAgICAgICBmaWxsOiAjMWIxZjIwOwogICAgICB9CiAgICA8L3N0eWxlPgogIDwvZGVmcz4KICA8cmVjdAogICAgIGNsYXNzPSJzdDIiCiAgICAgd2lkdGg9IjI1MCIKICAgICBoZWlnaHQ9IjI1MCIKICAgICByeD0iOC42ODU3Mzg2IgogICAgIHJ5PSI4LjcwMDgzMzMiCiAgICAgaWQ9InJlY3QxIgogICAgIHg9IjAiCiAgICAgeT0iMCIKICAgICBzdHlsZT0ic3Ryb2tlLXdpZHRoOjAuMjY2MDcxIiAvPgogIDxnCiAgICAgaWQ9Imc3Ij4KICAgIDxnCiAgICAgICBpZD0iZzYiCiAgICAgICB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtOTk1LjUxMDY2LC0xMjkuNzA4NzUpIj4KICAgICAgPHBhdGgKICAgICAgICAgY2xhc3M9InN0MCIKICAgICAgICAgZD0ibSAxMTYzLjMsMjI2LjggLTEzLjUsMjQgYyAtMTcuOCwtMTMuNyAtNDQuMiwtMTUuNyAtNjIsLTEgLTI4LjcsMjMuNyAtMjYuNyw3OC41IDE4LDc4LjggMTIuNSwwIDIzLjEsLTUuOSAzNC41LC05LjggbCA2LDIzLjkgYyAtMTAuMSw0LjcgLTIwLjQsOS41IC0zMS41LDExIC0xMDEuMiwxMy44IC05NS40LC0xMzIuMyAtMy45LC0xMzkuOSAxOS4yLC0xLjYgMzYuMSwzLjQgNTIuNSwxMyB6IgogICAgICAgICBpZD0icGF0aDQiIC8%2BCiAgICAgIDxwYXRoCiAgICAgICAgIGNsYXNzPSJzdDAiCiAgICAgICAgIGQ9Im0gMTA5My40LDIwMy44IGMgLTE1LjQsNC42IC0yOS43LDEzLjEgLTQwLjUsMjUgLTIsLTI0LjIgMy40LC03My4xIDMwLjMsLTgyLjcgNCwtMS40IDE3LjcsLTQuOSAxNy4zLDIuMiAtMC40LDcuMSAtOS45LDE5LjMgLTEyLjIsMjUuOSAtNCwxMS42IC0wLjMsMTkuNiA1LjIsMjkuNyB6IgogICAgICAgICBpZD0icGF0aDUiIC8%2BCiAgICAgIDxwb2x5Z29uCiAgICAgICAgIGNsYXNzPSJzdDAiCiAgICAgICAgIHBvaW50cz0iMTEzMS40LDMwNy44IDExMTYuNCwzMDcuOCAxMTE2LjQsMjkwLjggMTA5OS40LDI5MC44IDEwOTkuNCwyNzYuOCAxMTE0LjksMjc2LjggMTExNi40LDI3NS4zIDExMTYuNCwyNTguOCAxMTMxLjQsMjU4LjggMTEzMS40LDI3Ni44IDExNDcuNCwyNzYuOCAxMTQ3LjQsMjkwLjggMTEzMS40LDI5MC44ICIKICAgICAgICAgaWQ9InBvbHlnb241IiAvPgogICAgICA8cG9seWdvbgogICAgICAgICBjbGFzcz0ic3QwIgogICAgICAgICBwb2ludHM9IjExODYuNCwyOTAuOCAxMTg2LjQsMzA3LjggMTE3MS40LDMwNy44IDExNzEuNCwyOTAuOCAxMTU1LjQsMjkwLjggMTE1NS40LDI3Ni44IDExNzEuNCwyNzYuOCAxMTcxLjQsMjU4LjggMTE4Ni40LDI1OC44IDExODYuNCwyNzUuMyAxMTg3LjksMjc2LjggMTIwMy40LDI3Ni44IDEyMDMuNCwyOTAuOCAiCiAgICAgICAgIGlkPSJwb2x5Z29uNiIgLz4KICAgICAgPHBhdGgKICAgICAgICAgY2xhc3M9InN0MCIKICAgICAgICAgZD0ibSAxMTQyLjMsMTU2LjkgYyAyLDMgLTkuMywxNS45IC0xMS4xLDE5LjIgLTUuMiw5LjggLTEuNywxNS40IDIuMiwyNC43IC0xMS4zLC0xLjcgLTIxLjgsLTAuMyAtMzMsMSAyLjUsLTIxLjUgMTQuNiwtNTIuOCA0MS45LC00NC45IHoiCiAgICAgICAgIGlkPSJwYXRoNiIgLz4KICAgIDwvZz4KICA8L2c%2BCjwvc3ZnPgo%3D",
       "href": "https://github.com/ggml-org/llama.cpp",
       "officialProgramBadge": false,
-      "sha256": "7ad2d42449b624e4f190e2ff83ad64725499b073fb418f687850dc1bf7b4bea3"
+      "logoAsset": {
+        "sourceUrl": "https://raw.githubusercontent.com/ggml-org/llama.cpp/master/media/llama1-icon.svg",
+        "mimeType": "image/svg+xml",
+        "path": "assets/stack-logo-sources/llamacpp.svg",
+        "sha256": "3613677483c2bd701c3205fafe1b93345b7c66f79c829b733a68137d35e142d9"
+      },
+      "sha256": "db97751d95bd7a715b818755c96bbbae8065ee6c71784a0e52bbd3c60ab76459",
+      "publishedAsset": "assets/stack-llamacpp-logo.svg",
+      "publishedAssetSha256": "db97751d95bd7a715b818755c96bbbae8065ee6c71784a0e52bbd3c60ab76459"
     },
     {
       "id": "hindsight",
       "label": "Hindsight",
       "group": "stack",
-      "source": "https://img.shields.io/badge/Hindsight-0D1117?style=flat-square",
+      "source": "https://img.shields.io/badge/Hindsight-0D1117?style=flat-square&logo=data%3Aimage%2Fjpeg%3Bbase64%2C%2F9j%2F2wCEAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDIBCQkJDAsMGA0NGDIhHCEyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMv%2FAABEIAEAAQAMBIgACEQEDEQH%2FxAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29%2Fj5%2BgEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4%2BTl5ufo6ery8%2FT19vf4%2Bfr%2F2gAMAwEAAhEDEQA%2FAPn%2Bip7S0uL66S2tYJbieQ4SKJCzOfQAcmtc%2BCfFeT%2FxS%2Btf%2BAEv%2FwATQBg0Vo6loOr6Okb6npV9ZLISENzbvGGI643AZrOoAKKK0tO0DV9XjeTTNKv71YyA5tbZ5Qp9yoOKAM2it7%2FhCfFf%2FQsa1%2F4AS%2F8AxNZF3aT2VzJbXUEkE8bbZIpVKsh9CDyDQB1Pwr%2F5Kh4e%2FwCvofyNdN8RviD4t0r4ha3Y2OvXlvaw3G2OJHwqjA4Fcz8K%2FwDkqHh7%2Fr7H8jS%2FFb%2FkqPiH%2Fr6%2F9lFAGVqvibxF4r8i31PUbvUTES0SP8xUkc4A%2BlY0kUkLlJUZHXgqwwR%2BFaXhrWJPD%2FiXTtXizutLhJSB%2FEoPI%2FEZH416X8dtCtv7V0%2Fxdpi77DWIFLSpypkCgg%2B25Mf98mgDyKKJ5nEcasznoqjJP0ra0nxP4j8KrPbaXqV3p%2B9gZY4ztyR0yDXdfBbSILa71bxnqMTfYtDtnkiJ4DS7ScD1IXPHqy15trGq3WuaxeanevvuLqVpZCOmSeg9h0FAHpXw1%2BIHizVviJotjf69eXFrNMVkid8qw2sea5T4n%2F8AJTfEX%2FX69T%2FCT%2Fkqnh%2F%2FAK%2BD%2FwCgNUHxP%2F5Kb4i%2F6%2FXoAf8ACv8A5Kh4e%2F6%2Bx%2FI0vxW%2F5Kj4h%2F6%2Bv%2FZRSfCz%2Fkp%2Fh%2F8A6%2Bh%2FI1vfEnwV4o1H4i65eWXh7U7i2luN0csVq7K4wOQQOaAPMQcV7r8PpV%2BIPwk1bwXdSqb%2FAE8GawH8RXO5fqA%2BVJ7BgK8d1Xw5rehJG%2BraTe2KykiM3MDRhiOuMjmrfhHxXf8AgzX4tY00RNMiMhSUEo6sMYOCD6Hr2oA9O%2BI8sfgT4Y6J4EtJwLy7UXWpAdSOpB9i%2FT2jrxOtrxV4nv8Axf4gn1jUfLE8wUbIgQiAAAAAk8cVDpXhrXNcjkk0nSL2%2BSMhXa2gaQKTyAcCgDoPhJ%2FyVTw%2F%2FwBfB%2F8AQGqD4n%2F8lN8Rf9fr10nwy8GeJ9N%2BJGiXl94f1O2topyZJZbV1VRtbkkjiub%2BJ%2F8AyU3xEf8Ap9egDmbO9udOu47uznkt7iM7kljYqyn1BHSt3%2FhYPjL%2FAKGnWP8AwNk%2Fxrm6KANTVfEmt66kSatq17fLESYxcztIFJ64yeOlZdFFABWppfiXXNDjkj0rV72xSQhnW2naMMR3ODzWXRQB0f8AwsDxjnP%2FAAlOsf8AgbJ%2FjWHd3lzf3Ut1dzyT3ErbpJZWLM59ST1NQUUAf%2F%2FZ",
       "href": "https://github.com/vectorize-io/hindsight",
       "officialProgramBadge": false,
-      "sha256": "27f08f262482bb79b3cf7c1c5ff9641442146c11052c8e859e360149034bf3f4"
+      "logoAsset": {
+        "sourceUrl": "https://github.com/vectorize-io.png?size=64",
+        "mimeType": "image/jpeg",
+        "path": "assets/stack-logo-sources/hindsight.jpg",
+        "sha256": "3955281bb722b20381a999a2e95984d4e1d45127cc205442386d491607afeaf0"
+      },
+      "sha256": "9189a513a798ca1508ed9c0861419755641aeade18014d9b87c19c9fd9f7ed86",
+      "publishedAsset": "assets/stack-hindsight-logo.svg",
+      "publishedAssetSha256": "9189a513a798ca1508ed9c0861419755641aeade18014d9b87c19c9fd9f7ed86"
     },
     {
       "id": "honcho",
       "label": "Honcho",
       "group": "stack",
-      "source": "https://img.shields.io/badge/Honcho-0D1117?style=flat-square",
+      "source": "https://img.shields.io/badge/Honcho-0D1117?style=flat-square&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgOTk1LjczIDE2My4zMiI%2BCiAgPGRlZnM%2BCiAgICA8c3R5bGU%2BCiAgICAgIC5jbHMtMSB7CiAgICAgICAgbWFzazogdXJsKCNtYXNrKTsKICAgICAgfQoKICAgICAgLmNscy0yIHsKICAgICAgICBmaWxsOiAjRTYzNDJFOwogICAgICB9CgogICAgICAuY2xzLTIsIC5jbHMtMyB7CiAgICAgICAgc3Ryb2tlLXdpZHRoOiAwcHg7CiAgICAgIH0KCiAgICAgIC5jbHMtMyB7CiAgICAgICAgZmlsbDogI2ZmZjsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxtYXNrIGlkPSJtYXNrIiB4PSItMTAuNzgiIHk9Ii0yNC4xNCIgd2lkdGg9IjExNC44OCIgaGVpZ2h0PSIxOTguMSIgbWFza1VuaXRzPSJ1c2VyU3BhY2VPblVzZSI%2BCiAgICAgIDxyZWN0IGNsYXNzPSJjbHMtMyIgeD0iLTEwLjc4IiB5PSItMjQuMTQiIHdpZHRoPSIxMTQuODgiIGhlaWdodD0iMTk4LjEiLz4KICAgIDwvbWFzaz4KICA8L2RlZnM%2BCiAgPGcgY2xhc3M9ImNscy0xIj4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTMwLjA1LDg0LjI2czAsMC0uMDEuMDFoMHMwLDAsLjAxLS4wMVoiLz4KICA8L2c%2BCiAgPGc%2BCiAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xOTMuMDEsMy4xOXY1Ni40MWgtMzkuNThWMy4xOWgtNDguODJjLS4xNywwLS4zNCwwLS41MSwwLTI3LjgyLDAtNTMuNzQsMTQuOS02Ny43OCwzOC45MS02LjIyLDMuNzgtMTAuNDIsNi40Mi0xMC41MSw2LjQ2LTEyLjEyLDYuNjEtMTguMTcsMTIuOTEtMjEuMTQsMTcuOS0yLjMxLjA0LTQuMywxLjc1LTQuNjMsNC4xMS0uMzcsMi42LDEuNDUsNS4wMiw0LjA2LDUuMzksMi42MS4zNyw1LjAyLTEuNDUsNS4zOS00LjA2LjE5LTEuMzQtLjIxLTIuNjQtLjk5LTMuNjIsNC4zOS03LjA4LDEzLjY1LTEyLjkxLDE5LjMyLTE2LC45OC0uNTMsNTUuOS0zMy44LDYwLjAyLTMyLjk4LjY5LjE0LDEuNjkuNTEsMi40OCwyLjE0LDIuMTcsNC41MS0xNy44MiwxNy44Ny0yMS45LDIwLjMxLTMuOSwyLjM0LTcuMzQsNC44My0xMC4zMiw3LjQ5LTYuMzEsNS42Mi0xMC41MiwxMS45My0xMi41NiwxOC44NS0xLjIzLDQuMTgtNC43NCwxNi4xOS0xMy4yNSwxOS4xOC0uNi0xLjM0LTEuODItMi4zOS0zLjM3LTIuNzEtMi41OC0uNTQtNS4xMSwxLjEyLTUuNjQsMy43LS41MSwyLjQ0Ljk0LDQuODMsMy4yOCw1LjU0LDUuODcsMzguMDgsMzguNDgsNjYuMzEsNzcuNSw2Ni4zM3YuMDNoNDkuMzZ2LTY1Ljk2aDM5LjU4djY1Ljk2aDQ5LjM2VjMuMTloLTQ5LjM2Wk02MC4wMiw1My4yMmMtLjE4LDIuNDQtLjc1LDUuMjQtMi4xMiw3LjA3LTEuNDUsMS45Mi00LjIsMy41NS02LjY2LDQuNywxLjk1LTQuMTksNC44OS04LjEyLDguNzktMTEuNzdaTTEwNC4wNywxMDcuNzFoLTE5LjM1Yy0yLjA2LDAtMy43NCwxLjY3LTMuNzQsMy43NCwwLDEuMDMuNDIsMS45NywxLjEsMi42NC42OC42OCwxLjYxLDEuMDksMi42NCwxLjA5aDE5LjM1djQwLjY5Yy0zNi45My0uMDEtNjcuNzktMjYuNzQtNzMuMzMtNjIuNzkuNTctLjQxLDEuMDQtLjk0LDEuMzktMS41Nyw3LjA1LTIuNTIsMTIuMzgtNiwxNy4xNC0yMS4xNiwyLjU2LS44OSw4LjkzLTMuNDMsMTIuMDEtNy41MiwzLjEtNC4xMSwzLjE0LTEwLjUzLDMuMDEtMTMuMiwxLjk0LTEuNDgsNC4wNS0yLjksNi4zMy00LjI2LDEzLjAzLTcuOCwyNy4wOS0xOC40MiwyMy41My0yNS43OC0xLjE3LTIuNDMtMy4wNi0zLjk3LTUuNDYtNC40NC00LjUxLS44OS0yNy4wNywxMS44NC00My44OCwyMS44NCwxMy45Mi0xOC40MywzNS44OC0yOS41Nyw1OS4yNy0yOS41OHYxMDAuM1oiLz4KICAgIDxlbGxpcHNlIGNsYXNzPSJjbHMtMiIgY3g9Ijc5LjA5IiBjeT0iNjkuMTIiIHJ4PSI4LjA4IiByeT0iMTIuNTMiLz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTM2OS4xOCw3LjA1YzEwLjM5LDQuNywxNy45MywxMi44OSwyMi42MywyNC41Nyw0LjcsMTEuNjgsNy4wNSwyOC4zNiw3LjA1LDUwLjA0cy0yLjM1LDM4LjM3LTcuMDUsNTAuMDRjLTQuNywxMS42OC0xMi4yNSwxOS44Ny0yMi42MywyNC41Ny0xMC4zOSw0LjctMjQuOTEsNy4wNS00My41Niw3LjA1cy0zMi45NS0yLjM1LTQzLjMzLTcuMDVjLTEwLjM5LTQuNy0xNy45My0xMi44OS0yMi42My0yNC41Ny00LjctMTEuNjgtNy4wNS0yOC4zNi03LjA1LTUwLjA0czIuMzUtMzguMzYsNy4wNS01MC4wNGM0LjctMTEuNjgsMTIuMjQtMTkuODYsMjIuNjMtMjQuNTcsMTAuMzktNC43LDI0LjgzLTcuMDUsNDMuMzMtNy4wNXMzMy4xNywyLjM1LDQzLjU2LDcuMDVaTTMxMi41NCw0MC4zOGMtMi45NiwyLjUtNS4wNCw2LjktNi4yNiwxMy4xOS0xLjIyLDYuMjktMS44MiwxNS42Ni0xLjgyLDI4LjA5cy42LDIxLjgsMS44MiwyOC4wOWMxLjIxLDYuMjksMy4zLDEwLjY5LDYuMjYsMTMuMTlzNy4zMSwzLjc1LDEzLjA4LDMuNzUsMTAuMTItMS4yNSwxMy4wOC0zLjc1LDUuMDQtNi45LDYuMjYtMTMuMTljMS4yMS02LjI5LDEuODItMTUuNjYsMS44Mi0yOC4wOXMtLjYxLTIxLjgtMS44Mi0yOC4wOWMtMS4yMi02LjI5LTMuMy0xMC42OS02LjI2LTEzLjE5cy03LjMyLTMuNzUtMTMuMDgtMy43NS0xMC4xMiwxLjI1LTEzLjA4LDMuNzVaIi8%2BCiAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik01NTMuMzEsMTQzLjA4YzAsNS42MS0xLjQ0LDkuODYtNC4zMiwxMi43NC0yLjg4LDIuODgtNy4xMyw0LjMyLTEyLjc0LDQuMzJoLTE4Ljg4Yy00LjcsMC04LjMtMS4wNi0xMC44LTMuMTgtMi41LTIuMTItNS4yNy01Ljg0LTguMy0xMS4xNWwtMzQuMTItNTMuOTFjLTMuNzktNi44Mi03LjI4LTE1Ljc3LTEwLjQ2LTI2Ljg0aC0xLjU5YzEuNTEsMTAuNjIsMi4yNywyMC4xNywyLjI3LDI4LjY2djY2LjQyaC00NS40OVYyMC4yNGMwLTUuNjEsMS40NC05Ljg2LDQuMzItMTIuNzRzNy4xMy00LjMyLDEyLjc0LTQuMzJoMTguODhjNC43LDAsOC4yNiwxLjA2LDEwLjY5LDMuMTgsMi40MiwyLjEzLDUuMjMsNS44NCw4LjQyLDExLjE1bDMyLjc2LDUxLjQxYzQuMDksNy4yOCw4LjExLDE2LjIzLDEyLjA2LDI2Ljg0aDEuNTljLTEuMzYtMTEuNTItMi4wNS0yMS0yLjA1LTI4LjQzbC0uMjMtNjQuMTVoNDUuMjd2MTM5Ljg5WiIvPgogICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNjYyLjcyLDEuODJjNy4xMy45MSwxNC44NiwyLjUsMjMuMiw0Ljc4bC0zLjY0LDM1Ljk0Yy0zLjQ5LDAtNi4xNC0uMDctNy45Ni0uMjNsLTQwLjAzLS4yM2MtNS4zMSwwLTkuMzMsMS4xLTEyLjA2LDMuMy0yLjczLDIuMi00LjYzLDYuMDctNS42OSwxMS42LTEuMDYsNS41NC0xLjU5LDEzLjc2LTEuNTksMjQuNjhzLjUzLDE5LjE1LDEuNTksMjQuNjhjMS4wNiw1LjU0LDIuOTYsOS40LDUuNjksMTEuNiwyLjczLDIuMiw2Ljc1LDMuMywxMi4wNiwzLjMsMTIuNDMsMCwyMi4zMy0uMTEsMjkuNjgtLjM0LDcuMzUtLjIzLDE0LjU5LS43MiwyMS43Mi0xLjQ4bDMuNjQsMzUuOTRjLTguMDQsMi43My0xNi4xNSw0LjY2LTI0LjM0LDUuOC04LjE5LDEuMTQtMTguNDMsMS43MS0zMC43MSwxLjcxLTE3LjU5LDAtMzEuNTQtMi42Mi00MS44NS03Ljg1LTEwLjMxLTUuMjMtMTcuNzgtMTMuNzItMjIuNDEtMjUuNDgtNC42My0xMS43NS02Ljk0LTI3LjcxLTYuOTQtNDcuODhzMi4zMS0zNi4xMyw2Ljk0LTQ3Ljg4YzQuNjItMTEuNzUsMTIuMDktMjAuMjQsMjIuNDEtMjUuNDgsMTAuMzEtNS4yMywyNC4yNi03Ljg1LDQxLjg1LTcuODUsMTEuODMsMCwyMS4zLjQ1LDI4LjQzLDEuMzZaIi8%2BCiAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik04MzkuMjQsMy4xOHYxNTYuOTVoLTQ5LjM2di02NS45N2gtMzkuNTh2NjUuOTdoLTQ5LjM2VjMuMThoNDkuMzZ2NTYuNDFoMzkuNThWMy4xOGg0OS4zNloiLz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTk2Ni4wNSw3LjA1YzEwLjM5LDQuNywxNy45MywxMi44OSwyMi42MywyNC41Nyw0LjcsMTEuNjgsNy4wNSwyOC4zNiw3LjA1LDUwLjA0cy0yLjM1LDM4LjM3LTcuMDUsNTAuMDRjLTQuNywxMS42OC0xMi4yNSwxOS44Ny0yMi42MywyNC41Ny0xMC4zOSw0LjctMjQuOTEsNy4wNS00My41Niw3LjA1cy0zMi45NS0yLjM1LTQzLjMzLTcuMDVjLTEwLjM5LTQuNy0xNy45My0xMi44OS0yMi42My0yNC41Ny00LjctMTEuNjgtNy4wNS0yOC4zNi03LjA1LTUwLjA0czIuMzUtMzguMzYsNy4wNS01MC4wNGM0LjctMTEuNjgsMTIuMjQtMTkuODYsMjIuNjMtMjQuNTcsMTAuMzktNC43LDI0LjgzLTcuMDUsNDMuMzMtNy4wNXMzMy4xNywyLjM1LDQzLjU2LDcuMDVaTTkwOS40MSw0MC4zOGMtMi45NiwyLjUtNS4wNCw2LjktNi4yNiwxMy4xOS0xLjIyLDYuMjktMS44MiwxNS42Ni0xLjgyLDI4LjA5cy42LDIxLjgsMS44MiwyOC4wOWMxLjIxLDYuMjksMy4zLDEwLjY5LDYuMjYsMTMuMTlzNy4zMSwzLjc1LDEzLjA4LDMuNzUsMTAuMTItMS4yNSwxMy4wOC0zLjc1LDUuMDQtNi45LDYuMjYtMTMuMTljMS4yMS02LjI5LDEuODItMTUuNjYsMS44Mi0yOC4wOXMtLjYxLTIxLjgtMS44Mi0yOC4wOWMtMS4yMi02LjI5LTMuMy0xMC42OS02LjI2LTEzLjE5cy03LjMyLTMuNzUtMTMuMDgtMy43NS0xMC4xMiwxLjI1LTEzLjA4LDMuNzVaIi8%2BCiAgPC9nPgo8L3N2Zz4K",
       "href": "https://github.com/plastic-labs/honcho",
       "officialProgramBadge": false,
-      "sha256": "ca282dd7ec9599e7c672afa042814fa4b261b341263c61546708663ae8698262"
+      "logoAsset": {
+        "sourceUrl": "https://raw.githubusercontent.com/plastic-labs/honcho/main/docs/logo/honcho-dark.svg",
+        "mimeType": "image/svg+xml",
+        "path": "assets/stack-logo-sources/honcho.svg",
+        "sha256": "b8379d242dbbbd3e04e3c802a4f8fdb91e22f69da4c1f3626c9c0ce72256f4a8",
+        "presentation": {
+          "path": "assets/stack-logo-presentations/honcho.svg",
+          "color": "#E6342E",
+          "sha256": "c2902bc84c1632aa5d540c0d4ecf0eb02cdc983fa3ee084404e483e9c7a6736c"
+        }
+      },
+      "sha256": "bbb82fdc7718a08024e9401bb39ff6153fd9056c80edf47685b4037b4672a0fd",
+      "publishedAsset": "assets/stack-honcho-logo.svg",
+      "publishedAssetSha256": "bbb82fdc7718a08024e9401bb39ff6153fd9056c80edf47685b4037b4672a0fd"
     },
     {
       "id": "docker",
       "label": "Docker",
       "group": "stack",
-      "source": "https://img.shields.io/badge/Docker-0D1117?style=flat-square&logo=docker&logoColor=E6342E",
+      "source": "https://img.shields.io/badge/Docker-0D1117?style=flat-square&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsPSIjRTYzNDJFIj48dGl0bGU%2BRG9ja2VyPC90aXRsZT48cGF0aCBkPSJNMTMuOTgzIDExLjA3OGgyLjExOWEuMTg2LjE4NiAwIDAwLjE4Ni0uMTg1VjkuMDA2YS4xODYuMTg2IDAgMDAtLjE4Ni0uMTg2aC0yLjExOWEuMTg1LjE4NSAwIDAwLS4xODUuMTg1djEuODg4YzAgLjEwMi4wODMuMTg1LjE4NS4xODVtLTIuOTU0LTUuNDNoMi4xMThhLjE4Ni4xODYgMCAwMC4xODYtLjE4NlYzLjU3NGEuMTg2LjE4NiAwIDAwLS4xODYtLjE4NWgtMi4xMThhLjE4NS4xODUgMCAwMC0uMTg1LjE4NXYxLjg4OGMwIC4xMDIuMDgyLjE4NS4xODUuMTg1bTAgMi43MTZoMi4xMThhLjE4Ny4xODcgMCAwMC4xODYtLjE4NlY2LjI5YS4xODYuMTg2IDAgMDAtLjE4Ni0uMTg1aC0yLjExOGEuMTg1LjE4NSAwIDAwLS4xODUuMTg1djEuODg3YzAgLjEwMi4wODIuMTg1LjE4NS4xODZtLTIuOTMgMGgyLjEyYS4xODYuMTg2IDAgMDAuMTg0LS4xODZWNi4yOWEuMTg1LjE4NSAwIDAwLS4xODUtLjE4NUg4LjFhLjE4NS4xODUgMCAwMC0uMTg1LjE4NXYxLjg4N2MwIC4xMDIuMDgzLjE4NS4xODUuMTg2bS0yLjk2NCAwaDIuMTE5YS4xODYuMTg2IDAgMDAuMTg1LS4xODZWNi4yOWEuMTg1LjE4NSAwIDAwLS4xODUtLjE4NUg1LjEzNmEuMTg2LjE4NiAwIDAwLS4xODYuMTg1djEuODg3YzAgLjEwMi4wODQuMTg1LjE4Ni4xODZtNS44OTMgMi43MTVoMi4xMThhLjE4Ni4xODYgMCAwMC4xODYtLjE4NVY5LjAwNmEuMTg2LjE4NiAwIDAwLS4xODYtLjE4NmgtMi4xMThhLjE4NS4xODUgMCAwMC0uMTg1LjE4NXYxLjg4OGMwIC4xMDIuMDgyLjE4NS4xODUuMTg1bS0yLjkzIDBoMi4xMmEuMTg1LjE4NSAwIDAwLjE4NC0uMTg1VjkuMDA2YS4xODUuMTg1IDAgMDAtLjE4NC0uMTg2aC0yLjEyYS4xODUuMTg1IDAgMDAtLjE4NC4xODV2MS44ODhjMCAuMTAyLjA4My4xODUuMTg1LjE4NW0tMi45NjQgMGgyLjExOWEuMTg1LjE4NSAwIDAwLjE4NS0uMTg1VjkuMDA2YS4xODUuMTg1IDAgMDAtLjE4NC0uMTg2aC0yLjEyYS4xODYuMTg2IDAgMDAtLjE4Ni4xODZ2MS44ODdjMCAuMTAyLjA4NC4xODUuMTg2LjE4NW0tMi45MiAwaDIuMTJhLjE4NS4xODUgMCAwMC4xODQtLjE4NVY5LjAwNmEuMTg1LjE4NSAwIDAwLS4xODQtLjE4NmgtMi4xMmEuMTg1LjE4NSAwIDAwLS4xODQuMTg1djEuODg4YzAgLjEwMi4wODIuMTg1LjE4NS4xODVNMjMuNzYzIDkuODljLS4wNjUtLjA1MS0uNjcyLS41MS0xLjk1NC0uNTEtLjMzOC4wMDEtLjY3Ni4wMy0xLjAxLjA4Ny0uMjQ4LTEuNy0xLjY1My0yLjUzLTEuNzE2LTIuNTY2bC0uMzQ0LS4xOTktLjIyNi4zMjdjLS4yODQuNDM4LS40OS45MjItLjYxMiAxLjQzLS4yMy45Ny0uMDkgMS44ODIuNDAzIDIuNjYxLS41OTUuMzMyLTEuNTUuNDEzLTEuNzQ0LjQySC43NTFhLjc1MS43NTEgMCAwMC0uNzUuNzQ4IDExLjM3NiAxMS4zNzYgMCAwMC42OTIgNC4wNjJjLjU0NSAxLjQyOCAxLjM1NSAyLjQ4IDIuNDEgMy4xMjQgMS4xOC43MjMgMy4xIDEuMTM3IDUuMjc1IDEuMTM3Ljk4My4wMDMgMS45NjMtLjA4NiAyLjkzLS4yNjZhMTIuMjQ4IDEyLjI0OCAwIDAwMy44MjMtMS4zODljLjk4LS41NjcgMS44Ni0xLjI4OCAyLjYxLTIuMTM2IDEuMjUyLTEuNDE4IDEuOTk4LTIuOTk3IDIuNTUzLTQuNGguMjIxYzEuMzcyIDAgMi4yMTUtLjU0OSAyLjY4LTEuMDA5LjMwOS0uMjkzLjU1LS42NS43MDctMS4wNDZsLjA5OC0uMjg4WiIvPjwvc3ZnPg%3D%3D",
       "href": "https://www.docker.com",
       "officialProgramBadge": false,
-      "sha256": "c3ac8e9aefda5746623b9edca203f4810adbf76dc491a75dcec1d6a1ff81391d"
+      "logoAsset": {
+        "sourceUrl": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/docker.svg",
+        "mimeType": "image/svg+xml",
+        "path": "assets/stack-logo-sources/docker.svg",
+        "sha256": "65571291c261ef869c31540a38f3ca0f0ee3bb73f179c172211c8860f19a6359",
+        "presentation": {
+          "path": "assets/stack-logo-presentations/docker.svg",
+          "color": "#E6342E",
+          "sha256": "3f495e3f9a762ff910cf3b4aee78181713896d051de988e0eb0c68a9e374d4ed"
+        }
+      },
+      "sha256": "7e5a08d8934b12751ca381272220cf2d891eb376964aca67131958d1940a9118",
+      "publishedAsset": "assets/stack-docker-logo.svg",
+      "publishedAssetSha256": "7e5a08d8934b12751ca381272220cf2d891eb376964aca67131958d1940a9118"
     },
     {
       "id": "ecloud",
       "label": "E2B",
       "group": "stack",
-      "source": "https://img.shields.io/badge/E2B-0D1117?style=flat-square",
+      "source": "https://img.shields.io/badge/E2B-0D1117?style=flat-square&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB3aWR0aD0iMjY4IiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDI2OCAxMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI%2BPG1ldGFkYXRhPkUyQiBzaXplLXNwZWNpZmljIGxvZ290eXBlIGFydHdvcms8L21ldGFkYXRhPjxwYXRoIGQ9Ik05Ny4yNTE4IDI5Ljk5NzZWNDcuODA3Nkg0OS4xMDgxQzQ4LjUwOTMgNDcuODA3NiA0OC4wMjM5IDQ4LjI5MyA0OC4wMjM5IDQ4Ljg5MThWNTAuMDA2QzQ4LjAyMzkgNTAuNjA0OCA0OC41MDkzIDUxLjA5MDIgNDkuMTA4MSA1MS4wOTAySDk3LjI1MThWNjguOTAwMkg0OS4xMDgxQzQ4LjUwOTMgNjguOTAwMiA0OC4wMjM5IDY5LjM4NTYgNDguMDIzOSA2OS45ODQ0VjcxLjA5ODZDNDguMDIzOSA3MS42OTc0IDQ4LjUwOTMgNzIuMTgyOCA0OS4xMDgxIDcyLjE4MjhIOTcuMjUxOFY4OS45OTI2SDQxLjYxNjJDMzUuMzE5IDg5Ljk5MjUgMzAuMjE0MiA4NC44ODc0IDMwLjIxNDEgNzguNTkwMlY0MS4zOTk3QzMwLjIxNDIgMzUuMTAyNSAzNS4zMTkgMjkuOTk3NiA0MS42MTYyIDI5Ljk5NzZIOTcuMjUxOFoiIGZpbGw9IiNFNjM0MkUiLz48cGF0aCBkPSJNMTU2LjA2NiAyOS45OTgxQzE2Mi4zNjMgMjkuOTk4MiAxNjcuNDY4IDM1LjEwMzIgMTY3LjQ2OCA0MS40MDA0VjU3Ljk5MUMxNjcuNDY4IDY0LjAyMjkgMTYyLjU3OCA2OC45MTI4IDE1Ni41NDYgNjguOTEyOUgxNDguNzQxQzE0OC42ODcgNjguOTA0NSAxNDguNjMxIDY4LjkwMDIgMTQ4LjU3NCA2OC45MDAySDExOS4yMjdDMTE4LjYyOCA2OC45MDAyIDExOC4xNDMgNjkuMzg1NyAxMTguMTQzIDY5Ljk4NDRWNzEuMDk4M0MxMTguMTQzIDcxLjY5NzEgMTE4LjYyOCA3Mi4xODI1IDExOS4yMjcgNzIuMTgyNUgxNjcuNDM5Vjg5Ljk5MjZIMTAwLjMzM1Y2MS45OTk3QzEwMC4zMzMgNTUuOTY3NyAxMDUuMjIzIDUxLjA3NzcgMTExLjI1NSA1MS4wNzc3SDExOS4wNjJDMTE5LjExNiA1MS4wODYgMTE5LjE3MSA1MS4wOTAyIDExOS4yMjcgNTEuMDkwMkgxNDguNTc0QzE0OS4xNzMgNTEuMDkwMSAxNDkuNjU5IDUwLjYwNDcgMTQ5LjY1OSA1MC4wMDZWNDguODkyM0MxNDkuNjU5IDQ4LjI5MzYgMTQ5LjE3MyA0Ny44MDgyIDE0OC41NzQgNDcuODA4MUgxMDAuNDMxVjI5Ljk5ODFIMTU2LjA2NloiIGZpbGw9IiNFNjM0MkUiLz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTIyNi4yNTQgMjkuOTk3NkMyMzIuNTUxIDI5Ljk5NzcgMjM3LjY1NiAzNS4xMDI1IDIzNy42NTYgNDEuMzk5N1Y3OC41OTAyQzIzNy42NTYgODQuODg3NCAyMzIuNTUxIDg5Ljk5MjQgMjI2LjI1NCA4OS45OTI2SDE3MC42MDlWMjkuOTk3NkgyMjYuMjU0Wk0xODkuNTAzIDY4LjkwMDJDMTg4LjkwNCA2OC45MDAyIDE4OC40MTkgNjkuMzg1NiAxODguNDE5IDY5Ljk4NDRWNzEuMDk4NkMxODguNDE5IDcxLjY5NzQgMTg4LjkwNCA3Mi4xODI4IDE4OS41MDMgNzIuMTgyOEgyMTguNzYyQzIxOS4zNiA3Mi4xODI3IDIxOS44NDYgNzEuNjk3MyAyMTkuODQ2IDcxLjA5ODZWNjkuOTg0NEMyMTkuODQ2IDY5LjM4NTcgMjE5LjM2IDY4LjkwMDMgMjE4Ljc2MiA2OC45MDAySDE4OS41MDNaTTE4OS41MDMgNDcuODA3NkMxODguOTA0IDQ3LjgwNzYgMTg4LjQxOSA0OC4yOTMgMTg4LjQxOSA0OC44OTE4VjUwLjAwNkMxODguNDE5IDUwLjYwNDggMTg4LjkwNCA1MS4wOTAyIDE4OS41MDMgNTEuMDkwMkgyMTguNzYyQzIxOS4zNiA1MS4wOTAxIDIxOS44NDYgNTAuNjA0NyAyMTkuODQ2IDUwLjAwNlY0OC44OTE4QzIxOS44NDYgNDguMjkzMSAyMTkuMzYgNDcuODA3NyAyMTguNzYyIDQ3LjgwNzZIMTg5LjUwM1oiIGZpbGw9IiNFNjM0MkUiLz48L3N2Zz4K",
       "href": "https://e2b.dev",
       "officialProgramBadge": false,
-      "sha256": "fda861aed0f918374b485b312af2f1a6d278129bdc56dbf102238585fef82f7c"
+      "logoAsset": {
+        "sourceUrl": "https://e2b.dev/brand/e2b-logotype-black-l.svg",
+        "mimeType": "image/svg+xml",
+        "path": "assets/stack-logo-sources/ecloud.svg",
+        "sha256": "005139fc93c7811fa097c1aee13373425bd9517100609a52be6783bb5e717844",
+        "presentation": {
+          "path": "assets/stack-logo-presentations/ecloud.svg",
+          "color": "#E6342E",
+          "sha256": "8b7b4b15b07476eb2c9c96a2ec22f97f76abb5c55a41c46910dee91269cc7f32"
+        }
+      },
+      "sha256": "cd78b223f845b91aec3e4e00f45288c1c1acc728e4406f4276ac380cbfc9bd2d",
+      "publishedAsset": "assets/stack-ecloud-logo.svg",
+      "publishedAssetSha256": "cd78b223f845b91aec3e4e00f45288c1c1acc728e4406f4276ac380cbfc9bd2d"
     },
     {
       "id": "comfy",
       "label": "ComfyUI",
       "group": "stack",
-      "source": "https://img.shields.io/badge/ComfyUI-0D1117?style=flat-square&logo=comfyui&logoColor=E6342E",
+      "source": "https://img.shields.io/badge/ComfyUI-0D1117?style=flat-square&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC%2BaJAAADb0lEQVR4nOyZS0wTWxiA2%2BnQTttLKXBfUO4l3NtQAlzgRhJe8gxGE2J07daNC91pogvDghVhw4KYGBOCwcTgRknEBSLKo4KNmvhAE%2BQVoIWC8ra1086MUaQa0J7%2B%2F%2BkwNplv1%2BT%2F5%2Fzf6Tkz%2F5lhs9IcmniGUboAWlQBpVEFlEYVUBpVQGlUAaWJewFW7gFyC0z2HI5ltcRISaOZnQo8Gd0CXV9GAXsO19SamVtgBmVdu%2BJtaXRHH6%2BVqZ3%2BJ5vruJWdZAVPkChKtQXP11aEKOPl2gNNrZmI6j%2FNKLAiWQTsDi6%2FCLZywoyP%2BaOffrkESqoS0bmjgxugeFkEymgEhjZB8bEX0Bu0xeVIAb9PeDyy77dRo4lJs%2BmZnamob7AajTrcpVzOTT4ggVKoBFJ%2FY882Zhw6mpyQQH5ORcNA7zo0BS%2BQ%2Bivbedth%2B8uAvsIuvB7%2Bzs1VaBZ%2BD5w%2Bnx7D6n3vhXOnpv0%2BEZqI%2FAcMnPbIsWRimChIweCXNS19%2Frk3Zm0l5Ly%2F0d7m9czziEqQAuU1FpOZsFP9PuF49atFdxA3RJQgl1B9g5UY43Juyl09UoBlNdX1ScSw4XuwZyoOjMB%2F%2F5sTk8hrD%2FpMxYERKI2iU5idDsxOB1AlwcAIVNSR109fD%2FiOjgMskJyiyys0EcP6etawJcEAC5TXWBiG0Dh4F%2FixZz6KqgCABUqrLMSYR%2FuyfbcBC5RUkncw9FBCA0zAnsP9kaaPHCOK0sMHP6vAwTry%2BgkFJQFwpqUF1gtV1JIF9Aameyh3aZHQRHjm%2BLZmz%2BT4B1ABewG8F2J0GtdkUYI%2BZqfQRTffUPYyFKK6CKAaUdD4%2FeB%2BPQJ%2F2vS2TNoTBWw6L7UsiCLszBoBPiAuLdC2q7A9cL19eWRwI%2BtfbvungWPOXEjP%2BBs5i09dW4gj2C7AB5qZicDMxNcurbDYfOLk77ixh%2FtjcLel3ZEHSn9B5zr7we8g9kIlkJKqy84z4nI98%2FzUmxj021QCJZUWrQb5RmigNzbtKpVAWQ35ufZdJEnq7npHM3QYKgGTCZl%2B4%2Brb1y%2F8NEOHoRLo6lgOv%2FaJklBI6rzsbb44RzPut9B%2BYnLkG2sPWyN8wxMESdpxXF8NDd5dd89hXmD9CLm%2Bke0bcf%2BdWBVQGlVAaVQBpVEFlEYVUJq4F%2FgYAAD%2F%2F2Xz%2FJVkfTxZAAAAAElFTkSuQmCC",
       "href": "https://github.com/Comfy-Org/ComfyUI",
       "officialProgramBadge": false,
-      "sha256": "dfd042890a9684a2775afa0528ce7863d5719ae199e471ad6548668148852ca9"
+      "logoAsset": {
+        "sourceUrl": "https://github.com/Comfy-Org.png?size=64",
+        "mimeType": "image/png",
+        "path": "assets/stack-logo-sources/comfy.png",
+        "sha256": "4adbb12735b2f7c071647abd0529d421927e4d83f9aeb27531500f746c058047"
+      },
+      "sha256": "593a384dc2618bcb9d69850668fba6194d4197743d2c99777d7b14143782c560",
+      "publishedAsset": "assets/stack-comfy-logo.svg",
+      "publishedAssetSha256": "593a384dc2618bcb9d69850668fba6194d4197743d2c99777d7b14143782c560"
     },
     {
       "id": "macos",
@@ -200,6 +332,7 @@
       "source": "https://img.shields.io/badge/macOS-0D1117?style=flat-square&logo=macos&logoColor=E6342E",
       "href": "https://www.apple.com/macos/",
       "officialProgramBadge": false,
+      "logoAsset": null,
       "sha256": "ae1f57e7d2de01b7432c36a0af749fa2f33f7fc6ee6ac3bffc3727bb15d2539f"
     },
     {
@@ -209,6 +342,7 @@
       "source": "https://img.shields.io/badge/Windows-0D1117?style=flat-square",
       "href": "https://www.microsoft.com/windows",
       "officialProgramBadge": false,
+      "logoAsset": null,
       "sha256": "1d68c1f5109ba1ce4ab6f7d86aa6fa3c4687c8a8988c46014e5fddc8195abd49"
     },
     {
@@ -218,6 +352,7 @@
       "source": "https://img.shields.io/badge/Ubuntu-0D1117?style=flat-square&logo=ubuntu&logoColor=E6342E",
       "href": "https://ubuntu.com",
       "officialProgramBadge": false,
+      "logoAsset": null,
       "sha256": "fac6443ff9876ee430a5a7c3b867c13a79fe67856c27f04a6574c3bec602360a"
     },
     {
@@ -227,6 +362,7 @@
       "source": "https://img.shields.io/badge/Omarchy-0D1117?style=flat-square",
       "href": "https://omarchy.org",
       "officialProgramBadge": false,
+      "logoAsset": null,
       "sha256": "cf27be1f296ff5139c9a72865e5eb8cef7eaa3319381fe5fc2b4f761d10e5afb"
     },
     {
@@ -236,6 +372,7 @@
       "source": "https://img.shields.io/badge/OpenAI%20Daybreak%20%C2%B7%20Defensive%20security%20access-0D1117?style=flat-square",
       "href": "https://openai.com/daybreak/",
       "officialProgramBadge": false,
+      "logoAsset": null,
       "sha256": "c26ec73e6d31475eb8cf8a70d1a40cccd783b318e9d6a365d9762e6313d842ab"
     },
     {
@@ -245,6 +382,7 @@
       "source": "https://img.shields.io/badge/Apple%20Developer%20Program%20member-0D1117?style=flat-square",
       "href": "https://developer.apple.com/programs/",
       "officialProgramBadge": false,
+      "logoAsset": null,
       "sha256": "75dd8367456d3c08879826a898ac85cd46b6340a8abc2e29ffff9549954e9672"
     },
     {
@@ -254,6 +392,7 @@
       "source": "https://img.shields.io/badge/NVIDIA%20Developer%20Program-0D1117?style=flat-square",
       "href": "https://developer.nvidia.com/developer-program",
       "officialProgramBadge": false,
+      "logoAsset": null,
       "sha256": "f7003d04342066fae0371e4ae838e90045226e0501ec0875bb3c81a2f6bd8dc0"
     },
     {
@@ -263,6 +402,7 @@
       "source": "https://img.shields.io/badge/SPONSORED%20BY-E2B%20FOR%20STARTUPS-ff3001?style=for-the-badge&labelColor=black",
       "href": "https://e2b.dev/startups",
       "officialProgramBadge": true,
+      "logoAsset": null,
       "sha256": "2a26609d59b546fba1270e949f2fa938742df1f3e333eb15e7fa31bcda2a1a32"
     }
   ]

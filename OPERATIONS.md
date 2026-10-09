@@ -21,7 +21,9 @@ E2B uses the exact official “Sponsored by E2B for Startups” Shields snippet 
 
 ## Scheduled refresh
 
-`.github/workflows/profile-refresh.yml` supports a weekly schedule and manual dispatch. The job's only write permission is `contents: write`; it stages an explicit list of JSON, README, and generated chart files, then commits only when their content changes. It does not run for pull requests, use a personal token, or keep the schedule alive with unrelated commits.
+`.github/workflows/profile-refresh.yml` runs every six hours (00:17, 06:17, 12:17 and 18:17 UTC) and supports manual dispatch. GitHub may delay scheduled runs; this is not a real-time guarantee. The job's only write permission is `contents: write`; it stages an explicit list of JSON, README, and generated chart files, then commits only when their content changes. It does not run for pull requests, use a personal token, or keep the schedule alive with unrelated commits.
+
+The annual calendar remains the validated raw source. Charts select the last six calendar months from its endpoint, clamp month-end dates, and recompute the displayed total. The daily trend uses the same window; public search counts remain all-time. The pinned upstream geometry is fitted through a presentation wrapper. README uses new six-month asset names to avoid stale image caches; previous names remain compatible.
 
 The weekly/manual workflow is enabled in the public `TheAngryPit/TheAngryPit` repository. Its [first manual run](https://github.com/TheAngryPit/TheAngryPit/actions/runs/37697543823) completed installation, public-data refresh, chart generation, tests and a generated-data commit successfully. GitHub may disable scheduled workflows after 60 days of repository inactivity; an owner can run `workflow_dispatch` when needed. A successful first run does not guarantee future scheduled runs.
 

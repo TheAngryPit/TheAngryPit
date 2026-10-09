@@ -9,11 +9,12 @@ import {
   loadProfileData,
   parseContributionCalendar,
   parseProductionContributionCalendar,
+  sixMonthCalendar,
   validateContributions,
   validateMetrics,
 } from '../scripts/data.mjs';
 import { buildCityAddon } from '../scripts/build-city-addon.mjs';
-import { mapContributionCalendar } from '../scripts/city-addon.mjs';
+import { cityLayout, mapContributionCalendar } from '../scripts/city-addon.mjs';
 import { renderProfileAssets } from '../scripts/render.mjs';
 import { readmeDataBlock, readmeSourcesBlock, renderReadmeData } from '../scripts/render-readme-data.mjs';
 import { renderMarkdownSubset, rewritePreviewAssetPaths, selectPreviewContent } from '../scripts/render-preview.mjs';
@@ -97,6 +98,55 @@ test('date validation rejects impossible days and spans a year boundary without 
   ]);
 });
 
+test('six-month view rolls across years, clamps month ends, and recalculates only selected daily counts', () => {
+  for (const [to, expectedFrom] of [
+    ['2026-10-09', '2026-04-09'],
+    ['2027-01-04', '2026-07-04'],
+    ['2024-08-31', '2024-02-29'],
+    ['2025-08-31', '2025-02-28'],
+  ]) {
+    const source = parseContributionCalendar(annualCalendarHtml({ to }), { retrievedAt: `${to}T12:00:00.000Z` });
+    const before = JSON.stringify(source);
+    const view = sixMonthCalendar(source);
+    assert.equal(view.from, expectedFrom);
+    assert.equal(view.to, to);
+    assert.deepEqual(view.days.map(({ date }) => date), dateRange(expectedFrom, to));
+    assert.equal(view.total, source.days.filter(({ date }) => date >= expectedFrom).reduce((sum, day) => sum + day.count, 0));
+    assert.equal(JSON.stringify(source), before, 'annual source must not be mutated');
+    assert.deepEqual(sixMonthCalendar(view), view, 'window selection must be idempotent');
+  }
+});
+
+test('fitted city geometry keeps each bar inside its desktop and mobile plot', async () => {
+  const { contributions } = await loadProfileData();
+  const calendar = mapContributionCalendar(sixMonthCalendar(contributions));
+  const config = JSON.parse(await readFile(new URL('../config/city-addon.json', import.meta.url), 'utf8'));
+  const firstSunday = Math.floor(calendar[0].date.getTime() / 86_400_000) - calendar[0].date.getUTCDay();
+  for (const { plot } of Object.values(config.viewports)) {
+    const { dx, dy, nativeHeight, scaleY } = cityLayout(calendar, plot);
+    const weeks = Math.ceil((calendar.length + calendar[0].date.getUTCDay()) / 7);
+    for (const day of calendar) {
+      const week = Math.floor((Math.floor(day.date.getTime() / 86_400_000) - firstSunday) / 7);
+      const weekday = day.date.getUTCDay();
+      const x = (7 + week - weekday) * dx;
+      const baseY = nativeHeight - (weeks + 7) * dy + (week + weekday) * dy;
+      const barHeight = Math.log10(day.contributionCount / 20 + 1) * 144 + 3;
+      assert.ok(x >= 0 && x + dx * 1.8 <= plot.width);
+      assert.ok((baseY - barHeight) * scaleY >= 0);
+      assert.ok((baseY + dy * 1.8) * scaleY <= plot.height);
+    }
+  }
+});
+
+test('refresh workflow schedules every six hours and retains narrow public-refresh behavior', async () => {
+  const workflow = await readFile(new URL('../.github/workflows/profile-refresh.yml', import.meta.url), 'utf8');
+  assert.match(workflow, /cron: '17 \*\/6 \* \* \*'/);
+  assert.match(workflow, /workflow_dispatch:/);
+  assert.match(workflow, /node scripts\/refresh\.mjs/);
+  assert.match(workflow, /npm test/);
+  assert.doesNotMatch(workflow, /secrets\.|pull_request_target|git add -A/);
+});
+
 test('calendar parser accepts a complete window across New Year', async () => {
   const parsed = parseContributionCalendar(await fixture('year-boundary.html'), { retrievedAt: '2026-01-05T00:00:00.000Z' });
   assert.equal(parsed.from, '2025-12-29');
@@ -138,11 +188,11 @@ test('upstream addon maps every validated day and preserves native Sunday-first 
     const mobile = transforms(rendered['activity-mobile-dark.svg']);
     assert.equal(desktop.length, fixtureData.days.length);
     assert.equal(mobile.length, fixtureData.days.length);
-    assert.match(rendered['activity-dark.svg'], /<g transform="translate\(0 96\)">/);
-    assert.match(rendered['activity-mobile-dark.svg'], /<g transform="translate\(0 86\)">/);
+    assert.match(rendered['activity-dark.svg'], /<g transform="translate\(0 96\) scale\(1 /);
+    assert.match(rendered['activity-mobile-dark.svg'], /<g transform="translate\(0 86\) scale\(1 /);
 
     for (const [points, plotWidth] of [[desktop, 1120], [mobile, 324]]) {
-      const dx = plotWidth / 64;
+      const { dx } = cityLayout(mapContributionCalendar(fixtureData), { width: plotWidth, height: 220 });
       const dy = dx * Math.tan(Math.PI / 6);
       const [sunday, monday, , , , , , nextSunday] = points;
       assert.ok(Math.abs(sunday[0] - 7 * dx) < 0.02);
@@ -204,9 +254,10 @@ test('valid future annual refreshes remain renderable without freezing mutable s
   const outputDir = await mkdtemp(path.join(os.tmpdir(), 'career-profile-future-render-test-'));
   try {
     const rendered = await renderProfileAssets({ contributions: futureContributions, metrics: futureMetrics }, outputDir);
-    assert.ok(rendered['activity-dark.svg'].includes(futureContributions.from));
+    const view = sixMonthCalendar(futureContributions);
+    assert.ok(rendered['activity-dark.svg'].includes(view.from));
     assert.ok(rendered['activity-dark.svg'].includes(futureContributions.to));
-    assert.ok(rendered['activity-dark.svg'].includes(new Intl.NumberFormat('en-US').format(futureContributions.total)));
+    assert.ok(rendered['activity-dark.svg'].includes(new Intl.NumberFormat('en-US').format(view.total)));
     assert.ok(rendered['metrics-dark.svg'].includes(String(metrics.metrics[0].count + 1)));
   } finally {
     await rm(outputDir, { recursive: true, force: true });
@@ -215,21 +266,25 @@ test('valid future annual refreshes remain renderable without freezing mutable s
 
 test('chart regeneration is deterministic and carries the current source dates and totals', async () => {
   const data = await loadProfileData();
+  const view = sixMonthCalendar(data.contributions);
   const outputDir = await mkdtemp(path.join(os.tmpdir(), 'career-profile-render-test-'));
   try {
     const first = await renderProfileAssets(data, outputDir);
     const firstBytes = new Map(await Promise.all(Object.keys(first).map(async (name) => [name, await readFile(path.join(outputDir, name), 'utf8')])));
     const second = await renderProfileAssets(data, outputDir);
     for (const name of Object.keys(second)) assert.equal(second[name], firstBytes.get(name), `${name} changed between identical renders`);
-    assert.match(second['activity-dark.svg'], new RegExp(new Intl.NumberFormat('en-US').format(data.contributions.total)));
-    assert.ok(second['activity-dark.svg'].includes(data.contributions.from));
+    for (const name of Object.keys(second).filter(name => /^(?:activity|metrics)-/.test(name) && !name.includes('-six-months'))) {
+      assert.equal(second[name.replace('.svg', '-six-months.svg')], second[name], 'Visible six-month asset alias must refresh with its compatible name');
+    }
+    assert.match(second['activity-dark.svg'], new RegExp(new Intl.NumberFormat('en-US').format(view.total)));
+    assert.ok(second['activity-dark.svg'].includes(view.from));
     assert.ok(second['activity-dark.svg'].includes(data.contributions.to));
     assert.match(second['activity-dark.svg'], /GitHub activity/);
     assert.doesNotMatch(second['activity-dark.svg'], /Open-source activity/);
     assert.ok(second['metrics-dark.svg'].includes(String(data.metrics.metrics[0].count)));
-    const rangeStart = new Date(`${data.contributions.from}T00:00:00.000Z`);
+    const rangeStart = new Date(`${view.from}T00:00:00.000Z`);
     const startMonth = new Intl.DateTimeFormat('en-US', { month: 'short', timeZone: 'UTC' }).format(rangeStart);
-    assert.ok(second['activity-mobile-dark.svg'].includes(`${startMonth} ’${String(rangeStart.getUTCFullYear()).slice(-2)}`));
+    assert.ok(second['activity-mobile-dark.svg'].includes(startMonth));
     assert.match(second['activity-dark.svg'], /log-scaled daily counts/);
     assert.match(second['activity-mobile-dark.svg'], /Bar height: upstream log scale/);
     assert.doesNotMatch(second['activity-dark.svg'], /<animate(?:Transform)?\b/i);
@@ -240,14 +295,14 @@ test('chart regeneration is deterministic and carries the current source dates a
     }
     const desktopBars = [...second['activity-dark.svg'].matchAll(/<g transform="translate\(([-\d.]+) ([-\d.]+)\)">(?=<rect)/g)];
     const mobileBars = [...second['activity-mobile-dark.svg'].matchAll(/<g transform="translate\(([-\d.]+) ([-\d.]+)\)">(?=<rect)/g)];
-    assert.equal(desktopBars.length, data.contributions.days.length);
-    assert.equal(mobileBars.length, data.contributions.days.length);
-    assert.match(second['activity-dark.svg'], /height="790"/);
-    assert.match(second['activity-mobile-dark.svg'], /height="430"/);
+    assert.equal(desktopBars.length, view.days.length);
+    assert.equal(mobileBars.length, view.days.length);
+    assert.match(second['activity-dark.svg'], /height="650"/);
+    assert.match(second['activity-mobile-dark.svg'], /height="370"/);
     assert.match(second['activity-dark.svg'], /translate\(0 96\)/);
     assert.match(second['activity-mobile-dark.svg'], /translate\(0 86\)/);
     assert.match(second['activity-mobile-dark.svg'], /Contribution level/);
-    assert.match(second['activity-mobile-dark.svg'], /y="421"[^>]*>Bar height: upstream log scale/);
+    assert.match(second['activity-mobile-dark.svg'], /y="361"[^>]*>Bar height: upstream log scale/);
   } finally {
     await rm(outputDir, { recursive: true, force: true });
   }
@@ -271,13 +326,14 @@ test('invalid calendar data cannot replace previously rendered addon assets', as
 
 test('README data notes stay concise while collapsed source notes retain dynamic dates, counts, definitions, and queries', async () => {
   const { contributions, metrics } = await loadProfileData();
+  const view = sixMonthCalendar(contributions);
   const block = readmeDataBlock({ contributions, metrics });
-  const total = new Intl.NumberFormat('en-US').format(contributions.total);
-  const from = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${contributions.from}T00:00:00.000Z`));
+  const total = new Intl.NumberFormat('en-US').format(view.total);
+  const from = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${view.from}T00:00:00.000Z`));
   const to = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${contributions.to}T00:00:00.000Z`));
   assert.match(block, new RegExp(`${total} publicly displayed contributions · ${from}–${to}`));
   assert.match(block, /Public search counts \(all-time\):/);
-  assert.match(block, /rolling window/);
+  assert.match(block, /rolling six-month window/);
   const sources = readmeSourcesBlock({ contributions, metrics });
   assert.match(sources, /did not access private repositories/);
   assert.match(block, /distinct public PRs ever reviewed/);
@@ -295,9 +351,9 @@ test('README data notes stay concise while collapsed source notes retain dynamic
     metrics: { ...metrics, retrievedAt: '2027-01-04T12:00:00.000Z', metrics: metrics.metrics.map((metric) => ({ ...metric, count: metric.count + 1 })) },
   };
   const futureBlock = readmeDataBlock(future);
-  assert.match(futureBlock, new RegExp(`${new Intl.NumberFormat('en-US').format(futureContributions.total)} publicly displayed contributions`));
-  assert.match(futureBlock, /2 January 2026–4 January 2027/);
-  assert.match(futureBlock, /149/);
+  assert.match(futureBlock, new RegExp(`${new Intl.NumberFormat('en-US').format(sixMonthCalendar(futureContributions).total)} publicly displayed contributions`));
+  assert.match(futureBlock, /4 July 2026–4 January 2027/);
+  assert.ok(futureBlock.includes(`${new Intl.NumberFormat('en-US').format(future.metrics.metrics[0].count)} public pull requests opened`));
   assert.doesNotMatch(futureBlock, /1,964/);
 });
 
@@ -313,7 +369,7 @@ test('README data renderer replaces only its single bounded marker block determi
     assert.ok(first.startsWith('before\n<!-- PROFILE-DATA:START -->'));
     assert.ok(first.endsWith('<!-- PROFILE-SOURCES:END -->\n\n</details>\nafter\n'));
     const { contributions } = await loadProfileData();
-    assert.ok(first.includes(`${new Intl.NumberFormat('en-US').format(contributions.total)} publicly displayed contributions`));
+    assert.ok(first.includes(`${new Intl.NumberFormat('en-US').format(sixMonthCalendar(contributions).total)} publicly displayed contributions`));
     assert.doesNotMatch(first, /stale numbers/);
     await writeFile(readmePath, '<!-- PROFILE-DATA:END --><!-- PROFILE-DATA:START -->\n<!-- PROFILE-SOURCES:START -->\n<!-- PROFILE-SOURCES:END -->');
     await assert.rejects(renderReadmeData(readmePath), /markers are out of order/);

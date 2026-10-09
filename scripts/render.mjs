@@ -1,7 +1,7 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { loadProfileData, validateContributions, validateMetrics } from './data.mjs';
+import { loadProfileData, sixMonthCalendar, validateContributions, validateMetrics } from './data.mjs';
 
 const { createProfile3DCalendarSvg } = await import('./city-addon.mjs');
 
@@ -163,6 +163,7 @@ function badgeSvg(label, width) {
 export function renderProfileAssets({ contributions, metrics }, outputDir = ASSET_DIR) {
   validateContributions(contributions);
   validateMetrics(metrics);
+  contributions = sixMonthCalendar(contributions);
   const files = {
     'activity-dark.svg': activitySvg(contributions, 'dark'),
     'activity-light.svg': activitySvg(contributions, 'light'),
@@ -177,6 +178,9 @@ export function renderProfileAssets({ contributions, metrics }, outputDir = ASSE
     'badge-portfolio.svg': badgeSvg('Portfolio', 111),
     'badge-writing.svg': badgeSvg('Writing', 96),
   };
+  for (const name of Object.keys(files).filter(name => /^(?:activity|metrics)-/.test(name))) {
+    files[name.replace('.svg', '-six-months.svg')] = files[name];
+  }
   return mkdir(outputDir, { recursive: true }).then(async () => {
     for (const [name, contents] of Object.entries(files)) await writeFile(join(outputDir, name), contents, 'utf8');
     return files;

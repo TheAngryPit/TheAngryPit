@@ -3,7 +3,7 @@ name: Refresh public GitHub profile data
 on:
   workflow_dispatch:
   schedule:
-    - cron: '17 2 * * 1'
+    - cron: '17 */6 * * *'
 
 permissions:
   contents: read
@@ -43,6 +43,10 @@ jobs:
       - name: Commit only profile data and generated charts
         run: |
           git add README.md data/contributions.json data/metrics.json \
+            assets/activity-dark-six-months.svg assets/activity-light-six-months.svg \
+            assets/activity-mobile-dark-six-months.svg assets/activity-mobile-light-six-months.svg \
+            assets/metrics-dark-six-months.svg assets/metrics-light-six-months.svg \
+            assets/metrics-mobile-dark-six-months.svg assets/metrics-mobile-light-six-months.svg \
             assets/activity-dark.svg assets/activity-light.svg \
             assets/activity-mobile-dark.svg assets/activity-mobile-light.svg \
             assets/metrics-dark.svg assets/metrics-light.svg \

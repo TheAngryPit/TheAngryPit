@@ -20,17 +20,17 @@
   "viewports": {
     "desktop": {
       "width": 1180,
-      "height": 790,
-      "plot": { "x": 0, "y": 96, "width": 1120, "height": 610 },
+      "height": 650,
+      "plot": { "x": 0, "y": 96, "width": 1120, "height": 470 },
       "monthLabelY": 83,
-      "legendY": 751
+      "legendY": 611
     },
     "mobile": {
       "width": 360,
-      "height": 430,
+      "height": 370,
       "plot": { "x": 0, "y": 86, "width": 324, "height": 220 },
       "monthLabelY": 77,
-      "legendY": 394
+      "legendY": 334
     }
   }
 }

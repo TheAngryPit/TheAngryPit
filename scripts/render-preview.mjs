@@ -267,10 +267,10 @@ async function captureScreenshots() {
         if (visualChecks.images.some((image) => !image.alt || !image.loaded)) throw new Error(`${device}-${colorScheme} preview has an image without alt text or a loaded local asset`);
         const chartSources = visualChecks.images.filter(({ alt }) => /^(Three-dimensional contribution calendar|Public GitHub search counts)/.test(alt)).map(({ source }) => source);
         if (chartSources.length !== 2) throw new Error('preview must include the contribution calendar and metrics chart');
-        if (device === 'mobile' && chartSources.some((source) => !source.includes(`mobile-${colorScheme}.svg`))) {
+        if (device === 'mobile' && chartSources.some((source) => !source.includes(`mobile-${colorScheme}-six-months.svg`))) {
           throw new Error(`${device}-${colorScheme} preview did not select mobile theme-specific SVGs`);
         }
-        if (device === 'desktop' && chartSources.some((source) => !source.includes(`-${colorScheme}.svg`) || source.includes('-mobile-'))) {
+        if (device === 'desktop' && chartSources.some((source) => !source.includes(`-${colorScheme}-six-months.svg`) || source.includes('-mobile-'))) {
           throw new Error(`${device}-${colorScheme} preview did not select desktop theme-specific SVGs`);
         }
         const destination = path.join(screenshotDir, `${device}-${colorScheme}.png`);

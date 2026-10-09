@@ -1,6 +1,6 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
-import { loadProfileData } from './data.mjs';
+import { loadProfileData, sixMonthCalendar } from './data.mjs';
 
 const README = fileURLToPath(new URL('../README.md', import.meta.url));
 const DATA_START = '<!-- PROFILE-DATA:START -->';
@@ -27,13 +27,14 @@ function metricLabel(metric) {
 }
 
 export function readmeDataBlock({ contributions, metrics }) {
+  contributions = sixMonthCalendar(contributions);
   const total = new Intl.NumberFormat('en-US').format(contributions.total);
   const count = new Intl.NumberFormat('en-US');
   const metricSummary = metrics.metrics.map((metric) => `${count.format(metric.count)} ${metricLabel(metric)}`).join(' · ');
   return [
-    `- **Calendar:** ${total} publicly displayed contributions · ${formatDate(contributions.from)}–${formatDate(contributions.to)} (${count.format(contributions.days.length)} days).`,
+    `- **Calendar — last six months:** ${total} publicly displayed contributions · ${formatDate(contributions.from)}–${formatDate(contributions.to)} (${count.format(contributions.days.length)} days).`,
     `- **Public search counts (all-time):** ${metricSummary}; retrieved ${formatRetrievedAt(metrics.retrievedAt)} UTC.`,
-    '- GitHub’s displayed calendar is a rolling window that may include privacy-obscured activity; it is not a public-only total. Search counts use a different period.',
+    '- The calendar shows a rolling six-month window from GitHub’s displayed activity, which may include privacy-obscured contributions; it is not a public-only total. Search counts use a different period.',
   ].join('\n');
 }
 
@@ -45,7 +46,7 @@ export function readmeSourcesBlock({ contributions, metrics }) {
     return `- **${metricLabel(metric)}:** [${queryLabel}](${metric.source}); retrieved ${formatRetrievedAt(metrics.retrievedAt)} UTC.`;
   });
   return [
-    `- **Contribution calendar:** [public GitHub contribution calendar](${contributions.source}); retrieved ${formatRetrievedAt(contributions.retrievedAt)} UTC. The source reports displayed activity and may include privacy-obscured contributions. This package did not access private repositories.`,
+    `- **Contribution calendar:** [public GitHub contribution calendar](${contributions.source}); retrieved ${formatRetrievedAt(contributions.retrievedAt)} UTC. The full annual source is validated and retained; the charts display its last six calendar months, with totals recalculated for that period. The source may include privacy-obscured contributions. This package did not access private repositories.`,
     ...metricLines,
     '- The reviewed count is distinct pull requests ever reviewed, not the number of review submissions.',
     '- Counts come from GitHub’s public Search API queries and are all-time snapshots; they do not share the calendar’s rolling date window.',

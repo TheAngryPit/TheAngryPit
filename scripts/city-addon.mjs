@@ -36,10 +36,19 @@ function addText(svg, { text, x, y, fill, size, weight = 400, anchor = 'start' }
     .text(text);
 }
 
+export function cityLayout(calendar, plot) {
+  const weeks = Math.ceil((calendar.length + calendar[0].date.getUTCDay()) / 7);
+  const dx = plot.width / (weeks + 8);
+  const dy = dx * Math.tan(Math.PI / 6);
+  const maxBar = Math.max(...calendar.map((day) => Math.log10(day.contributionCount / 20 + 1) * 144 + 3));
+  const nativeHeight = (weeks + 7) * dy + maxBar + 12;
+  return { dx, dy, nativeWidth: dx * 64, nativeHeight, scaleY: plot.height / nativeHeight };
+}
+
 function monthAnchors(calendar, plot, viewport, mobile) {
   const first = calendar[0].date;
   const firstSunday = Math.floor(first.getTime() / DAY_MS) * DAY_MS - first.getUTCDay() * DAY_MS;
-  const dx = plot.width / 64;
+  const { dx } = cityLayout(calendar, plot);
   const months = [];
   let lastMonth = -1;
 
@@ -87,7 +96,7 @@ export function createProfile3DCalendarSvg(data, theme, themeColors, { mobile = 
     .attr('role', 'img')
     .attr('aria-labelledby', 'calendar-title calendar-description');
 
-  const description = `A three-dimensional GitHub activity calendar showing ${new Intl.NumberFormat('en-US').format(data.total)} publicly displayed contributions from ${data.from} through ${data.to}. Bars use the pinned upstream github-profile-3d-contrib geometry and log-scaled daily counts; face color follows GitHub's contribution level. GitHub's public display may include privacy-obscured activity. No private repositories were accessed.`;
+  const description = `A three-dimensional GitHub activity calendar showing ${new Intl.NumberFormat('en-US').format(data.total)} publicly displayed contributions in the last six months, from ${data.from} through ${data.to}. Bars use the pinned upstream github-profile-3d-contrib geometry and log-scaled daily counts; face color follows GitHub's contribution level. The presentation fits the selected weeks into the viewport. GitHub's public display may include privacy-obscured activity. No private repositories were accessed.`;
   svg.append('title').attr('id', 'calendar-title').text(`GitHub activity: ${new Intl.NumberFormat('en-US').format(data.total)} publicly displayed contributions`);
   svg.append('desc').attr('id', 'calendar-description').text(description);
   svg.append('rect').attr('width', viewport.width).attr('height', viewport.height).attr('fill', themeColors.background);
@@ -95,11 +104,11 @@ export function createProfile3DCalendarSvg(data, theme, themeColors, { mobile = 
 
   const formatter = new Intl.NumberFormat('en-US');
   if (mobile) {
-    addText(svg, { text: 'GitHub activity', x: 18, y: 27, fill: themeColors.foreground, size: 18, weight: 700 });
+    addText(svg, { text: 'Last six months', x: 18, y: 27, fill: themeColors.foreground, size: 18, weight: 700 });
     addText(svg, { text: formatter.format(data.total), x: 342, y: 27, fill: themeColors.foreground, size: 17, weight: 700, anchor: 'end' });
     addText(svg, { text: `${data.days.length} days · ${data.from}–${data.to}`, x: 18, y: 49, fill: themeColors.muted, size: 11 });
   } else {
-    addText(svg, { text: 'GitHub activity', x: 26, y: 34, fill: themeColors.foreground, size: 21, weight: 700 });
+    addText(svg, { text: 'GitHub activity · Last six months', x: 26, y: 34, fill: themeColors.foreground, size: 21, weight: 700 });
     addText(svg, { text: `${data.days.length} days · ${data.from} to ${data.to}`, x: 26, y: 55, fill: themeColors.muted, size: 12 });
     addText(svg, { text: formatter.format(data.total), x: viewport.width - 26, y: 35, fill: themeColors.foreground, size: 20, weight: 700, anchor: 'end' });
     addText(svg, { text: 'publicly displayed contributions', x: viewport.width - 26, y: 55, fill: themeColors.muted, size: 11, anchor: 'end' });
@@ -110,8 +119,9 @@ export function createProfile3DCalendarSvg(data, theme, themeColors, { mobile = 
   }
 
   const userInfo = { contributionCalendar: calendar };
-  const grid = svg.append('g').attr('transform', `translate(${plot.x} ${plot.y})`);
-  create3DContrib(grid, userInfo, 0, 0, plot.width, plot.height, createSettings(theme, themeColors), false);
+  const layout = cityLayout(calendar, plot);
+  const grid = svg.append('g').attr('transform', `translate(${plot.x} ${plot.y}) scale(1 ${layout.scaleY})`);
+  create3DContrib(grid, userInfo, 0, 0, layout.nativeWidth, layout.nativeHeight, createSettings(theme, themeColors), false);
 
   const levels = [0, 1, 2, 3, 4];
   const swatch = mobile ? 10 : 12;

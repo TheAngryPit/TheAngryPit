@@ -12,19 +12,19 @@ Working with agents lets me bring ideas to life that I previously lacked the mea
 
 ### Tools
 
-<a href="https://github.com/openai/codex"><img src="assets/stack-codex.svg" alt="Codex" height="26"></a>
-<a href="https://openclaw.ai"><img src="assets/stack-openclaw.svg" alt="OpenClaw" height="26"></a>
-<a href="https://github.com/NousResearch/hermes-agent"><img src="assets/stack-hermes.svg" alt="Hermes Agent" height="26"></a>
-<a href="https://github.com/PrimeIntellect-ai/prime-agent"><img src="assets/stack-prime.svg" alt="Prime Agent" height="26"></a>
-<a href="https://github.com/OpenWhispr/openwhispr"><img src="assets/stack-openwhispr.svg" alt="OpenWhispr" height="26"></a>
-<a href="https://github.com/chidiwilliams/buzz"><img src="assets/stack-buzz.svg" alt="Buzz" height="26"></a>
-<a href="https://ghostty.org"><img src="assets/stack-ghostty.svg" alt="Ghostty" height="26"></a>
-<a href="https://github.com/ggml-org/llama.cpp"><img src="assets/stack-llamacpp.svg" alt="llama.cpp" height="26"></a>
-<a href="https://github.com/vectorize-io/hindsight"><img src="assets/stack-hindsight.svg" alt="Hindsight" height="26"></a>
-<a href="https://github.com/plastic-labs/honcho"><img src="assets/stack-honcho.svg" alt="Honcho" height="26"></a>
-<a href="https://www.docker.com"><img src="assets/stack-docker.svg" alt="Docker" height="26"></a>
-<a href="https://e2b.dev"><img src="assets/stack-ecloud.svg" alt="E2B" height="26"></a>
-<a href="https://github.com/Comfy-Org/ComfyUI"><img src="assets/stack-comfy.svg" alt="ComfyUI" height="26"></a>
+<a href="https://github.com/openai/codex"><img src="assets/stack-codex-logo.svg" alt="Codex" height="26"></a>
+<a href="https://openclaw.ai"><img src="assets/stack-openclaw-logo.svg" alt="OpenClaw" height="26"></a>
+<a href="https://github.com/NousResearch/hermes-agent"><img src="assets/stack-hermes-logo.svg" alt="Hermes Agent" height="26"></a>
+<a href="https://github.com/PrimeIntellect-ai/prime-agent"><img src="assets/stack-prime-logo.svg" alt="Prime Agent" height="26"></a>
+<a href="https://github.com/OpenWhispr/openwhispr"><img src="assets/stack-openwhispr-logo.svg" alt="OpenWhispr" height="26"></a>
+<a href="https://github.com/chidiwilliams/buzz"><img src="assets/stack-buzz-logo.svg" alt="Buzz" height="26"></a>
+<a href="https://ghostty.org"><img src="assets/stack-ghostty-logo.svg" alt="Ghostty" height="26"></a>
+<a href="https://github.com/ggml-org/llama.cpp"><img src="assets/stack-llamacpp-logo.svg" alt="llama.cpp" height="26"></a>
+<a href="https://github.com/vectorize-io/hindsight"><img src="assets/stack-hindsight-logo.svg" alt="Hindsight" height="26"></a>
+<a href="https://github.com/plastic-labs/honcho"><img src="assets/stack-honcho-logo.svg" alt="Honcho" height="26"></a>
+<a href="https://www.docker.com"><img src="assets/stack-docker-logo.svg" alt="Docker" height="26"></a>
+<a href="https://e2b.dev"><img src="assets/stack-ecloud-logo.svg" alt="E2B" height="26"></a>
+<a href="https://github.com/Comfy-Org/ComfyUI"><img src="assets/stack-comfy-logo.svg" alt="ComfyUI" height="26"></a>
 
 ### Languages
 
@@ -54,27 +54,27 @@ Working with agents lets me bring ideas to life that I previously lacked the mea
 ## GitHub activity
 
 <picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/activity-mobile-dark.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/activity-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/activity-light.svg">
-  <img src="assets/activity-dark.svg" alt="Three-dimensional contribution calendar by day and activity level. Exact dates, total and source are provided in the data notes below.">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/activity-mobile-dark-six-months.svg">
+  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/activity-mobile-light-six-months.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark-six-months.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/activity-light-six-months.svg">
+  <img src="assets/activity-dark-six-months.svg" alt="Three-dimensional contribution calendar by day and activity level. Exact dates, total and source are provided in the data notes below.">
 </picture>
 
 <picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/metrics-mobile-dark.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/metrics-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/metrics-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/metrics-light.svg">
-  <img src="assets/metrics-dark.svg" alt="Public GitHub search counts for pull requests opened, distinct pull requests ever reviewed, and issues opened, alongside a contribution trend. Periods and definitions are provided below.">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/metrics-mobile-dark-six-months.svg">
+  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/metrics-mobile-light-six-months.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/metrics-dark-six-months.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/metrics-light-six-months.svg">
+  <img src="assets/metrics-dark-six-months.svg" alt="Public GitHub search counts for pull requests opened, distinct pull requests ever reviewed, and issues opened, alongside a contribution trend. Periods and definitions are provided below.">
 </picture>
 
 ### Data notes
 
 <!-- PROFILE-DATA:START -->
-- **Calendar:** 1,968 publicly displayed contributions · 5 October 2025–7 October 2026 (368 days).
-- **Public search counts (all-time):** 148 public pull requests opened · 78 distinct public PRs ever reviewed · 101 public issues opened; retrieved 7 October 2026 UTC.
-- GitHub’s displayed calendar is a rolling window that may include privacy-obscured activity; it is not a public-only total. Search counts use a different period.
+- **Calendar — last six months:** 1,981 publicly displayed contributions · 9 April 2026–9 October 2026 (184 days).
+- **Public search counts (all-time):** 167 public pull requests opened · 79 distinct public PRs ever reviewed · 102 public issues opened; retrieved 9 October 2026 UTC.
+- The calendar shows a rolling six-month window from GitHub’s displayed activity, which may include privacy-obscured contributions; it is not a public-only total. Search counts use a different period.
 <!-- PROFILE-DATA:END -->
 
 ## Building
@@ -99,13 +99,13 @@ Contributions to **OpenClaw**, **Hermes Agent**, **Hindsight**, **MLX Audio** an
 City rendering uses [GitHub Profile 3D Contrib](https://github.com/yoshi389111/github-profile-3d-contrib), customized to this profile's palette with a public-calendar adapter. Tools and language badges are generated by [Shields.io](https://shields.io); they do not indicate proficiency levels or certifications.
 
 <!-- PROFILE-SOURCES:START -->
-- **Contribution calendar:** [public GitHub contribution calendar](https://github.com/users/TheAngryPit/contributions); retrieved 7 October 2026 UTC. The source reports displayed activity and may include privacy-obscured contributions. This package did not access private repositories.
+- **Contribution calendar:** [public GitHub contribution calendar](https://github.com/users/TheAngryPit/contributions); retrieved 9 October 2026 UTC. The full annual source is validated and retained; the charts display its last six calendar months, with totals recalculated for that period. The source may include privacy-obscured contributions. This package did not access private repositories.
 
-- **public pull requests opened:** [Pull requests opened search](https://api.github.com/search/issues?q=is%3Apr+author%3ATheAngryPit+is%3Apublic&per_page=1); retrieved 7 October 2026 UTC.
+- **public pull requests opened:** [Pull requests opened search](https://api.github.com/search/issues?q=is%3Apr+author%3ATheAngryPit+is%3Apublic&per_page=1); retrieved 9 October 2026 UTC.
 
-- **distinct public PRs ever reviewed:** [PRs matched by the public reviewed-by search](https://api.github.com/search/issues?q=is%3Apr+reviewed-by%3ATheAngryPit+is%3Apublic&per_page=1); retrieved 7 October 2026 UTC.
+- **distinct public PRs ever reviewed:** [PRs matched by the public reviewed-by search](https://api.github.com/search/issues?q=is%3Apr+reviewed-by%3ATheAngryPit+is%3Apublic&per_page=1); retrieved 9 October 2026 UTC.
 
-- **public issues opened:** [Issues opened search](https://api.github.com/search/issues?q=is%3Aissue+author%3ATheAngryPit+is%3Apublic&per_page=1); retrieved 7 October 2026 UTC.
+- **public issues opened:** [Issues opened search](https://api.github.com/search/issues?q=is%3Aissue+author%3ATheAngryPit+is%3Apublic&per_page=1); retrieved 9 October 2026 UTC.
 
 - The reviewed count is distinct pull requests ever reviewed, not the number of review submissions.
 
