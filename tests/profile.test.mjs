@@ -123,7 +123,7 @@ test('fitted city geometry keeps each bar inside its desktop and mobile plot', a
   const config = JSON.parse(await readFile(new URL('../config/city-addon.json', import.meta.url), 'utf8'));
   const firstSunday = Math.floor(calendar[0].date.getTime() / 86_400_000) - calendar[0].date.getUTCDay();
   for (const { plot } of Object.values(config.viewports)) {
-    const { dx, dy, nativeHeight, scaleY } = cityLayout(calendar, plot);
+    const { dx, dy, nativeHeight, scale, offsetX } = cityLayout(calendar, plot);
     const weeks = Math.ceil((calendar.length + calendar[0].date.getUTCDay()) / 7);
     for (const day of calendar) {
       const week = Math.floor((Math.floor(day.date.getTime() / 86_400_000) - firstSunday) / 7);
@@ -131,10 +131,21 @@ test('fitted city geometry keeps each bar inside its desktop and mobile plot', a
       const x = (7 + week - weekday) * dx;
       const baseY = nativeHeight - (weeks + 7) * dy + (week + weekday) * dy;
       const barHeight = Math.log10(day.contributionCount / 20 + 1) * 144 + 3;
-      assert.ok(x >= 0 && x + dx * 1.8 <= plot.width);
-      assert.ok((baseY - barHeight) * scaleY >= 0);
-      assert.ok((baseY + dy * 1.8) * scaleY <= plot.height);
+      assert.ok(offsetX + x * scale >= 0 && offsetX + (x + dx * 1.8) * scale <= plot.width);
+      assert.ok((baseY - barHeight) * scale >= 0);
+      assert.ok((baseY + dy * 1.8) * scale <= plot.height);
     }
+  }
+});
+
+test('responsive city fitting preserves the original 30-degree projection and bar-to-tile proportions', async () => {
+  const calendar = mapContributionCalendar(sixMonthCalendar((await loadProfileData()).contributions));
+  for (const plot of [{ width: 740, height: 470 }, { width: 324, height: 220 }, { width: 280, height: 180 }]) {
+    const { dx, dy, scale } = cityLayout(calendar, plot);
+    assert.equal(dx, 1120 / 64, 'Retain the original desktop tile size before uniform fitting');
+    assert.ok(Math.abs(Math.atan2(dy * scale, dx * scale) * 180 / Math.PI - 30) < 1e-10);
+    const bar = Math.log10(79 / 20 + 1) * 144 + 3;
+    assert.ok(Math.abs((bar * scale) / (dx * scale) - bar / (1120 / 64)) < 1e-10);
   }
 });
 
@@ -188,8 +199,11 @@ test('upstream addon maps every validated day and preserves native Sunday-first 
     const mobile = transforms(rendered['activity-mobile-dark.svg']);
     assert.equal(desktop.length, fixtureData.days.length);
     assert.equal(mobile.length, fixtureData.days.length);
-    assert.match(rendered['activity-dark.svg'], /<g transform="translate\(0 96\) scale\(1 /);
-    assert.match(rendered['activity-mobile-dark.svg'], /<g transform="translate\(0 86\) scale\(1 /);
+    for (const svg of [rendered['activity-dark.svg'], rendered['activity-mobile-dark.svg']]) {
+      assert.match(svg, /data-city-projection="isometric-30" transform="translate\([\d.]+ [\d.]+\) scale\([\d.]+\)"/);
+    }
+    assert.equal(rendered['activity-isometric-dark-six-months.svg'], rendered['activity-dark.svg']);
+    assert.equal(rendered['activity-isometric-mobile-dark-six-months.svg'], rendered['activity-mobile-dark.svg']);
 
     for (const [points, plotWidth] of [[desktop, 1120], [mobile, 324]]) {
       const { dx } = cityLayout(mapContributionCalendar(fixtureData), { width: plotWidth, height: 220 });
@@ -299,8 +313,8 @@ test('chart regeneration is deterministic and carries the current source dates a
     assert.equal(mobileBars.length, view.days.length);
     assert.match(second['activity-dark.svg'], /height="650"/);
     assert.match(second['activity-mobile-dark.svg'], /height="370"/);
-    assert.match(second['activity-dark.svg'], /translate\(0 96\)/);
-    assert.match(second['activity-mobile-dark.svg'], /translate\(0 86\)/);
+    assert.match(second['activity-dark.svg'], /data-city-projection="isometric-30" transform="translate\([\d.]+ 96\) scale\([\d.]+\)"/);
+    assert.match(second['activity-mobile-dark.svg'], /data-city-projection="isometric-30" transform="translate\([\d.]+ 86\) scale\([\d.]+\)"/);
     assert.match(second['activity-mobile-dark.svg'], /Contribution level/);
     assert.match(second['activity-mobile-dark.svg'], /y="361"[^>]*>Bar height: upstream log scale/);
   } finally {

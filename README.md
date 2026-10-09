@@ -54,11 +54,11 @@ Working with agents lets me bring ideas to life that I previously lacked the mea
 ## GitHub activity
 
 <picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/activity-mobile-dark-six-months.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/activity-mobile-light-six-months.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark-six-months.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/activity-light-six-months.svg">
-  <img src="assets/activity-dark-six-months.svg" alt="Three-dimensional contribution calendar by day and activity level. Exact dates, total and source are provided in the data notes below.">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/activity-isometric-mobile-dark-six-months.svg">
+  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/activity-isometric-mobile-light-six-months.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/activity-isometric-dark-six-months.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/activity-isometric-light-six-months.svg">
+  <img src="assets/activity-isometric-dark-six-months.svg" alt="Three-dimensional contribution calendar by day and activity level. Exact dates, total and source are provided in the data notes below.">
 </picture>
 
 <picture>

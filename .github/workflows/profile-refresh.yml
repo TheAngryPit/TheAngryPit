@@ -43,6 +43,8 @@ jobs:
       - name: Commit only profile data and generated charts
         run: |
           git add README.md data/contributions.json data/metrics.json \
+            assets/activity-isometric-dark-six-months.svg assets/activity-isometric-light-six-months.svg \
+            assets/activity-isometric-mobile-dark-six-months.svg assets/activity-isometric-mobile-light-six-months.svg \
             assets/activity-dark-six-months.svg assets/activity-light-six-months.svg \
             assets/activity-mobile-dark-six-months.svg assets/activity-mobile-light-six-months.svg \
             assets/metrics-dark-six-months.svg assets/metrics-light-six-months.svg \

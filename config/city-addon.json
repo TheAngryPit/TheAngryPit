@@ -19,9 +19,9 @@
   },
   "viewports": {
     "desktop": {
-      "width": 1180,
+      "width": 800,
       "height": 650,
-      "plot": { "x": 0, "y": 96, "width": 1120, "height": 470 },
+      "plot": { "x": 30, "y": 96, "width": 740, "height": 470 },
       "monthLabelY": 83,
       "legendY": 611
     },

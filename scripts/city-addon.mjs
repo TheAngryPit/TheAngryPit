@@ -38,17 +38,29 @@ function addText(svg, { text, x, y, fill, size, weight = 400, anchor = 'start' }
 
 export function cityLayout(calendar, plot) {
   const weeks = Math.ceil((calendar.length + calendar[0].date.getUTCDay()) / 7);
-  const dx = plot.width / (weeks + 8);
+  const dx = 1120 / 64;
   const dy = dx * Math.tan(Math.PI / 6);
-  const maxBar = Math.max(...calendar.map((day) => Math.log10(day.contributionCount / 20 + 1) * 144 + 3));
-  const nativeHeight = (weeks + 7) * dy + maxBar + 12;
-  return { dx, dy, nativeWidth: dx * 64, nativeHeight, scaleY: plot.height / nativeHeight };
+  const firstSunday = Math.floor(calendar[0].date.getTime() / DAY_MS) - calendar[0].date.getUTCDay();
+  const bounds = calendar.map((day) => {
+    const week = Math.floor((Math.floor(day.date.getTime() / DAY_MS) - firstSunday) / 7);
+    const baseY = (week + day.date.getUTCDay()) * dy;
+    const barHeight = Math.log10(day.contributionCount / 20 + 1) * 144 + 3;
+    return { top: baseY - barHeight, bottom: baseY + dy * 1.8 };
+  });
+  const minY = Math.min(...bounds.map(({ top }) => top));
+  const maxY = Math.max(...bounds.map(({ bottom }) => bottom));
+  const nativeHeight = (weeks + 7) * dy - minY + 12;
+  const paintedHeight = maxY - minY + 24;
+  const footprintWidth = (weeks + 8) * dx;
+  const scale = Math.min(plot.width / footprintWidth, plot.height / paintedHeight);
+  const offsetX = (plot.width - footprintWidth * scale) / 2;
+  return { dx, dy, nativeWidth: dx * 64, nativeHeight, scale, offsetX };
 }
 
 function monthAnchors(calendar, plot, viewport, mobile) {
   const first = calendar[0].date;
   const firstSunday = Math.floor(first.getTime() / DAY_MS) * DAY_MS - first.getUTCDay() * DAY_MS;
-  const { dx } = cityLayout(calendar, plot);
+  const { dx, scale, offsetX } = cityLayout(calendar, plot);
   const months = [];
   let lastMonth = -1;
 
@@ -64,7 +76,7 @@ function monthAnchors(calendar, plot, viewport, mobile) {
     const label = date.getUTCMonth() === 9 || date.getUTCMonth() === 0
       ? `${month} ’${String(date.getUTCFullYear()).slice(-2)}`
       : month;
-    months.push({ x: plot.x + dx * (7 + week), y: viewport.monthLabelY, label });
+    months.push({ x: plot.x + offsetX + dx * (7 + week) * scale, y: viewport.monthLabelY, label });
   }
   return months;
 }
@@ -120,7 +132,8 @@ export function createProfile3DCalendarSvg(data, theme, themeColors, { mobile = 
 
   const userInfo = { contributionCalendar: calendar };
   const layout = cityLayout(calendar, plot);
-  const grid = svg.append('g').attr('transform', `translate(${plot.x} ${plot.y}) scale(1 ${layout.scaleY})`);
+  const grid = svg.append('g').attr('data-city-projection', 'isometric-30')
+    .attr('transform', `translate(${plot.x + layout.offsetX} ${plot.y}) scale(${layout.scale})`);
   create3DContrib(grid, userInfo, 0, 0, layout.nativeWidth, layout.nativeHeight, createSettings(theme, themeColors), false);
 
   const levels = [0, 1, 2, 3, 4];

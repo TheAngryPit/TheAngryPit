@@ -181,6 +181,9 @@ export function renderProfileAssets({ contributions, metrics }, outputDir = ASSE
   for (const name of Object.keys(files).filter(name => /^(?:activity|metrics)-/.test(name))) {
     files[name.replace('.svg', '-six-months.svg')] = files[name];
   }
+  for (const name of ['activity-dark', 'activity-light', 'activity-mobile-dark', 'activity-mobile-light']) {
+    files[`${name.replace('activity-', 'activity-isometric-')}-six-months.svg`] = files[`${name}.svg`];
+  }
   return mkdir(outputDir, { recursive: true }).then(async () => {
     for (const [name, contents] of Object.entries(files)) await writeFile(join(outputDir, name), contents, 'utf8');
     return files;
