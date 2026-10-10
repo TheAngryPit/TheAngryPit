@@ -79,6 +79,8 @@ Working with agents lets me bring ideas to life that I previously lacked the mea
 
 ## Building
 
+- **[mailcrawl](https://github.com/TheAngryPit/mailcrawl)**: local-first, read-only archive for exported mail, designed around a searchable SQLite index; pre-alpha scaffold.
+- **[meetcrawl](https://github.com/TheAngryPit/meetcrawl)**: local-first meeting transcript archive with SQLite search, privacy classes, provenance and read-only MCP for agents; Phase 1 code in-tree.
 - **[TheAngrySkills](https://github.com/TheAngryPit/TheAngrySkills)**: creator and maintainer.
 - **Nexus**: agent orchestration, governance and harness infrastructure; in development.
 - **Almanac**: an OpenClaw-based OS; in development.

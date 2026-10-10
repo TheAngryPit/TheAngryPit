@@ -22,6 +22,26 @@ import { refreshProfile } from '../scripts/refresh.mjs';
 
 const FIXTURES = new URL('./fixtures/', import.meta.url);
 
+test('public builds have their own links and maturity labels, preserved by data refresh', async () => {
+  const readme = await readFile(new URL('../README.md', import.meta.url), 'utf8');
+  const building = readme.split('## Building\n')[1].split('## Open-source contributions\n')[0];
+  assert.match(building, /\*\*\[mailcrawl\]\(https:\/\/github\.com\/TheAngryPit\/mailcrawl\)\*\*:.*pre-alpha scaffold\./);
+  assert.match(building, /\*\*\[meetcrawl\]\(https:\/\/github\.com\/TheAngryPit\/meetcrawl\)\*\*:.*Phase 1 code in-tree\./);
+  assert.equal((building.match(/\[mailcrawl\]/g) || []).length, 1);
+  assert.equal((building.match(/\[meetcrawl\]/g) || []).length, 1);
+  const upstream = readme.split('## Open-source contributions\n')[1];
+  assert.ok(!/\[mailcrawl\]|\[meetcrawl\]/.test(upstream));
+  const directory = await mkdtemp(path.join(os.tmpdir(), 'profile-building-test-'));
+  const readmePath = path.join(directory, 'README.md');
+  try {
+    await writeFile(readmePath, readme);
+    const refreshed = await renderReadmeData(readmePath);
+    assert.equal(refreshed.split('## Building\n')[1].split('## Open-source contributions\n')[0], building);
+  } finally {
+    await rm(directory, { recursive: true, force: true });
+  }
+});
+
 async function fixture(name) {
   return readFile(new URL(name, FIXTURES), 'utf8');
 }
