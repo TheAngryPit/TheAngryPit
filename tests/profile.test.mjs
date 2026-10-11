@@ -4,6 +4,7 @@ import { mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import test from 'node:test';
+import { JSDOM } from 'jsdom';
 import {
   dateRange,
   loadProfileData,
@@ -333,8 +334,25 @@ test('chart regeneration is deterministic and carries the current source dates a
     assert.equal(mobileBars.length, view.days.length);
     assert.match(second['activity-dark.svg'], /height="650"/);
     assert.match(second['activity-mobile-dark.svg'], /height="370"/);
-    assert.match(second['activity-dark.svg'], /data-city-projection="isometric-30" transform="translate\([\d.]+ 96\) scale\([\d.]+\)"/);
-    assert.match(second['activity-mobile-dark.svg'], /data-city-projection="isometric-30" transform="translate\([\d.]+ 86\) scale\([\d.]+\)"/);
+    for (const [asset, y, width] of [['activity-dark.svg', 96, 800], ['activity-mobile-dark.svg', 86, 360]]) {
+      const dom = new JSDOM(second[asset], { contentType: 'image/svg+xml' });
+      try {
+        const grid = dom.window.document.querySelector('[data-city-projection="isometric-30"]');
+        assert.ok(grid, `${asset} must retain the isometric projection`);
+        const transform = grid.getAttribute('transform').match(/^translate\(([^)]+)\) scale\(([^)]+)\)$/);
+        assert.ok(transform, `${asset} must use only a translation and uniform scale`);
+        const translation = transform[1].split(/\s+/).map(Number);
+        const scales = transform[2].split(/\s+/).map(Number);
+        assert.equal(translation.length, 2);
+        assert.equal(scales.length, 1, 'non-uniform scaling would distort the city');
+        assert.ok([...translation, ...scales].every(Number.isFinite));
+        assert.ok(translation[0] >= -1e-9 && translation[0] < width);
+        assert.equal(translation[1], y);
+        assert.ok(scales[0] > 0);
+      } finally {
+        dom.window.close();
+      }
+    }
     assert.match(second['activity-mobile-dark.svg'], /Contribution level/);
     assert.match(second['activity-mobile-dark.svg'], /y="361"[^>]*>Bar height: upstream log scale/);
   } finally {
