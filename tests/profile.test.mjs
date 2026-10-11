@@ -50,7 +50,7 @@ function annualStart(end, days = 368) {
   return new Date(Date.parse(`${end}T00:00:00.000Z`) - (days - 1) * 86_400_000).toISOString().slice(0, 10);
 }
 
-function annualCalendarHtml({ to, from = annualStart(to), declaredRange = true, omit = [] }) {
+function annualCalendarHtml({ to, from = annualStart(to), declaredFrom = from, declaredRange = true, omit = [] }) {
   const dates = dateRange(from, to);
   const excluded = new Set(omit);
   const days = dates.map((date, index) => ({
@@ -59,7 +59,7 @@ function annualCalendarHtml({ to, from = annualStart(to), declaredRange = true, 
     level: index > 5 && index % 31 === 0 ? 1 : 0,
   })).filter((day) => !excluded.has(day.date));
   const total = days.reduce((sum, day) => sum + day.count, 0);
-  const declaration = declaredRange ? ` data-from="${from} 00:00:00 UTC" data-to="${to} 23:59:59 UTC"` : '';
+  const declaration = declaredRange ? ` data-from="${declaredFrom} 00:00:00 UTC" data-to="${to} 23:59:59 UTC"` : '';
   const cells = days.map((day) => {
     const id = `contribution-day-component-${day.date}`;
     const tooltip = day.count === 0 ? `No contributions on ${day.date}.` : `1 contribution on ${day.date}.`;
@@ -552,6 +552,28 @@ test('refresh accepts the linked-tooltip calendar shape and sends GITHUB_TOKEN o
   }
 });
 
+test('Sunday rollover refresh persists the actual complete annual grid despite a one-week-lagging data-from', async () => {
+  const dataDir = await mkdtemp(path.join(os.tmpdir(), 'profile-sunday-rollover-test-'));
+  const html = annualCalendarHtml({ from: '2025-10-12', declaredFrom: '2025-10-05', to: '2026-10-11' });
+  try {
+    const { contributions } = await refreshProfile({
+      dataDir,
+      now: () => new Date('2026-10-11T12:45:00.000Z'),
+      fetchImpl: mockRefreshFetch(html),
+    });
+    const saved = JSON.parse(await readFile(path.join(dataDir, 'contributions.json'), 'utf8'));
+    assert.deepEqual(saved, contributions);
+    assert.equal(saved.from, '2025-10-12');
+    assert.equal(saved.to, '2026-10-11');
+    assert.equal(saved.days.length, 365);
+    assert.equal(saved.total, 11);
+    assert.ok(!saved.days.some(({ date }) => date < '2025-10-12'));
+    assert.equal(JSON.parse(await readFile(path.join(dataDir, 'metrics.json'), 'utf8')).metrics[0].count, 148);
+  } finally {
+    await rm(dataDir, { recursive: true, force: true });
+  }
+});
+
 test('production refresh rejects short, undeclared, partial-edge, and stale calendars without replacing last-good snapshots', async () => {
   const dataDir = await mkdtemp(path.join(os.tmpdir(), 'career-profile-annual-boundary-test-'));
   const original = new Map();
@@ -572,6 +594,16 @@ test('production refresh rejects short, undeclared, partial-edge, and stale cale
     { name: 'missing first zero edge day', html: annualCalendarHtml({ from: start, to: end, omit: [start] }), pattern: /do not match declared range/ },
     { name: 'missing last zero edge day', html: annualCalendarHtml({ from: start, to: end, omit: [end] }), pattern: /do not match declared range/ },
     { name: 'stale range end', html: staleWindow, now: new Date('2026-10-08T12:00:00.000Z'), pattern: /is stale or in the future/ },
+    ...[
+      { name: 'six-day lag', from: '2025-10-12', declaredFrom: '2025-10-06', to: '2026-10-11' },
+      { name: 'two-week lag', from: '2025-10-12', declaredFrom: '2025-09-28', to: '2026-10-11' },
+      { name: 'one-week lag on Monday', from: '2025-10-13', declaredFrom: '2025-10-06', to: '2026-10-12' },
+      { name: 'missing rollover first day', from: '2025-10-12', declaredFrom: '2025-10-05', to: '2026-10-11', omit: ['2025-10-12'] },
+      { name: 'missing rollover last day', from: '2025-10-12', declaredFrom: '2025-10-05', to: '2026-10-11', omit: ['2026-10-11'] },
+    ].map(item => ({ name: item.name, html: annualCalendarHtml(item), now: new Date(`${item.to}T12:45:00.000Z`), pattern: /do not match declared range/ })),
+    { name: 'rollover interior gap', html: annualCalendarHtml({ from: '2025-10-12', declaredFrom: '2025-10-05', to: '2026-10-11', omit: ['2026-05-01'] }), now: new Date('2026-10-11T12:45:00.000Z'), pattern: /incomplete or discontinuous/ },
+    { name: 'rollover wrong total', html: annualCalendarHtml({ from: '2025-10-12', declaredFrom: '2025-10-05', to: '2026-10-11' }).replace('<h2>11 contributions', '<h2>12 contributions'), now: new Date('2026-10-11T12:45:00.000Z'), pattern: /does not match daily sum/ },
+    { name: 'stale rollover', html: annualCalendarHtml({ from: '2025-10-12', declaredFrom: '2025-10-05', to: '2026-10-11' }), now: new Date('2026-10-13T12:45:00.000Z'), pattern: /is stale or in the future/ },
   ];
 
   try {

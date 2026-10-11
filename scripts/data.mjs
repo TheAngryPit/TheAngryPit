@@ -159,6 +159,18 @@ function declaredCalendarRange(html) {
   return null;
 }
 
+function matchesCalendarRange({ from, to }, days) {
+  const first = days[0].date;
+  const last = days.at(-1).date;
+  if (from === first && to === last) return true;
+  // On Sunday GitHub can drop the oldest week while data-from still names it.
+  // Admit only that complete 365-day grid; never fill or discard source cells.
+  return to === last && days.length === 365
+    && parseIsoDate(first) - parseIsoDate(from) === 7 * 86_400_000
+    && new Date(`${from}T00:00:00.000Z`).getUTCDay() === 0
+    && new Date(`${to}T00:00:00.000Z`).getUTCDay() === 0;
+}
+
 export function parseContributionCalendar(html, { username = USERNAME, retrievedAt = new Date().toISOString() } = {}) {
   if (typeof html !== 'string' || html.trim().length === 0) throw new Error('contribution calendar response was empty');
   if (!/<(?:html|main|table)\b/i.test(html)) throw new Error('contribution calendar response was not recognizable HTML');
@@ -191,7 +203,7 @@ export function parseContributionCalendar(html, { username = USERNAME, retrieved
   }
 
   const declaredRange = declaredCalendarRange(html);
-  if (declaredRange && (declaredRange.from !== cells[0].date || declaredRange.to !== cells.at(-1).date)) {
+  if (declaredRange && !matchesCalendarRange(declaredRange, cells)) {
     throw new Error(`contribution calendar day cells do not match declared range ${declaredRange.from}..${declaredRange.to}`);
   }
 
@@ -239,7 +251,7 @@ export function parseProductionContributionCalendar(html, {
   }
 
   const contributions = parseContributionCalendar(html, { username, retrievedAt });
-  if (contributions.from !== declaredRange.from || contributions.to !== declaredRange.to) {
+  if (!matchesCalendarRange(declaredRange, contributions.days)) {
     throw new Error('production contribution calendar day cells do not match the declared endpoints');
   }
   if (contributions.days.length < 365 || contributions.days.length > 371) {
