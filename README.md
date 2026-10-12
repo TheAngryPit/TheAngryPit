@@ -72,8 +72,8 @@ Working with agents lets me bring ideas to life that I previously lacked the mea
 ### Data notes
 
 <!-- PROFILE-DATA:START -->
-- **Calendar — last six months:** 2,084 publicly displayed contributions · 12 April 2026–12 October 2026 (184 days).
-- **Public search counts (all-time):** 195 public pull requests opened · 81 distinct public PRs ever reviewed · 104 public issues opened; retrieved 12 October 2026 UTC.
+- **Calendar — last six months:** 2,120 publicly displayed contributions · 12 April 2026–12 October 2026 (184 days).
+- **Public search counts (all-time):** 212 public pull requests opened · 83 distinct public PRs ever reviewed · 105 public issues opened; retrieved 12 October 2026 UTC.
 - The calendar shows a rolling six-month window from GitHub’s displayed activity, which may include privacy-obscured contributions; it is not a public-only total. Search counts use a different period.
 <!-- PROFILE-DATA:END -->
 
