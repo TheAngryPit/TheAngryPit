@@ -4,6 +4,24 @@ import { createHash } from 'node:crypto';
 import { readFile } from 'node:fs/promises';
 import { badgeUrl, logoDataUri, presentLogo, validateBadge } from '../scripts/fetch-stack-badges.mjs';
 
+test('Buzz identifies the Block workspace and embeds its official app icon', async () => {
+  const stack = JSON.parse(await readFile(new URL('../config/stack-badges.json', import.meta.url), 'utf8'));
+  const buzz = stack.find(({ id }) => id === 'buzz');
+  assert.equal(buzz.href, 'https://github.com/block/buzz');
+  assert.equal(buzz.logoSource, 'https://raw.githubusercontent.com/block/buzz/main/desktop/src-tauri/icons/32x32.png');
+  const readme = await readFile(new URL('../README.md', import.meta.url), 'utf8');
+  assert.ok(readme.includes('<a href="https://github.com/block/buzz"><img src="assets/stack-buzz-logo.svg"'));
+  assert.ok(!readme.includes('chidiwilliams/buzz'));
+  const receipt = JSON.parse(await readFile(new URL('../assets/stack-badges.provenance.json', import.meta.url), 'utf8'));
+  const provenance = receipt.badges.find(({ id }) => id === 'buzz');
+  assert.equal(provenance.href, buzz.href);
+  assert.equal(provenance.logoAsset.sourceUrl, buzz.logoSource);
+  assert.equal(provenance.logoAsset.path, 'assets/stack-logo-sources/buzz.png');
+  const icon = await readFile(new URL('../assets/stack-logo-sources/buzz.png', import.meta.url));
+  const badge = await readFile(new URL('../assets/stack-buzz-logo.svg', import.meta.url), 'utf8');
+  assert.ok(badge.includes(`data:image/png;base64,${icon.toString('base64')}`));
+});
+
 test('stack badges use real Shields flat-square source, encoded labels and the approved palette', () => {
   const url = badgeUrl({ label: 'C#', logo: 'dotnet' });
   assert.equal(url.origin, 'https://img.shields.io');

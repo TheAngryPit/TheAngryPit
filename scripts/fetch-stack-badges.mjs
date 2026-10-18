@@ -150,7 +150,7 @@ export async function fetchStackBadges({ onlyIds = [] } = {}) {
     const relativePath = priorAsset?.sourceUrl === item.logoSource && priorAsset.path
       ? priorAsset.path
       : `assets/stack-logo-sources/${item.id}.${logo.originalExt}`;
-    if (!priorAsset?.path) await writeFile(path.join(root, relativePath), logo.original);
+    if (!priorAsset?.path || priorAsset.sourceUrl !== item.logoSource) await writeFile(path.join(root, relativePath), logo.original);
     const sourceSha256 = createHash('sha256').update(logo.original).digest('hex');
     const logoAsset = {
       sourceUrl: item.logoSource,

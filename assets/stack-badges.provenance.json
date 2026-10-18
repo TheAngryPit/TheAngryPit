@@ -1,7 +1,7 @@
 {
   "provider": "Shields.io",
   "style": "flat-square; E2B official for-the-badge exception",
-  "retrievedAt": "2026-10-09T12:43:17.578Z",
+  "retrievedAt": "2026-10-18T11:40:53.868Z",
   "scope": "Static tool/OS badges and confirmed access/membership labels, not certifications or proficiency ratings. Tool marks are embedded from local snapshots of official repo/site assets or verified Simple Icons; original source URLs and SHA-256 hashes are retained separately from any presentation-tinted SVG snapshot. E2B uses its official Startups sponsorship badge; other program labels are custom Shields badges, not official credentials.",
   "badges": [
     {
@@ -173,18 +173,18 @@
       "id": "buzz",
       "label": "Buzz",
       "group": "stack",
-      "source": "https://img.shields.io/badge/Buzz-0D1117?style=flat-square&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIxMDI0IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTEyLCA1MTIpIHNjYWxlKDAuOSkgdHJhbnNsYXRlKC01MTIsIC01MTIpIiBjbGlwLXBhdGg9InVybCgjY2xpcDBfOTQ1XzgpIj4KICAgICAgICA8cmVjdCB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIxMDI0IiBmaWxsPSIjQ0QwMDAwIi8%2BCiAgICAgICAgPHJlY3Qgd2lkdGg9IjEwMjQiIGhlaWdodD0iMTAyNCIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyXzk0NV84KSIvPgogICAgICAgIDxwYXRoIGQ9Ik04NzEgNTEyQzg3MSA3MTAuMjcgNzEwLjI3IDg3MSA1MTIgODcxQzMxMy43MyA4NzEgMTUzIDcxMC4yNyAxNTMgNTEyQzE1MyAzMTMuNzMgMzEzLjczIDE1MyA1MTIgMTUzQzcxMC4yNyAxNTMgODcxIDMxMy43MyA4NzEgNTEyWiIKICAgICAgICAgICAgICBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjcyIi8%2BCiAgICAgICAgPGNpcmNsZSBjeD0iNTEyLjUiIGN5PSI1MTIuNSIgcj0iMjM3LjUiIGZpbGw9InVybCgjcGFpbnQxX3JhZGlhbF85NDVfOCkiLz4KICAgIDwvZz4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhcl85NDVfOCIgeDE9IjUxMiIgeTE9IjAiIHgyPSI1MTIiIHkyPSIxMDI0IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI%2BCiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNDRDAwMDAiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3Atb3BhY2l0eT0iMC4yIi8%2BCiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8cmFkaWFsR3JhZGllbnQgaWQ9InBhaW50MV9yYWRpYWxfOTQ1XzgiIGN4PSIwIiBjeT0iMCIgcj0iMSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICAgICAgICAgICAgICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDQ2IDQ1NC45MDYpIHJvdGF0ZSg0NSkgc2NhbGUoMzIwLjc2MSAzNjUuODUzKSI%2BCiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMC41Nzg5OTgiIHN0b3AtY29sb3I9IndoaXRlIi8%2BCiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMC44NzMxNzciIHN0b3AtY29sb3I9IiNFNkU2RTYiLz4KICAgICAgICA8L3JhZGlhbEdyYWRpZW50PgogICAgICAgIDxjbGlwUGF0aCBpZD0iY2xpcDBfOTQ1XzgiPgogICAgICAgICAgICA8cmVjdCB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIxMDI0IiByeD0iMTg1IiBmaWxsPSJ3aGl0ZSIvPgogICAgICAgIDwvY2xpcFBhdGg%2BCiAgICA8L2RlZnM%2BCjwvc3ZnPgo%3D",
-      "href": "https://github.com/chidiwilliams/buzz",
+      "source": "https://img.shields.io/badge/Buzz-0D1117?style=flat-square&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAECUlEQVR42u1Xz2sTWxT%2B7mSSdKLV%2FNC%2BhlctVG39VfEfEEF0JeJCEPy1ciEuRFdu%2B6DdKrgRQRBciG6qCLoRFyqKuhBE8MdbqCi071nNs2ljUtPJ3DffGW9MxonWIhShFy5J7p17zne%2B851zJzYAjTkcNuZ4zAP4vQBYFqCUgtb8bN5rXKvV9K8HQOeehxkVzddnfxEAY3DjxhT27VuCVMqSiBsHo69WNYaH%2F8Pdu5MzBqFahUSDnLGYwvS0xoYNKVy%2BvEqcf%2F6sxQH3ODxP%2B7QD8Xjwe%2F%2F%2Bl7h1a0J%2Bc137aHUL4qyoRRrmAUZA5xy7d2exYIGFDx%2FcuqPxcRcfP7pwXSCRUCgWa3Ju796c7PMswXHNgP1hChgZRcTP%2Fv4UcjkbL15M1Wl3XY2hoRHk8wns2ZODbSvcvFnE7dsTOHiwA9lsTMDk83H09TkolWp4%2BrSCSsUTRsNM2FG53rZtMY4fz6OnJynGSiUPnz55%2Fr7C2bPvcebMmDy%2FYkUSa9c6OHTotRh%2B%2B7aKixdXCvAbN1YjnY4JO6OjVZw%2B%2FQ4XLhS%2BAWE10k7nO3dmcP58j2%2B8DVNTWmjlIAOktKsrHiD3I0%2BnbSSTyl9LyFp3d1IodxxL0sSz5bKHjo44Tp3qxpEjf3yTDhGhQZXN2j6dq9HeHvOF5jU9aOqcjqnyTMbGunWOrI%2BMVP00VbBpU3tdeEbIgUiD721tFrZv%2FxvPn1fqbNsB9UryvmXLInR2xlEouOIoXBWGuh070kIt88rR29smVVIsusJauEnRGbXjOMoHkBYASgUFaDciXbYs0YQ83OkIamxsGo8fl%2F3v%2BGIEdXFSgExHVP3zUTJj0tUkQhOZyXdUzZKhTCaGgYF3vtAKkSXFlFy71id5t6xoEMZHCEDg8d69SaGVKQn3exPB8uUJSRMFaHo%2BnbFKWHa0FcWg0cGdOxPRnZBOqeCBgT9x9GinlE4jCO4bEdJhq85mGpcBZ55jX7h6ddzvFa%2Ba9FQH0Lg4ONiFAweWSA8wg72ARjmDpqJCGtFSAcmkJQAXLow13I7A9evjOHbsjS9SLxpAGARVvXlzO5YujePZswq2bl2EXbuyfhccxYkT%2F0jJUngmBcw7z1y50osHD0q4dKmA9esdTE7WcP9%2BSWbUTWlH3emcT56UZZrR3%2B9IhIyAgw4bAfAmNOKjU96Kw8PNGjJa%2BO5dQBCcNMS8G%2BOPHpUlv4cPd%2FhXcq4uVGOc%2BkkkLKH%2B4cMgWnbJ4DZs%2FZIS8%2BdfURvmNjRdjc2DuV%2BzxpGOxi5JRjj5nXrhmXPn3uPkyX%2Fr0XJqPYv3gVaDfZ4AdMgqRVmtBpdWWE%2BzeiFp9Z7wo%2Fe9IDV6Rs5nxYBS39%2FXP%2Fk%2FS83%2FNZsHMNcA%2Fgehkvsol01xMgAAAABJRU5ErkJggg%3D%3D",
+      "href": "https://github.com/block/buzz",
       "officialProgramBadge": false,
       "logoAsset": {
-        "sourceUrl": "https://raw.githubusercontent.com/chidiwilliams/buzz/main/share/icons/io.github.chidiwilliams.Buzz.svg",
-        "mimeType": "image/svg+xml",
-        "path": "assets/stack-logo-sources/buzz.svg",
-        "sha256": "0aac4a0dbedc4cac1ecbbee027b08f9fe82a566c502a273074bf44c31de6e14b"
+        "sourceUrl": "https://raw.githubusercontent.com/block/buzz/main/desktop/src-tauri/icons/32x32.png",
+        "mimeType": "image/png",
+        "path": "assets/stack-logo-sources/buzz.png",
+        "sha256": "836869cdb15f5fa6df1ac7799e2d54bf65320d061c8578c0381cd5885ed2be04"
       },
-      "sha256": "cbd9ee2bd71e5a0206c5fd14e7c5c38d6616fd7c712daf8ac12ebf574ef9a44e",
+      "sha256": "668cbead477ebd26e837491f94095f0f2accaf480a5c94a3b7a2d432f12925c0",
       "publishedAsset": "assets/stack-buzz-logo.svg",
-      "publishedAssetSha256": "cbd9ee2bd71e5a0206c5fd14e7c5c38d6616fd7c712daf8ac12ebf574ef9a44e"
+      "publishedAssetSha256": "668cbead477ebd26e837491f94095f0f2accaf480a5c94a3b7a2d432f12925c0"
     },
     {
       "id": "ghostty",
