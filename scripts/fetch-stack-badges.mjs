@@ -182,7 +182,8 @@ export async function fetchStackBadges({ onlyIds = [] } = {}) {
     assert(badge, `Missing provenance for tool badge ${item.id}`);
     assert.equal(createHash('sha256').update(canonical).digest('hex'), badge.sha256, `Canonical badge hash mismatch for ${item.id}`);
     validateBadge(canonical.toString('utf8'), item.label);
-    const publishedAsset = `assets/stack-${item.id}-logo.svg`;
+    const publishedAsset = item.publishedAsset || `assets/stack-${item.id}-logo.svg`;
+    assert(/^assets\/stack-[a-z-]+-logo\.svg$/.test(publishedAsset), 'Invalid tool publication asset path');
     await writeFile(path.join(root, publishedAsset), canonical);
     badgeMap.set(item.id, { ...badge, publishedAsset, publishedAssetSha256: badge.sha256 });
   }

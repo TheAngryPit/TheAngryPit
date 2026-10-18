@@ -17,7 +17,7 @@ Working with agents lets me bring ideas to life that I previously lacked the mea
 <a href="https://github.com/NousResearch/hermes-agent"><img src="assets/stack-hermes-logo.svg" alt="Hermes Agent" height="26"></a>
 <a href="https://github.com/PrimeIntellect-ai/prime-agent"><img src="assets/stack-prime-logo.svg" alt="Prime Agent" height="26"></a>
 <a href="https://github.com/OpenWhispr/openwhispr"><img src="assets/stack-openwhispr-logo.svg" alt="OpenWhispr" height="26"></a>
-<a href="https://github.com/block/buzz"><img src="assets/stack-buzz-logo.svg" alt="Buzz" height="26"></a>
+<a href="https://github.com/block/buzz"><img src="assets/stack-buzz-block-logo.svg" alt="Buzz" height="26"></a>
 <a href="https://ghostty.org"><img src="assets/stack-ghostty-logo.svg" alt="Ghostty" height="26"></a>
 <a href="https://github.com/ggml-org/llama.cpp"><img src="assets/stack-llamacpp-logo.svg" alt="llama.cpp" height="26"></a>
 <a href="https://github.com/vectorize-io/hindsight"><img src="assets/stack-hindsight-logo.svg" alt="Hindsight" height="26"></a>

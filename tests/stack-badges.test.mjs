@@ -8,9 +8,10 @@ test('Buzz identifies the Block workspace and embeds its official app icon', asy
   const stack = JSON.parse(await readFile(new URL('../config/stack-badges.json', import.meta.url), 'utf8'));
   const buzz = stack.find(({ id }) => id === 'buzz');
   assert.equal(buzz.href, 'https://github.com/block/buzz');
-  assert.equal(buzz.logoSource, 'https://raw.githubusercontent.com/block/buzz/main/desktop/src-tauri/icons/32x32.png');
+  assert.equal(buzz.logoSource, 'https://raw.githubusercontent.com/block/buzz/main/desktop/public/app-icon@3x.png');
+  assert.equal(buzz.publishedAsset, 'assets/stack-buzz-block-logo.svg');
   const readme = await readFile(new URL('../README.md', import.meta.url), 'utf8');
-  assert.ok(readme.includes('<a href="https://github.com/block/buzz"><img src="assets/stack-buzz-logo.svg"'));
+  assert.ok(readme.includes('<a href="https://github.com/block/buzz"><img src="assets/stack-buzz-block-logo.svg"'));
   assert.ok(!readme.includes('chidiwilliams/buzz'));
   const receipt = JSON.parse(await readFile(new URL('../assets/stack-badges.provenance.json', import.meta.url), 'utf8'));
   const provenance = receipt.badges.find(({ id }) => id === 'buzz');
@@ -18,7 +19,7 @@ test('Buzz identifies the Block workspace and embeds its official app icon', asy
   assert.equal(provenance.logoAsset.sourceUrl, buzz.logoSource);
   assert.equal(provenance.logoAsset.path, 'assets/stack-logo-sources/buzz.png');
   const icon = await readFile(new URL('../assets/stack-logo-sources/buzz.png', import.meta.url));
-  const badge = await readFile(new URL('../assets/stack-buzz-logo.svg', import.meta.url), 'utf8');
+  const badge = await readFile(new URL('../assets/stack-buzz-block-logo.svg', import.meta.url), 'utf8');
   assert.ok(badge.includes(`data:image/png;base64,${icon.toString('base64')}`));
 });
 
@@ -73,9 +74,10 @@ test('every tool badge has an embedded official logo with source URL and SHA-256
     validateBadge(badge, item.label);
     assert.match(badge, /<image\b[^>]*\bhref="data:image\//, `${item.id} rendered without an embedded mark`);
     const provenance = receipt.badges.find(({ id }) => id === item.id);
-    const alias = await readFile(new URL(`../assets/stack-${item.id}-logo.svg`, import.meta.url), 'utf8');
+    const publishedAsset = item.publishedAsset || `assets/stack-${item.id}-logo.svg`;
+    const alias = await readFile(new URL(`../${publishedAsset}`, import.meta.url), 'utf8');
     assert.equal(alias, badge, `${item.id} publication alias must match the canonical badge`);
-    assert.equal(provenance?.publishedAsset, `assets/stack-${item.id}-logo.svg`);
+    assert.equal(provenance?.publishedAsset, publishedAsset);
     assert.equal(provenance?.publishedAssetSha256, provenance?.sha256);
     assert.equal(provenance?.logoAsset?.sourceUrl, item.logoSource);
     assert.match(provenance?.logoAsset?.sha256 || '', /^[a-f0-9]{64}$/);
@@ -100,7 +102,7 @@ test('README exposes exactly the source-backed stack and includes the confirmed 
   assert.deepEqual(stack.map(({ label }) => label), ['Codex', 'OpenClaw', 'Hermes Agent', 'TypeScript', 'C#', 'Python', 'Swift', 'Rust', 'HTML', 'SQL', 'JavaScript', 'OpenWhispr', 'Prime Agent', 'Buzz', 'Ghostty', 'llama.cpp', 'Hindsight', 'Honcho', 'Docker', 'E2B', 'ComfyUI', 'macOS', 'Windows', 'Ubuntu', 'Omarchy', 'OpenAI Daybreak · Defensive security access', 'Apple Developer Program member', 'NVIDIA Developer Program', 'SPONSORED BY: E2B FOR STARTUPS']);
   for (const { id, href, group } of stack) {
     assert.ok(readme.includes(`href="${href}"`));
-    const imageAsset = ['language', 'os', 'program'].includes(group) ? `assets/stack-${id}.svg` : `assets/stack-${id}-logo.svg`;
+    const imageAsset = ['language', 'os', 'program'].includes(group) ? `assets/stack-${id}.svg` : (stack.find(item => item.id === id).publishedAsset || `assets/stack-${id}-logo.svg`);
     assert.ok(readme.includes(imageAsset));
   }
   assert.ok(readme.includes('**Nexus**: agent orchestration, governance and harness infrastructure; in development.'));
