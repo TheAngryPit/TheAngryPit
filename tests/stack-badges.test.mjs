@@ -99,7 +99,7 @@ test('every tool badge has an embedded official logo with source URL and SHA-256
 test('README exposes exactly the source-backed stack and includes the confirmed Nexus description', async () => {
   const readme = await readFile(new URL('../README.md', import.meta.url), 'utf8');
   const stack = JSON.parse(await readFile(new URL('../config/stack-badges.json', import.meta.url), 'utf8'));
-  assert.deepEqual(stack.map(({ label }) => label), ['Codex', 'OpenClaw', 'Hermes Agent', 'TypeScript', 'C#', 'Python', 'Swift', 'Rust', 'HTML', 'SQL', 'JavaScript', 'OpenWhispr', 'Prime Agent', 'Buzz', 'Ghostty', 'llama.cpp', 'Hindsight', 'Honcho', 'Docker', 'E2B', 'ComfyUI', 'macOS', 'Windows', 'Ubuntu', 'Omarchy', 'OpenAI Daybreak · Defensive security access', 'Apple Developer Program member', 'NVIDIA Developer Program', 'SPONSORED BY: E2B FOR STARTUPS']);
+  assert.deepEqual(stack.map(({ label }) => label), ['Codex', 'OpenClaw', 'Hermes Agent', 'TypeScript', 'C#', 'Python', 'Swift', 'Rust', 'HTML', 'SQL', 'JavaScript', 'OpenWhispr', 'Prime Agent', 'Buzz', 'Ghostty', 'llama.cpp', 'Hindsight', 'Honcho', 'Docker', 'E2B', 'ComfyUI', 'Cua', 'macOS', 'Windows', 'Ubuntu', 'Omarchy', 'OpenAI Daybreak · Defensive security access', 'Apple Developer Program member', 'NVIDIA Developer Program', 'SPONSORED BY: E2B FOR STARTUPS']);
   for (const { id, href, group } of stack) {
     assert.ok(readme.includes(`href="${href}"`));
     const imageAsset = ['language', 'os', 'program'].includes(group) ? `assets/stack-${id}.svg` : (stack.find(item => item.id === id).publishedAsset || `assets/stack-${id}-logo.svg`);

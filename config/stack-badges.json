@@ -20,6 +20,7 @@
   {"id":"docker","label":"Docker","logoSource":"https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/docker.svg","logoTint":"E6342E","href":"https://www.docker.com","evidence":"User-stated tool use, 2026-10-08"},
   {"id":"ecloud","label":"E2B","logoSource":"https://e2b.dev/brand/e2b-logotype-black-l.svg","logoTint":"E6342E","href":"https://e2b.dev","evidence":"User-stated tool use, 2026-10-08"},
   {"id":"comfy","label":"ComfyUI","logoSource":"https://github.com/Comfy-Org.png?size=64","href":"https://github.com/Comfy-Org/ComfyUI","evidence":"User-stated tool use, 2026-10-08"},
+  {"id":"cua","label":"Cua","logoSource":"https://github.com/trycua.png?size=64","href":"https://github.com/trycua/cua","evidence":"User explicitly requested this tool and repository, 2026-10-18; official trycua organization mark"},
   {"id":"macos","label":"macOS","logo":"macos","group":"os","href":"https://www.apple.com/macos/","evidence":"User-stated operating system use, 2026-10-08"},
   {"id":"windows","label":"Windows","group":"os","href":"https://www.microsoft.com/windows","evidence":"User-stated operating system use, 2026-10-08"},
   {"id":"ubuntu","label":"Ubuntu","logo":"ubuntu","group":"os","href":"https://ubuntu.com","evidence":"User-stated operating system use, 2026-10-08"},

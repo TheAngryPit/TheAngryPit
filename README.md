@@ -25,6 +25,7 @@ Working with agents lets me bring ideas to life that I previously lacked the mea
 <a href="https://www.docker.com"><img src="assets/stack-docker-logo.svg" alt="Docker" height="26"></a>
 <a href="https://e2b.dev"><img src="assets/stack-ecloud-logo.svg" alt="E2B" height="26"></a>
 <a href="https://github.com/Comfy-Org/ComfyUI"><img src="assets/stack-comfy-logo.svg" alt="ComfyUI" height="26"></a>
+<a href="https://github.com/trycua/cua"><img src="assets/stack-cua-logo.svg" alt="Cua" height="26"></a>
 
 ### Languages
 
