@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
   "username": "TheAngryPit",
-  "retrievedAt": "2026-11-08T21:59:59.970Z",
+  "retrievedAt": "2026-11-09T22:18:11.566Z",
   "scope": "Public repository search counts; all time. Reviewed PRs counts distinct PRs ever reviewed, not reviews submitted.",
   "metrics": [
     {
       "id": "prs",
       "label": "Pull requests opened",
       "query": "is:pr author:TheAngryPit is:public",
-      "count": 313,
+      "count": 316,
       "source": "https://api.github.com/search/issues?q=is%3Apr+author%3ATheAngryPit+is%3Apublic&per_page=1"
     },
     {
       "id": "reviews",
       "label": "PRs reviewed",
       "query": "is:pr reviewed-by:TheAngryPit is:public",
-      "count": 112,
+      "count": 113,
       "source": "https://api.github.com/search/issues?q=is%3Apr+reviewed-by%3ATheAngryPit+is%3Apublic&per_page=1"
     },
     {
       "id": "issues",
       "label": "Issues opened",
       "query": "is:issue author:TheAngryPit is:public",
-      "count": 129,
+      "count": 133,
       "source": "https://api.github.com/search/issues?q=is%3Aissue+author%3ATheAngryPit+is%3Apublic&per_page=1"
     }
   ]
